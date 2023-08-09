@@ -1,2 +1,3 @@
-# homestuck-heardle-remix
-(WIP) A new game mode for Homestuck Heardle: guess the musical references
+# Homestuck Motifle
+
+(WIP) Guess the motifs in Homestuck songs! A daily game in the style of Wordle and Heardle.
