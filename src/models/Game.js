@@ -22,7 +22,7 @@ class Game {
         this.displayedMotifs = this.initializeDisplayedMotifs(motifsArray);
         this.status = GAME_STATUS.ONGOING;
         this.errorCount = 0;
-        this.maxPoints = this.initializePoints();
+        this.maxPoints = this.initializeMaxPoints();
         this.maxErrors = this.initializeMaxErrors();
     }
 
@@ -70,11 +70,11 @@ class Game {
         this.displayedMotifs = gameObject.displayedMotifs;
         this.status = gameObject.status;
         this.errorCount = gameObject.errorCount;
-        this.maxPoints = gameObject.maxPoints || this.initializePoints();
+        this.maxPoints = gameObject.maxPoints || this.initializeMaxPoints();
         this.maxErrors = gameObject.maxErrors || this.initializeMaxErrors();
     }
 
-    initializePoints() {
+    initializeMaxPoints() {
         // based on rarity, a song is worth a certain number of points. we'll initialize the maxPoints to that number
         // to show to the user, and then we'll subtract points as they make mistakes
         const points = this.displayedMotifs.reduce((acc, motif) => {

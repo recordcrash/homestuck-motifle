@@ -148,7 +148,7 @@ onMount(async () => {
 </script>
 
 <svelte:head>
-	<title>Homestuck Motifle</title>
+	<title>Homestuck Motifle - HOMESTUCK.NET</title>
 	<meta name="description" content="Homestuck Motifle: guess the song's leitmotifs!">
 </svelte:head>
 
