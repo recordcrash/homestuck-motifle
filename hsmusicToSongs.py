@@ -22,7 +22,11 @@ EXCLUDED_SONGS = [
     'special-delivery', # I cannot hear a single of these references
 ]
 
-START_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+# This will never change. Since the game has gone live, we must preserve songs between this date and...
+ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+
+# The first day of the newly generated songs
+START_DATETIME = datetime.datetime(2023, 8, 13, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -65,6 +69,8 @@ def load_slugs(album_path) -> dict:
         album_object = next((album for album in potential_songs if 'Album' in album), None)
         album_lacks_art = 'Has Track Art' in album_object and album_object['Has Track Art'] == False
         for song in potential_songs:
+            if song is None:
+                continue
             if all(x in song for x in ['Track', 'URLs']):
                 song_name = song['Track']
                 song_slug = normalize_wiki_string(song_name)
@@ -121,6 +127,8 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
         readable_album_name = potential_songs[0]['Album']
 
         for song in potential_songs:
+            if song is None:
+                continue
             if all(x in song for x in ['Track', 'URLs']):
                 # print(f'Found song {song["Track"]} from {readable_album_name}')
                 song_name = song['Track']
@@ -138,6 +146,8 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
                         artists.remove(artist)
                         artists.append('Koba')
                 referenced_tracks = song['Referenced Tracks'] if 'Referenced Tracks' in song else []
+                sampled_tracks = song['Sampled Tracks'] if 'Sampled Tracks' in song else []
+                referenced_tracks = list(set(referenced_tracks + sampled_tracks))
                 leitmotifs = []
                 for referenced_track in referenced_tracks:
                     if referenced_track in slugs_dict:
@@ -216,7 +226,8 @@ def get_guesses_array(slugs_dict, leitmotif_counter: Counter, official_slugs, co
     return guesses_array
 
 
-def filter_songs(songs: list, leitmotif_counter: Counter, official_slugs, common_leitmotif_threshold: int, uncommon_leitmotif_threshold: int, rare_leitmotif_threshold: int, 
+def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, official_slugs: list, 
+                 common_leitmotif_threshold: int, uncommon_leitmotif_threshold: int, rare_leitmotif_threshold: int, 
                  min_leitmotifs: int, max_leitmotifs: int):
     # takes the full songs json and filters based on chosen gameplay parameters
     filtered_songs = []
@@ -257,6 +268,9 @@ def filter_songs(songs: list, leitmotif_counter: Counter, official_slugs, common
     # filter out songs that have less than min_n_references leitmotifs
     print(f'Filtering out songs that have less than {min_leitmotifs} leitmotifs or more than {max_leitmotifs}...')
     for song in songs:
+        if song['slug'] in [song['slug'] for song in old_game_songs]:
+            print(f'Skipping {song["name"]} because it is in old_game_songs')
+            continue
         if song['nLeitmotifs'] >= min_leitmotifs and song['nLeitmotifs'] <= max_leitmotifs:
             set_song_leitmotifs = set(song['leitmotifs'])
             n_official_songs = len(set_song_leitmotifs.intersection(official_leitmotifs))
@@ -283,6 +297,20 @@ def get_game_data(store: bool = True) -> List[object]:
     
     slugs_dict = load_slugs(album_path)
 
+    # check if an old song file exist
+    old_game_songs_file = None
+    old_game_songs = []
+    if os.path.exists(os.path.join(OUTPUT_PATH, 'game_songs_old.json')):
+        with open(os.path.join(OUTPUT_PATH, 'game_songs_old.json'), 'r') as f:
+            old_game_songs_file = json.loads(f.read())
+    
+    # if it exists, and the date is before the original date, we want to use the old songs and remove them from being picked
+    if old_game_songs_file is not None:
+        day_difference = (START_DATETIME - ORIGINAL_DATETIME).days
+        for index in range(day_difference):
+            old_game_songs.append(old_game_songs_file[index])
+        print(f'Found {len(old_game_songs)} old songs: {old_game_songs}')
+
     songs, leitmotif_counter, official_slugs = get_valid_songs(slugs_dict, album_path)
 
     five_hundred_most_common = leitmotif_counter.most_common(500)
@@ -296,7 +324,7 @@ def get_game_data(store: bool = True) -> List[object]:
     max_leitmotifs = 999
 
     filtered_songs = filter_songs(
-        songs, leitmotif_counter, official_slugs,
+        songs, old_game_songs, leitmotif_counter, official_slugs,
         common_leitmotif_threshold, 
         uncommon_leitmotif_threshold, 
         rare_leitmotif_threshold,
@@ -305,6 +333,9 @@ def get_game_data(store: bool = True) -> List[object]:
     )
 
     print(f'Filtered {len(filtered_songs)} songs')
+
+    # add the old songs to the filtered songs
+    game_songs = old_game_songs + filtered_songs
 
     guesses_array = get_guesses_array(slugs_dict, leitmotif_counter, official_slugs, common_leitmotif_threshold, uncommon_leitmotif_threshold, rare_leitmotif_threshold)
     print(f'Found {len(guesses_array)} guesses')
@@ -319,13 +350,13 @@ def get_game_data(store: bool = True) -> List[object]:
             f.write(json.dumps(guesses_array, indent=2))
 
     # count representation of album names in the filtered songs
-    album_names = [song['albumName'] for song in filtered_songs]
+    album_names = [song['albumName'] for song in game_songs]
     album_counter = Counter(album_names)
     # count representation of is_official
-    is_official = [song['isOfficial'] for song in filtered_songs]
+    is_official = [song['isOfficial'] for song in game_songs]
     is_official_counter = Counter(is_official)
     # count representation of url_type
-    url_types = [song['urlType'] for song in filtered_songs]
+    url_types = [song['urlType'] for song in game_songs]
     url_type_counter = Counter(url_types)
     print(f'Found {url_type_counter["youtube"]} youtube links and {url_type_counter["soundcloud"]} soundcloud links')
     # count representation of rarity per motif
@@ -337,9 +368,22 @@ def get_game_data(store: bool = True) -> List[object]:
         if os.path.exists(songs_path):
             os.remove(songs_path)
         with open(songs_path, 'w') as f:
-            f.write(json.dumps(filtered_songs, indent=2))
+            f.write(json.dumps(game_songs, indent=2))
 
-    return filtered_songs
+    return game_songs
+
+def backup_old_files():
+    # backs up old game_songs.json to store old dates
+    # this is so we can revert to the old version if we need to
+    # and we can also access it when we're creating new versions
+    songs_path = os.path.join(OUTPUT_PATH, 'game_songs.json')
+    if os.path.exists(songs_path):
+        # remove previous backup
+        if os.path.exists(os.path.join(OUTPUT_PATH, 'game_songs_old.json')):
+            os.remove(os.path.join(OUTPUT_PATH, 'game_songs_old.json'))
+        os.rename(songs_path, os.path.join(OUTPUT_PATH, f'game_songs_old.json'))
+
 
 if __name__ == '__main__':
+    backup_old_files()
     get_game_data(store=True)

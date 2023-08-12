@@ -5,17 +5,86 @@
     export let game;
 
     let countdownTime;
+    let isCurrentGame;
+
+    const rarityEmojis = {
+        // 🟫🟨🟩🟦🟪 from common to rare
+        5: '🟫',
+        4: '🟨',
+        3: '🟩',
+        2: '🟦',
+        1: '🟪',
+    }
     
     onMount(() => {
-        const now = new Date();
-        const midnight = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1, 0, 0, 0);
-        countdownTime = Math.floor((midnight - now) / 1000 / 60); // in minutes
+        // we want to be consistent with the game's date, and not the user's timezone
+        // so we will use UTC midnight
+        // additionally, countDownTime is a human readable string like "in 5 minutes" or "in 2 hours, 30 minutes"
+        countdownTime = getHumanReadableUntilMidnightString();
+        // we also don't want to show the time left if we're showing a past game
+        isCurrentGame = getIsCurrentGame();
     });
+
+    // also update on game change
+    $: if (game) {
+        countdownTime = getHumanReadableUntilMidnightString();
+        isCurrentGame = getIsCurrentGame();
+    }
+
+    function getIsCurrentGame() {
+        // uses the game's dateString (UTC based, with midnight time) to check if we're looking at an old game
+        // an old game is described as a game that happened 24 hours ago or more
+        // gameDate needs to be UTC
+        const gameDate = new Date(game.dateString);
+        const now = new Date();
+        const utcMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+        const utcMidnightMs = utcMidnight.getTime();
+        const gameDateMs = gameDate.getTime();
+        const isCurrentGame = gameDateMs >= utcMidnightMs;
+        return isCurrentGame;
+    }
+
+    function getMinutesUntilMidnight() {
+        const now = new Date();
+        const utcMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+        const utcMidnightMs = utcMidnight.getTime();
+        const utcMidnightPlus24hMs = utcMidnightMs + 24 * 60 * 60 * 1000;
+        const timeUntilMidnightMs = utcMidnightPlus24hMs - now.getTime();
+        const timeUntilMidnightMinutes = Math.floor(timeUntilMidnightMs / (60 * 1000));
+        return timeUntilMidnightMinutes;
+    }
+
+    function getHumanReadableUntilMidnightString() {
+        const timeUntilMidnightMinutes = getMinutesUntilMidnight();
+        const timeUntilMidnightHours = Math.floor(timeUntilMidnightMinutes / 60);
+        const timeUntilMidnightMinutesLeft = timeUntilMidnightMinutes - timeUntilMidnightHours * 60;
+        let timeUntilMidnightString = `in ${timeUntilMidnightMinutes} minutes`;
+        if (timeUntilMidnightHours > 0) {
+            timeUntilMidnightString = `in ${timeUntilMidnightHours} hours, ${timeUntilMidnightMinutesLeft} minutes`;
+        }
+        return timeUntilMidnightString;
+    }
+
+    function getMotifsState() {
+        // this is going to return square emojis with a color based on each motif's rarity, or a X emoji if it was missed
+        // going displayedMotif by displayedMotif, we'll check if it was guessed or not
+        // if it was guessed, we'll return the emoji for its rarity
+        // if it wasn't, we'll return the X emoji
+        let motifsString = '';
+        game.displayedMotifs.forEach((motif) => {
+            if (motif.isGuessed) {
+                motifsString += rarityEmojis[motif.rarity];
+            } else {
+                motifsString += '❌';
+            }
+        });
+        return motifsString;
+    }
 
     function copyGameState(url=false, urlEmbed=false) {
         console.log(`Copying game state to clipboard with url=${url} and urlEmbed=${urlEmbed}`);
         const baseString = 'Homestuck Motifle'
-        const gameState = `${baseString} ${game.dateString}\n🎵 ${game.points} / ${game.maxPoints} points 🎵`;
+        const gameState = `${baseString} ${game.dateString} (${game.points} / ${game.maxPoints})\n${getMotifsState()}`;
         if (url === true) {
             // add the url at the end
             navigator.clipboard.writeText(`${gameState}\nPlayed at <https://motifle.homestuck.net>`);
@@ -45,7 +114,7 @@
         <p><a href={game.song.url} target="_blank">Listen on {game.song.urlType == 'youtube' ? 'Youtube' : 'Soundcloud'}</a></p>
         <h3>Total points: {game.points} / {game.maxPoints}</h3>
 
-        <p>Come back in {countdownTime} minutes for a new game!</p>
+        {#if isCurrentGame}<p>Come back in {countdownTime} for a new game!</p>{/if}
         <div class="button-row">
             <button on:click={copyWithUrlEmbed}>Copy Results</button>
             <button on:click={copyWithoutUrlEmbed}>Copy Results (no Discord embed)</button>

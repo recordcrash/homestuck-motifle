@@ -1,5 +1,4 @@
 <script>
-    import { MAX_ERRORS } from '../models/Game.js';
     import { onMount } from 'svelte';
 
     export let game, displayedMotifs;
@@ -95,7 +94,7 @@
 <div class={shakeKey > 0 ? 'score-container shake' : 'score-container'}>
     <div class="error-text">
         <div class="error-circle-container">
-            {#each Array(MAX_ERRORS) as _, i}
+            {#each Array(game.maxErrors) as _, i}
                 <div class="error-circle {i < errorCount ? 'filled' : ''}"></div>
             {/each}
         </div>

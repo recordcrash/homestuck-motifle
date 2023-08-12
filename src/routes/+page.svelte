@@ -104,26 +104,29 @@ function updateGame() {
 	}
 }
 
+function showToastMessage(message) {
+    showToast = true;
+    toastMessage = message;
+    // Hide the toast after 3 seconds
+    setTimeout(() => {
+        showToast = false;
+    }, 3000);
+}
+
 function handleMotif(motif, success) {
-	console.log(`Submitted motif ${motif.name} with success ${success}`);
+    console.log(`Submitted motif ${motif.name} with success ${success}`);
+
     if (success === 'success') {
         // You can add a brief celebration animation here, like a sparkle or stars.
+    } else if (success === 'same') {
+        showToastMessage(`Yes, the song is "${motif.name}", but you're meant to guess *its motifs*, numbnuts!`);
     } else if (success === 'partial') {
-        showToast = true;
-        toastMessage = `Your guess "${motif.name}" was close! It hasn't been counted as an error.`;
-        // Hide the toast after 3 seconds
-        setTimeout(() => {
-            showToast = false;
-        }, 3000);
+        showToastMessage(`Your guess "${motif.name}" was close! It hasn't been counted as an error.`);
     } else if (success === 'error') {
-		showToast = true;
-		toastMessage = `Your guess "${motif.name}" was wrong!`;
-		// Hide the toast after 3 seconds
-		setTimeout(() => {
-			showToast = false;
-		}, 3000);
-	}
+        showToastMessage(`Your guess "${motif.name}" was wrong!`);
+    }
 }
+
 
 function submitMotif(event) {
     const motif = event.detail.original;
@@ -161,7 +164,7 @@ onMount(async () => {
 	overflow-y: auto;
 	margin: 10px 0;
 	/* Other elements take more than n pixels currently, can't go beyond 100vh - n */
-	max-height: calc(100vh - 235px);
+	max-height: calc(100vh - 250px);
 }
 
 .search-bar {
@@ -231,38 +234,38 @@ onMount(async () => {
 
 /* Rarity colors, they are dark and go from rarest 1 to most common 5 */
 :global(.rarity5) {
-	color: black;
+	color: rgb(74, 35, 35);
 }
 :global(.rarity4) {
-	color: #1e8200;
+	color: #c8a000;
 }
 :global(.rarity3) {
-	color: #0027c3;
+	color: #1e8200;
 }
 :global(.rarity2) {
-	color: #7a00d1;
+	color: #0027c3;
 }
 :global(.rarity1) {
-	color: #c80068;
+	color: #7a00d1;
 }
-:global(.rarity6) {
+:global(.rarity6) { /* This is for the error case */
 	color: lightgrey;
 }
 
 :global(.raritybg5) {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(165, 42, 42, 0.1);
 }
 :global(.raritybg4) {
-	background-color: rgba(30, 130, 0, 0.1);
+	background-color: rgba(200, 173, 0, 0.1);
 }
 :global(.raritybg3) {
-	background-color: rgba(0, 39, 195, 0.1);
+	background-color: rgba(30, 130, 0, 0.1);
 }
 :global(.raritybg2) {
-	background-color: rgba(122, 0, 209, 0.1);
+	background-color: rgba(0, 39, 195, 0.1);
 }
 :global(.raritybg1) {
-	background-color: rgba(200, 0, 104, 0.1);
+	background-color: rgba(122, 0, 209, 0.1);
 }
 
 .give-up-btn {
@@ -300,7 +303,7 @@ onMount(async () => {
 <div class="container" transition:fade={{ duration: 1000 }}>
 	<div class="first-row">
 		<input class="dateInput" type="date" bind:value={selectedDateString} 
-			min={firstDayString} max={lastDayString} />
+			min={firstDayString} max={lastDayString}/>
 		<MediaPlayer game={currentGame} />
 		<ScoreDisplay game={currentGame} displayedMotifs={displayedMotifs} />
 	</div>

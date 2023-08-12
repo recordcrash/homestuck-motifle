@@ -1,4 +1,5 @@
 <script>
+    import {RARITY_POINTS} from '../models/Game.js';
     export let motif;
     export let forceReveal = false;
     export let currentGame;
@@ -9,6 +10,38 @@
     
     const unknownImage = '/unknown.gif';
     const errorImage = '/error.gif';
+
+    function getUnknownString() {
+        const rarityPoints = RARITY_POINTS[motif.rarity];
+        
+        // based on the motif's rarity
+        switch (motif.rarity) {
+            case 5:
+                return `${rarityPoints} points (Core)`
+            case 4:
+                return `${rarityPoints} points (Common)`
+            case 3:
+                return `${rarityPoints} points (Uncommon)`
+            case 2:
+                return `${rarityPoints} points (Rare)`
+            case 1:
+                return `${rarityPoints} points (Singular)`
+            default:
+                return 'Unknown';
+        }
+    }
+
+    function getAlbumName() {
+        // some albums have pretty weird names that we'll want to adapt
+        const replacementsDict = {
+            'References Beyond Homestuck': 'Not Homestuck'
+        };
+        let albumName = motif.albumName;
+        if (albumName in replacementsDict) {
+            albumName = replacementsDict[albumName];
+        }
+        return albumName;
+    }
     
     function loadImage() {
         const img = new Image();
@@ -34,9 +67,10 @@
         isLoading = false;
     }
 
-    $: displayName = currentGame && currentGame.errorCount >= 2 
-        ? `Unknown (${motif.albumName})` 
-        : 'Unknown';
+    // album name revealed when error count is over half (if 3 errors, 2/3, if 10 errors, 5/3)
+    $: displayName = currentGame && currentGame.errorCount > currentGame.maxErrors / 2
+        ? `${getUnknownString()} (${getAlbumName()})` 
+        : getUnknownString();
     
     let rarityClass = `raritybg${motif.rarity} rarity${motif.rarity}`;
 </script>

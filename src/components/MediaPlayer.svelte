@@ -6,6 +6,7 @@ export let game;
 let player; // YouTube or SoundCloud player instance
 let soundcloudPlayer; // SoundCloud player instance
 let isPlaying = false;
+let isReady = false; // Whether the player is ready to play
 
 onMount(() => {
     setupYouTubePlayer();
@@ -31,6 +32,7 @@ $: {
 }
 
 function onPlayerReady(event) {
+    isReady = true;
     console.log("YouTube Player is ready.");
 
     if (game && game.song.urlType === 'youtube') {
@@ -64,6 +66,7 @@ function stopSong() {
 }
 
 function togglePlay() {
+    if (!isReady) return;
     isPlaying = !isPlaying;
     console.log('Toggling play', isPlaying);
     if (isPlaying) {
@@ -119,6 +122,10 @@ function setupSoundCloudPlayer() {
     const soundCloudURL = game.song.urlType === 'soundcloud' ? game.song.url : 'https://soundcloud.com/romm_music/beta-version-rom-m';
     soundCloudIframe.setAttribute('src', `https://w.soundcloud.com/player/?url=${encodeURIComponent(soundCloudURL)}`);
     soundcloudPlayer = SC.Widget(soundCloudIframe);
+    soundcloudPlayer.bind(SC.Widget.Events.READY, () => {
+        console.log('SoundCloud player is ready.');
+        isReady = true;
+    });
 }
 
 
@@ -142,11 +149,11 @@ function extractYouTubeID(url) {
     <div id="youtube-player"></div>
     <iframe id="soundcloud-player" src="" frameborder="0"></iframe>
     
-    <button class="play-button" on:click={togglePlay}>
-        {isPlaying ? '⏸' : '▶'}
+    <button class="play-button" on:click={togglePlay} disabled={!isReady}>
+        {isReady ? (isPlaying ? '⏸' : '▶') : '⧗'}
     </button>
-    <button class="stop-button" on:click={stopSong}>
-        ⏹
+    <button class="stop-button" on:click={stopSong} disabled={!isReady}>
+        { isReady ? '⏹' : '⧗'}
     </button>
 </div>
 
@@ -177,6 +184,11 @@ function extractYouTubeID(url) {
 
     .play-button:focus {
         outline: none;
+    }
+
+    .play-button:disabled, .stop-button:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
     }
 
     .stop-button {

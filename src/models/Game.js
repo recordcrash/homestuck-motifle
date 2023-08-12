@@ -14,8 +14,6 @@ export const RARITY_POINTS = {
     5: 100
 };
 
-export const MAX_ERRORS = 3;
-
 class Game {
     constructor(dateString, songsArray, motifsArray) {
         this.dateString = dateString;
@@ -25,6 +23,43 @@ class Game {
         this.status = GAME_STATUS.ONGOING;
         this.errorCount = 0;
         this.maxPoints = this.initializePoints();
+        this.maxErrors = this.initializeMaxErrors();
+    }
+
+    
+    get submittedMotifSlugs() {
+        return this.submittedMotifs.map((motif) => motif.slug);
+    }
+
+    get isGuessed() {
+        // all target leitmotifs in song.leitmotifs (in the form track:trackslug, track:trackslug2, etc.) are included in submittedMotifs (or their .slug properties)
+        return this.song.leitmotifs.every((leitmotifSlug) => this.submittedMotifSlugs.includes(leitmotifSlug));
+    }
+
+    get isGameActive() {
+        return this.status === GAME_STATUS.ONGOING;
+    }
+
+    get points() {
+        // points is the sum of the points of all the motifs that have been guessed
+        const pointsSum = this.displayedMotifs.reduce((acc, motif) => {
+            if (motif.isGuessed) return acc + motif.points;
+            return acc;
+        }, 0);
+        // and then minus errors * 1 pts, min 0
+        const points = Math.max(pointsSum - (this.errorCount * 1), 0);
+        return points;
+    }
+
+    get nLeitmotifsGuessed() {
+        return this.displayedMotifs.reduce((acc, motif) => {
+            if (motif.isGuessed) return acc + 1;
+            return acc;
+        }, 0);
+    }
+    
+    get nTotalLeitmotifs() {
+        return this.displayedMotifs.length;
     }
 
     hydrateWithObject(gameObject) {
@@ -35,6 +70,8 @@ class Game {
         this.displayedMotifs = gameObject.displayedMotifs;
         this.status = gameObject.status;
         this.errorCount = gameObject.errorCount;
+        this.maxPoints = gameObject.maxPoints || this.initializePoints();
+        this.maxErrors = gameObject.maxErrors || this.initializeMaxErrors();
     }
 
     initializePoints() {
@@ -46,23 +83,69 @@ class Game {
         return points;
     }
 
+    initializeMaxErrors() {
+        // the max number of errors is the number of motifs in the song, minus one, or 3, whichever is higher, and 10, whichever is lower
+        // so if there's 5 motifs, the max errors is 4, if there's 2 motifs, the max errors is 3, if there's 20 motifs, the max errors is 10
+        return Math.min(Math.max(this.displayedMotifs.length - 1, 3), 10);
+    }
+
     checkBallpark(motif) {
         // some songs are in the ballpark of the target song, but not quite right
         // we have lists of songs that sound almost exactly the same. in that case we'll tell the user and not count it as an error
         // we'll have lists of lists of slugs and compare them. if we can find both slugs in the same list, we'll return true
+        // thanks to quasarNebula for 70% of the list!
         const ballparkList = [
             ['doctor', 'doctor-original-loop'],
             ['flare', 'flare-cascade'],
             ['cascade', 'cascade-beta'],
-            ['homestuck', 'homestuck-anthem'],
             ['showtime-original-mix', 'showtime-piano-refrain', 'showtime-imp-strife-mix'],
-            ['savior-of-the-waking-world', 'penumbra-phantasm'],
-            ['three-in-the-morning', 'three-in-the-morning-rj', '3-in-the-morning-pianokind'],
+            ['three-in-the-morning', '3-in-the-morning-pianokind', 'three-in-the-morning-rj'],
             ['liquid-negrocity', 'black'],
             ['sunsetter', 'sunslammer'],
             ['MeGaLoVania', 'megalovania-halloween', 'megalovania-undertale'],
             ['dissension-original', 'dissension-remix'],
-            ['black-rose-green-sun', 'black-hole-green-sun']
+            ['black-hole-green-sun', 'black-rose-green-sun'],
+            ['sburban-jungle', 'sburban-jungle-brief-mix', 'sburban-countdown'],
+            ['harlequin', 'harleboss', 'hardlyquin'],
+            ['verdancy-bassline', 'kinetic-verdancy'],
+            ['beatdown-strider-style', 'strider-showdown-loop'],
+            ['chorale-for-jaspers', 'hardchorale'],
+            ['the-ballad-of-jack-noir-original', 'the-ballad-of-jack-noir'],
+            ['hauntjelly', 'hauntjam'],
+            ['carefree-victory', 'carefree-action'],
+            ['atomyk-ebonpyre', 'tribal-ebonpyre'],
+            ['guardian', 'guardian-v2'],
+            ['endless-climb', 'clockwork-melody'],
+            ['homestuck', 'elevatorstuck', 'homestuck-anthem'],
+            ['skaian-skirmish', 'skaian-skuffle'],
+            ['savior-of-the-waking-world', 'savior-of-the-dreaming-dead', 'penumbra-phantasm'],
+            ['courser', 'umbral-ultimatum', 'an-unbreakable-union'],
+            ['skaian-flight', 'skaian-overdrive', 'skaian-ride', 'skaian-happy-flight'],
+            ['pumpkin-cravings', 'this-pumpkin'],
+            ['crystamanthequins', 'crystalanthemums', 'crystalanthology'],
+            ['lotus-bloom', 'lotus', 'lotus-land-story'],
+            ['how-do-i-live', 'how-do-i-live-bunny-back-in-the-box-version'],
+            ['ruins', 'ruins-with-strings'],
+            ['the-beginning-of-something-really-excellent', 'gardener'],
+            ['candles-and-clockwork-alpha-version', 'candles-and-clockwork'],
+            ['karkats-theme', 'crustacean'],
+            ['arisen-anew', 'psych0ruins'],
+            ['nepetas-theme', 'walls-covered-in-blood'],
+            ['virgin-orb', 'darling-kanaya'],
+            ['the-la2t-frontiier', 'the-blind-prophet'],
+            ['vriskas-theme', 'spiders-claw'],
+            ['alternia', 'theme'],
+            ['ocean-stars', 'ocean-stars-falling'],
+            ['clockwork-apocalypse', 'clockwork-reversal'],
+            ['eternity-served-cold', 'english'],
+            ['i-dont-want-to-miss-a-thing-aerosmith', 'i-dont-want-to-miss-a-thing'],
+            ['wsw-beatdown', 'walk-stab-walk-rande'],
+            ['horschestra-STRONG-version', 'horschestra'],
+            ['trollcops', 'under-the-hat'],
+            ['serenade', 'requited'],
+            ['hate-you', 'love-you-feferis-theme'],
+            ['im-a-member-of-the-midnight-crew-acapella', 'im-a-member-of-the-midnight-crew'],
+            ['stress', 'five-four-stress']
         ]
         let notAlreadyGuessedSlugs = this.displayedMotifs.filter((displayedMotif) => !displayedMotif.isGuessed).map((displayedMotif) => displayedMotif.slug);
         notAlreadyGuessedSlugs = notAlreadyGuessedSlugs.map((slug) => slug.replace('track:', ''));
@@ -76,6 +159,9 @@ class Game {
     submitMotif(motif) {
         // Logic to handle motif submission.
         let success = 'error';
+
+        // Before anything, check the user didn't submit the motif of the current song, instead of its child motifs
+        if (motif.slug === `track:${this.song.slug}`) return 'same';
 
         this.submittedMotifs.push(motif);
         const submittedMotif = this.submittedMotifs.find((submittedMotif) => submittedMotif.slug === motif.slug);
@@ -97,8 +183,7 @@ class Game {
 
     checkGameEnd() {
         // Logic to determine if the game is won or lost.
-
-        if (this.errorCount >= MAX_ERRORS) {
+        if (this.errorCount >= this.maxErrors) {
             this.endGame(GAME_STATUS.LOST);
         } else if (this.isGuessed) {
             this.endGame(GAME_STATUS.WON);
@@ -108,41 +193,6 @@ class Game {
     endGame(result) {
         // Logic to handle game ending.
         this.status = result;
-    }
-
-    get submittedMotifSlugs() {
-        return this.submittedMotifs.map((motif) => motif.slug);
-    }
-
-    get isGuessed() {
-        // all target leitmotifs in song.leitmotifs (in the form track:trackslug, track:trackslug2, etc.) are included in submittedMotifs (or their .slug properties)
-        return this.song.leitmotifs.every((leitmotifSlug) => this.submittedMotifSlugs.includes(leitmotifSlug));
-    }
-
-    get isGameActive() {
-        return this.status === GAME_STATUS.ONGOING;
-    }
-
-    get points() {
-        // points is the sum of the points of all the motifs that have been guessed
-        const pointsSum = this.displayedMotifs.reduce((acc, motif) => {
-            if (motif.isGuessed) return acc + motif.points;
-            return acc;
-        }, 0);
-        // and then divided depending on number of errors, 1 error = 75% of points, 2 errors = 50% of points, 3 errors = 25% of points
-        const errorMultiplier = 1 - (this.errorCount * 0.25);
-        return Math.floor(pointsSum * errorMultiplier);
-    }
-
-    get nLeitmotifsGuessed() {
-        return this.displayedMotifs.reduce((acc, motif) => {
-            if (motif.isGuessed) return acc + 1;
-            return acc;
-        }, 0);
-    }
-    
-    get nTotalLeitmotifs() {
-        return this.displayedMotifs.length;
     }
 
     initializeDisplayedMotifs(motifsArray) {

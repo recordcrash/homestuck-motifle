@@ -16,3 +16,7 @@ vite.config.ts.timestamp-*
 .vscode
 hsmusic-data
 /hsmusic-data
+hsmusic-media
+/hsmusic-media
+hsmusic-wiki
+/hsmusic-wiki
