@@ -15,7 +15,7 @@ INCLUDED_GROUPS = [*COUNTED_REFERENCE_GROUPS, 'Fandom']
 
 EXCLUDED_GROUPS = ['Desynced']
 
-EXCLUDED_ALBUMS = ['hiveswap-act-1-ost', 'hiveswap-act-2-ost', 'hiveswap-friendsim', 'the-grubbles', 'homestuck-vol-1-4']
+EXCLUDED_ALBUMS = ['hiveswap-act-1-ost', 'hiveswap-act-2-ost', 'hiveswap-friendsim', 'the-grubbles', 'homestuck-vol-1-4', 'genesis-frog', 'sburb']
 
 EXCLUDED_SONGS = [
     'lame-and-old-webcomic-voluem-10-mega-milx', # fuck you nik of links
@@ -26,7 +26,7 @@ EXCLUDED_SONGS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 8, 13, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2023, 8, 16, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -320,7 +320,7 @@ def get_game_data(store: bool = True) -> List[object]:
     common_leitmotif_threshold = 10
     uncommon_leitmotif_threshold = 4
     rare_leitmotif_threshold = 2
-    min_leitmotifs = 2
+    min_leitmotifs = 3
     max_leitmotifs = 999
 
     filtered_songs = filter_songs(
