@@ -164,7 +164,7 @@ onMount(async () => {
 	overflow-y: auto;
 	margin: 10px 0;
 	/* Other elements take more than n pixels currently, can't go beyond 100vh - n */
-	max-height: calc(100vh - 250px);
+	max-height: calc(100vh - 350px);
 }
 
 .search-bar {
@@ -181,6 +181,13 @@ onMount(async () => {
     align-items: center; /* Vertically aligns items in the center */
     justify-content: space-between; /* Places maximum space between items */
     padding: 10px 0;
+}
+
+.second-row {
+	display: flex;
+	align-items: center; /* Vertically aligns items in the center */
+	justify-content: space-between; /* Places maximum space between items */
+	width: 100%;
 }
 
 
@@ -304,8 +311,10 @@ onMount(async () => {
 	<div class="first-row">
 		<input class="dateInput" type="date" bind:value={selectedDateString} 
 			min={firstDayString} max={lastDayString}/>
-		<MediaPlayer game={currentGame} />
 		<ScoreDisplay game={currentGame} displayedMotifs={displayedMotifs} />
+	</div>
+	<div class="second-row">
+		<MediaPlayer game={currentGame} />
 	</div>
 
 		<div class="cards-container">

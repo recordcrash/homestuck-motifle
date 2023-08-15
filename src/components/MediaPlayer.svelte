@@ -1,5 +1,5 @@
 <script>
-import { onMount } from 'svelte';
+import { onDestroy, onMount } from 'svelte';
 
 export let game;
 
@@ -7,10 +7,17 @@ let player; // YouTube or SoundCloud player instance
 let soundcloudPlayer; // SoundCloud player instance
 let isPlaying = false;
 let isReady = false; // Whether the player is ready to play
+let currentProgress = 0; // This value will keep track of the current playback progress
+let seekBarInterval; // Interval to update the seek bar
 
 onMount(() => {
     setupYouTubePlayer();
     setupSoundCloudPlayer();
+    seekBarInterval = setInterval(updateSeekBar, 1000); // Update every second
+});
+
+onDestroy(() => {
+    clearInterval(seekBarInterval);
 });
 
 $: if (player) {
@@ -51,6 +58,7 @@ function resetPlayerState() {
         soundcloudPlayer.pause();
     }
     isPlaying = false;
+    currentProgress = 0;
 }
 
 function stopSong() {
@@ -63,6 +71,7 @@ function stopSong() {
         soundcloudPlayer.pause();   // Ensure SoundCloud track is paused
     }
     isPlaying = false;
+    currentProgress = 0;
 }
 
 function togglePlay() {
@@ -143,19 +152,62 @@ function extractYouTubeID(url) {
     }
     return videoId;
 }
+
+const updateSeekBar = () => {
+    if (game.song.urlType === 'youtube' && player && player.getDuration) {
+        const percentage = (player.getCurrentTime() / player.getDuration()) * 100;
+        currentProgress = percentage || 0;
+    } else if (game.song.urlType === 'soundcloud' && soundcloudPlayer) {
+        soundcloudPlayer.getPosition(position => {
+            soundcloudPlayer.getDuration(duration => {
+                const percentage = (position / duration) * 100;
+                currentProgress = percentage || 0;
+            });
+        });
+    }
+}
+
+const handleSeekBarChange = event => {
+    const percentage = event.target.value;
+    
+    if (game.song.urlType === 'youtube' && player && player.getDuration) {
+        const goToTime = (percentage / 100) * player.getDuration();
+        player.seekTo(goToTime);
+    } else if (game.song.urlType === 'soundcloud' && soundcloudPlayer) {
+        soundcloudPlayer.getDuration(duration => {
+            const goToTime = (percentage / 100) * duration;
+            soundcloudPlayer.seekTo(goToTime);
+        });
+    }
+}
 </script>
 
 <div id="player-container">
     <div id="youtube-player"></div>
     <iframe id="soundcloud-player" src="" frameborder="0"></iframe>
     
-    <button class="play-button" on:click={togglePlay} disabled={!isReady}>
-        {isReady ? (isPlaying ? '⏸' : '▶') : '⧗'}
-    </button>
-    <button class="stop-button" on:click={stopSong} disabled={!isReady}>
-        { isReady ? '⏹' : '⧗'}
-    </button>
+    <div class="controls-container">
+        <button class="play-button" on:click={togglePlay} disabled={!isReady}>
+            {isReady ? (isPlaying ? '⏸' : '▶') : '⧗'}
+        </button>
+        
+        <div class="seek-bar-container">
+            <input 
+                type="range" 
+                class="seek-bar" 
+                min="0" 
+                max="100" 
+                value={currentProgress} 
+                on:input={handleSeekBarChange}
+            />
+        </div>
+
+        <button class="stop-button" on:click={stopSong} disabled={!isReady}>
+            { isReady ? '⏹' : '⧗'}
+        </button>
+    </div>
 </div>
+
 
 <style>
     #youtube-player,
@@ -163,7 +215,7 @@ function extractYouTubeID(url) {
         display: none;
     }
 
-    .play-button {
+    .play-button, .stop-button {
         background-color: var(--color-theme-1);
         color: white;
         border: none;
@@ -174,43 +226,97 @@ function extractYouTubeID(url) {
         font-size: 20px;
         line-height: 40px;
         text-align: center;
-        margin: 0 0 0 5px;
         transition: background-color 0.3s;
     }
 
-    .play-button:hover {
+    .play-button:hover, .stop-button:hover {
         background-color: #d32f2f;
     }
 
-    .play-button:focus {
+    .play-button:focus, .stop-button:focus {
         outline: none;
     }
 
-    .play-button:disabled, .stop-button:disabled {
+    .play-button:disabled, .stop-button:disabled, .play-button:disabled:hover, .stop-button:disabled:hover {
         cursor: not-allowed;
         opacity: 0.5;
     }
 
+    .play-button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     .stop-button {
-        background-color: var(--color-theme-1);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        font-size: 20px;
-        line-height: 40px;
-        text-align: center;
-        margin: 0 5px 0 0 ;
-        transition: background-color 0.3s;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .stop-button:hover {
-        background-color: #d32f2f;
+    #player-container {
+        position: relative;
+        width: 100%;
     }
 
-    .stop-button:focus {
+    .controls-container {
+        position: relative;
+        display: flex;
+        align-items: center; /* To vertically align the buttons and SVG */
+        justify-content: space-between; /* To spread out the two buttons */
+        width: 100%;
+        height: 50px;
+    }
+
+    .play-button, .stop-button {
+        position: relative; /* Relative to ensure z-index stacking order is respected */
+        z-index: 2; /* Ensuring buttons are over the SVG */
+    }
+
+    .seek-bar-container {
+        width: calc(100% - 150px);
+        margin-top: 10px; /* provide some space between the buttons and the seek bar */
+    }
+
+    .seek-bar {
+        width: 100%;
+        appearance: none; /* removes default appearance */
+        height: 20px;
+        border-radius: 10px;
+        background: #d3d3d3;
         outline: none;
+        transition: opacity 0.2s;
+        cursor: pointer;
+    }
+
+    .seek-bar::-webkit-slider-thumb {
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: var(--color-theme-1);
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .seek-bar::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: var(--color-theme-1);
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .seek-bar::-webkit-slider-thumb:hover,
+    .seek-bar::-moz-range-thumb:hover {
+        background: #d32f2f;
+    }
+
+    .seek-bar::-webkit-slider-runnable-track,
+    .seek-bar::-moz-range-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        border-radius: 2px;
+        background: #d3d3d3;
     }
 </style>
