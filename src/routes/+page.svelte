@@ -6,8 +6,7 @@ import GameResults from '../components/GameResults.svelte';
 import ScoreDisplay from '../components/ScoreDisplay.svelte';
 import MediaPlayer from '../components/MediaPlayer.svelte';
 import Typeahead from "svelte-typeahead";
-import { slide, fade, fly } from 'svelte/transition'
-import { tick } from 'svelte';
+import { fade } from 'svelte/transition'
 
 let showToast = false;
 let toastMessage = '';
@@ -237,42 +236,6 @@ onMount(async () => {
 :global(.motifSlug) {
 	font-size: 0.8em;
 	color: #666;
-}
-
-/* Rarity colors, they are dark and go from rarest 1 to most common 5 */
-:global(.rarity5) {
-	color: rgb(74, 35, 35);
-}
-:global(.rarity4) {
-	color: #c8a000;
-}
-:global(.rarity3) {
-	color: #1e8200;
-}
-:global(.rarity2) {
-	color: #0027c3;
-}
-:global(.rarity1) {
-	color: #7a00d1;
-}
-:global(.rarity6) { /* This is for the error case */
-	color: lightgrey;
-}
-
-:global(.raritybg5) {
-	background-color: rgba(165, 42, 42, 0.1);
-}
-:global(.raritybg4) {
-	background-color: rgba(200, 173, 0, 0.1);
-}
-:global(.raritybg3) {
-	background-color: rgba(30, 130, 0, 0.1);
-}
-:global(.raritybg2) {
-	background-color: rgba(0, 39, 195, 0.1);
-}
-:global(.raritybg1) {
-	background-color: rgba(122, 0, 209, 0.1);
 }
 
 .give-up-btn {

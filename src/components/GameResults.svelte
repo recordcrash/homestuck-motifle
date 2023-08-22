@@ -6,6 +6,7 @@
 
     let countdownTime;
     let isCurrentGame;
+    let artistsHTML = '';
 
     const rarityEmojis = {
         // 🟫🟨🟩🟦🟪 from common to rare
@@ -23,6 +24,7 @@
         countdownTime = getHumanReadableUntilMidnightString();
         // we also don't want to show the time left if we're showing a past game
         isCurrentGame = getIsCurrentGame();
+        artistsHTML = getArtistsHTML();
     });
 
     // also update on game change
@@ -42,6 +44,31 @@
         const gameDateMs = gameDate.getTime();
         const isCurrentGame = gameDateMs >= utcMidnightMs;
         return isCurrentGame;
+    }
+
+    function deSlugify(artistName) {
+        // to provide human readable artist names, we turn the - in to spaces
+        // and capitalize the first letter of each word
+        const artistNameWords = artistName.split('-');
+        const artistNameWordsCapitalized = artistNameWords.map((word) => {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        });
+        const artistNameCapitalized = artistNameWordsCapitalized.join(' ');
+        return artistNameCapitalized;
+    }
+
+    function getArtistsHTML() {
+        // an array of artist slugs comes in the game object, in its 'artist' property
+        // we need to remove the 'artist:' part of each slug, and then join them with a comma
+        // AND surround the artist names in links with the following format
+        // https://hsmusic.wiki/artist/{artist_name_without_artist:}
+        // so we'll use a regex to remove the artist: part, and then map each artist to a link
+        // finally, we'll join the links with a comma
+        const artistsHTML = game.song.artist.map((artist) => {
+            const artistName = artist.replace('artist:', '');
+            return `<a style="text-decoration: underline; color: inherit;" href="https://hsmusic.wiki/artist/${artistName}" target="_blank">${deSlugify(artistName)}</a>`;
+        }).join(', ');
+        return artistsHTML;
     }
 
     function getMinutesUntilMidnight() {
@@ -110,7 +137,7 @@
 {#if game}
     <div class="endgame-container {game.status}" in:slide={{ duration: 500 }}>
         <h2>{game.status === 'won' ? 'Congratulations! The song was:' : 'Better luck next time! The song was:'}</h2>
-        <p><a href={game.song.wikiUrl} target="_blank">{game.song.name}</a> ({game.song.albumName})</p>
+        <p><a href={game.song.wikiUrl} target="_blank">{game.song.name}</a> by <span class="artist-links">{@html artistsHTML}</span> ({game.song.albumName})</p>
         <p><a href={game.song.url} target="_blank">Listen on {game.song.urlType == 'youtube' ? 'Youtube' : 'Soundcloud'}</a></p>
         <h3>Total points: {game.points} / {game.maxPoints}</h3>
 

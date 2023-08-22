@@ -8,12 +8,14 @@ let soundcloudPlayer; // SoundCloud player instance
 let isPlaying = false;
 let isReady = false; // Whether the player is ready to play
 let currentProgress = 0; // This value will keep track of the current playback progress
+let currentTime = '00:00'; // This value will keep track of the current playback time
 let seekBarInterval; // Interval to update the seek bar
+let seekBarDisabled = true; // Whether the seek bar should be disabled
 
 onMount(() => {
     setupYouTubePlayer();
     setupSoundCloudPlayer();
-    seekBarInterval = setInterval(updateSeekBar, 1000); // Update every second
+    seekBarInterval = setInterval(updateSeekBar, 500); // Update every half second
 });
 
 onDestroy(() => {
@@ -72,10 +74,13 @@ function stopSong() {
     }
     isPlaying = false;
     currentProgress = 0;
+    currentTime = '00:00';
+    seekBarDisabled = true;
 }
 
 function togglePlay() {
     if (!isReady) return;
+    seekBarDisabled = false;
     isPlaying = !isPlaying;
     console.log('Toggling play', isPlaying);
     if (isPlaying) {
@@ -135,12 +140,22 @@ function setupSoundCloudPlayer() {
         console.log('SoundCloud player is ready.');
         isReady = true;
     });
+    soundcloudPlayer.bind(SC.Widget.Events.FINISH, () => {
+        console.log('SoundCloud track finished.');
+        isPlaying = false;
+        currentProgress = 0; // Reset the progress bar
+        currentTime = '00:00'; // Reset the timestamp
+        seekBarDisabled = true;
+    });
 }
 
 
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
         isPlaying = false;
+        currentProgress = 0; // Reset the progress bar
+        currentTime = '00:00'; // Reset the timestamp
+        seekBarDisabled = true;
     }
 }
 
@@ -154,16 +169,21 @@ function extractYouTubeID(url) {
 }
 
 const updateSeekBar = () => {
-    if (game.song.urlType === 'youtube' && player && player.getDuration) {
-        const percentage = (player.getCurrentTime() / player.getDuration()) * 100;
-        currentProgress = percentage || 0;
-    } else if (game.song.urlType === 'soundcloud' && soundcloudPlayer) {
-        soundcloudPlayer.getPosition(position => {
-            soundcloudPlayer.getDuration(duration => {
-                const percentage = (position / duration) * 100;
-                currentProgress = percentage || 0;
+    if (isPlaying) {
+        if (game.song.urlType === 'youtube' && player && player.getDuration) {
+            const percentage = (player.getCurrentTime() / player.getDuration()) * 100;
+            currentProgress = percentage || 0;
+            currentTime = formatTime(player.getCurrentTime());
+        } else if (game.song.urlType === 'soundcloud' && soundcloudPlayer) {
+            soundcloudPlayer.getPosition(position => {
+                soundcloudPlayer.getDuration(duration => {
+                    const percentage = (position / duration) * 100;
+                    currentProgress = percentage || 0;
+                    // Soundcloud provides the position in milliseconds
+                    currentTime = formatTime(position / 1000);
+                });
             });
-        });
+        }
     }
 }
 
@@ -180,11 +200,17 @@ const handleSeekBarChange = event => {
         });
     }
 }
+
+const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+};
 </script>
 
 <div id="player-container">
     <div id="youtube-player"></div>
-    <iframe id="soundcloud-player" src="" frameborder="0"></iframe>
+    <iframe id="soundcloud-player" src="" frameborder="0" title="soundcloud"></iframe>
     
     <div class="controls-container">
         <button class="play-button" on:click={togglePlay} disabled={!isReady}>
@@ -198,8 +224,12 @@ const handleSeekBarChange = event => {
                 min="0" 
                 max="100" 
                 value={currentProgress} 
+                disabled={seekBarDisabled}
                 on:input={handleSeekBarChange}
             />
+            <div class="time-display">
+                <span class="timestamp-pill">{currentTime}</span>
+            </div>
         </div>
 
         <button class="stop-button" on:click={stopSong} disabled={!isReady}>
@@ -281,7 +311,7 @@ const handleSeekBarChange = event => {
         appearance: none; /* removes default appearance */
         height: 20px;
         border-radius: 10px;
-        background: #d3d3d3;
+        background: #ffffff;
         outline: none;
         transition: opacity 0.2s;
         cursor: pointer;
@@ -317,6 +347,21 @@ const handleSeekBarChange = event => {
         height: 4px;
         cursor: pointer;
         border-radius: 2px;
-        background: #d3d3d3;
+        background: #ffffff;
+    }
+
+    .time-display {
+        text-align: center;
+        font-size: 12px;
+        color: #555;    /* darker color for better visibility */
+    }
+
+    .timestamp-pill {
+        display: inline-block;
+        background-color: white;
+        border-radius: 15px;   /* Gives it a rounded pill shape */
+        padding: 2px 8px;      /* Add some padding for aesthetics */
+        font-size: 12px;       /* Adjust to the desired font size */
+        color: #333;           /* Text color */
     }
 </style>

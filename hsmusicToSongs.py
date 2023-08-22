@@ -17,16 +17,31 @@ EXCLUDED_GROUPS = ['Desynced']
 
 EXCLUDED_ALBUMS = ['hiveswap-act-1-ost', 'hiveswap-act-2-ost', 'hiveswap-friendsim', 'the-grubbles', 'homestuck-vol-1-4', 'genesis-frog', 'sburb']
 
+# Songs that aren't fun to play
 EXCLUDED_SONGS = [
     'lame-and-old-webcomic-voluem-10-mega-milx', # fuck you nik of links
     'special-delivery', # I cannot hear a single of these references
+    'please-help-me-i-am-in-pain', # this song personally offends me
+    'crystalmegamix',
+    'waste-of-a-track-slot',
+    'credit-shack',
+    'licord-nacrasty',
+]
+
+# Motifs that are generally just memes that shouldn't count for making a song playable
+DISCARDED_MOTIFS = [
+    'the-nutshack-intro',
+    'bowmans-credit-score',
+    'snow-halation',
+    'dk-rap',
+    'meet-the-flintstones'
 ]
 
 # This will never change. Since the game has gone live, we must preserve songs between this date and...
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 8, 16, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2023, 8, 29, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -70,6 +85,9 @@ def load_slugs(album_path) -> dict:
         album_lacks_art = 'Has Track Art' in album_object and album_object['Has Track Art'] == False
         for song in potential_songs:
             if song is None:
+                continue
+            # if it contains the field Originally Released As, skip it
+            if 'Originally Released As' in song:
                 continue
             if all(x in song for x in ['Track', 'URLs']):
                 song_name = song['Track']
@@ -129,6 +147,9 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
         for song in potential_songs:
             if song is None:
                 continue
+            # if it contains the field Originally Released As, skip it
+            if 'Originally Released As' in song:
+                continue
             if all(x in song for x in ['Track', 'URLs']):
                 # print(f'Found song {song["Track"]} from {readable_album_name}')
                 song_name = song['Track']
@@ -138,13 +159,17 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
                 is_fandom = 'Fandom' in groups
                 if is_official:
                     official_slugs.append(track_slug)
-                album_art_artist = potential_songs[0]['Artists'] if 'Artists' in potential_songs[0] else []
-                artists =  song['Artists'] if 'Artists' in song else album_art_artist
-                # stupid exception but I'm not going to slug everything just for ONE artist
+                album_artists = potential_songs[0]['Artists'] if 'Artists' in potential_songs[0] else []
+                artists = song['Artists'] if 'Artists' in song else album_artists
                 for artist in artists:
-                    if artist == 'artist:kobacat':
-                        artists.remove(artist)
-                        artists.append('Koba')
+                    # if artist doesn't contain artist:, slug it and put it before the artist name
+                    if 'artist:' not in artist:
+                        # remove anything between parentheses and then trim the end
+                        normalized_artist = re.sub(r'\([^)]*\)', '', artist).strip()
+                        artist_slug = f"artist:{normalize_wiki_string(normalized_artist)}"
+                        artist_index = artists.index(artist)
+                        artists[artist_index] = artist_slug
+
                 referenced_tracks = song['Referenced Tracks'] if 'Referenced Tracks' in song else []
                 sampled_tracks = song['Sampled Tracks'] if 'Sampled Tracks' in song else []
                 referenced_tracks = list(set(referenced_tracks + sampled_tracks))
@@ -210,7 +235,9 @@ def get_guesses_array(slugs_dict, leitmotif_counter: Counter, official_slugs, co
         if slug in leitmotif_counter:
             count = leitmotif_counter[slug]
             song['slug'] = slug
-            if count >= common_leitmotif_threshold:
+            if count == 1:
+                song['rarity'] = 1
+            elif count >= common_leitmotif_threshold:
                 song['rarity'] = 5
             elif count >= uncommon_leitmotif_threshold:
                 song['rarity'] = 4
@@ -218,10 +245,10 @@ def get_guesses_array(slugs_dict, leitmotif_counter: Counter, official_slugs, co
                 song['rarity'] = 3
             elif count < rare_leitmotif_threshold:
                 song['rarity'] = 2
-            else:
-                song['rarity'] = -1
             if slug not in official_slugs:
                 song['rarity'] -= 1
+            if song['rarity'] < 1:
+                song['rarity'] = 1
             guesses_array.append(song)
     return guesses_array
 
@@ -251,10 +278,10 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
             uncommon_leitmotifs.add(leitmotif)
         elif count >= rare_leitmotif_threshold:
             rare_leitmotifs.add(leitmotif)
-    # print(f'Found {len(common_leitmotifs)} common leitmotifs, {len(uncommon_leitmotifs)} uncommon leitmotifs, and {len(rare_leitmotifs)} rare leitmotifs')
-    # print(f'Common leitmotifs: {common_leitmotifs}')
-    # print(f'Uncommon leitmotifs: {uncommon_leitmotifs}')
-    # print(f'Rare leitmotifs: {rare_leitmotifs}')
+    print(f'Found {len(common_leitmotifs)} common leitmotifs, {len(uncommon_leitmotifs)} uncommon leitmotifs, and {len(rare_leitmotifs)} rare leitmotifs')
+    print(f'Common leitmotifs: {common_leitmotifs}')
+    print(f'Uncommon leitmotifs: {uncommon_leitmotifs}')
+    print(f'Rare leitmotifs: {rare_leitmotifs}')
 
     # add all sets into guessable_leitmotifs
     guessable_leitmotifs = common_leitmotifs.union(uncommon_leitmotifs).union(rare_leitmotifs)
@@ -269,10 +296,14 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
     print(f'Filtering out songs that have less than {min_leitmotifs} leitmotifs or more than {max_leitmotifs}...')
     for song in songs:
         if song['slug'] in [song['slug'] for song in old_game_songs]:
-            print(f'Skipping {song["name"]} because it is in old_game_songs')
             continue
-        if song['nLeitmotifs'] >= min_leitmotifs and song['nLeitmotifs'] <= max_leitmotifs:
+        set_song_leitmotifs = set(song['leitmotifs'])
+        for discarded_motif in DISCARDED_MOTIFS:
+                set_song_leitmotifs.discard(f"track:{discarded_motif}")
+        if len(set_song_leitmotifs) >= min_leitmotifs and song['nLeitmotifs'] <= max_leitmotifs:
             set_song_leitmotifs = set(song['leitmotifs'])
+            # remove meme leitmotifs that shouldn't count
+            # for example, the-nutshack-theme
             n_official_songs = len(set_song_leitmotifs.intersection(official_leitmotifs))
             n_common_unofficial_songs = len(set_song_leitmotifs.intersection(common_leitmotifs).difference(official_leitmotifs))
             # for fun gameplay, we want to make sure that there are either official or very well known leitmotifs in the song
@@ -317,9 +348,9 @@ def get_game_data(store: bool = True) -> List[object]:
     # pretty print so it's one per line
     print('\n'.join([f'{leitmotif}: {count}' for leitmotif, count in five_hundred_most_common]))
 
-    common_leitmotif_threshold = 10
-    uncommon_leitmotif_threshold = 4
-    rare_leitmotif_threshold = 2
+    common_leitmotif_threshold = 20
+    uncommon_leitmotif_threshold = 10
+    rare_leitmotif_threshold = 4
     min_leitmotifs = 3
     max_leitmotifs = 999
 

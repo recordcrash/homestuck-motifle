@@ -107,6 +107,42 @@ button:focus:not(:focus-visible) {
 	white-space: nowrap;
 }
 
+/* Rarity colors, they are dark and go from rarest 1 to most common 5 */
+.rarity5 {
+	color: #4a2323;
+}
+.rarity4 {
+	color: #c8a000;
+}
+.rarity3 {
+	color: #1e8200;
+}
+.rarity2 {
+	color: #0027c3;
+}
+.rarity1 {
+	color: #7a00d1;
+}
+.rarity6 { /* This is for the error case */
+	color: lightgrey;
+}
+
+.raritybg5 {
+	background-color: rgba(165, 42, 42, 0.1);
+}
+.raritybg4 {
+	background-color: rgba(200, 173, 0, 0.1);
+}
+.raritybg3 {
+	background-color: rgba(30, 130, 0, 0.1);
+}
+.raritybg2 {
+	background-color: rgba(0, 39, 195, 0.1);
+}
+.raritybg1 {
+	background-color: rgba(122, 0, 209, 0.1);
+}
+
 @keyframes shake {
 	0% { transform: translateX(0); }
 	10% { transform: translateX(-5px); }
