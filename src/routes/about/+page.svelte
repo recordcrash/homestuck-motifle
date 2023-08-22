@@ -36,7 +36,7 @@
 
 	<h2>Support</h2>
 	<p>
-		If you love what I'm doing, consider my design philosophy: fandom and money should stay separate. Make your projects for free, release them under extremely permissive licenses, advocate for keeping any paid work off fan spaces, and don't let your love for a franchise be exploited by predatory non-fans trying to make money off you.Sharing this site with your friends is also nice!
+		If you love what I'm doing, consider my design philosophy: fandom and money should stay separate. Make your projects for free, release them under extremely permissive licenses, advocate for keeping any paid work off fan spaces, and don't let your love for a franchise be exploited by predatory non-fans trying to make money off you.<br>Sharing this site with your friends is also nice!
 	</p>
 </div>
 

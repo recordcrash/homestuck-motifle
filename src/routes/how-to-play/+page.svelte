@@ -7,7 +7,7 @@
     <h1>How to play Motifle</h1>
 
     <p>
-        In this musical game, your main goal is to <b>guess a song's referenced melodies</b>. For instance, the song <a class="rarity4" href="https://hsmusic.wiki/track/descend">Descend</a> prominently features the drums from <a class="rarity5" href="https://hsmusic.wiki/track/upward-movement">Upward Movement</a>, that sequence where Dave rose to the highest point of his building. Listen carefully to the song and use the search bar to identify motifs!
+        In this musical game, your main goal is to <b>guess a song's referenced melodies</b>. For instance, the song <a class="rarity4" href="https://hsmusic.wiki/track/descend">Descend</a> prominently features the drums from <a class="rarity5" href="https://hsmusic.wiki/track/upward-movement-dave-owns">Upward Movement</a>, that sequence where Dave rose to the highest point of his building. Listen carefully to the song and use the search bar to identify motifs!
     </p>
 
     <p>
