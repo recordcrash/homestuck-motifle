@@ -35,22 +35,23 @@ function saveGamesToLocalStorage() {
 
 function loadGamesFromLocalStorage() {
     const savedGames = localStorage.getItem('games');
+    const loadedGames = {};
     if (savedGames) {
         const jsonGames = JSON.parse(savedGames);
-		const games = {};
-		for (const dateString in jsonGames) {
-			const game = jsonGames[dateString];
-			games[dateString] = new Game(dateString, gameSongs, gameMotifs);
-			try {
-				games[dateString].hydrateWithObject(game);
-			} catch (e) {
-				console.error(`Error hydrating game for date ${dateString}: ${e}, erasing game.`);
-				delete games[dateString];
-			}
-		}
-		return games;
+        for (const dateString in jsonGames) {
+            try {
+                const game = jsonGames[dateString];
+                const loadedGame = new Game(dateString, gameSongs, gameMotifs);
+                loadedGame.hydrateWithObject(game);
+                loadedGames[dateString] = loadedGame;
+            } catch (e) {
+                console.error(`Error hydrating game for date ${dateString}: ${e}. Deleting game.`);
+                delete jsonGames[dateString];
+                localStorage.setItem('games', JSON.stringify(jsonGames)); // Update localStorage to remove the faulty game
+            }
+        }
     }
-    return {};
+    return loadedGames;
 }
 
 // Reactive statement to load the game for the selected date.
