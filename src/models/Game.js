@@ -197,9 +197,11 @@ class Game {
 
     initializeDisplayedMotifs(motifsArray) {
         // first let's turn the motif slugs stored in song.leitmotifs into the actual motif objects
-        const motifObjects = this.song.leitmotifs.map((leitmotifSlug) => motifsArray.find((motif) => motif.slug === leitmotifSlug));
+        let motifObjects = this.song.leitmotifs.map((leitmotifSlug) => motifsArray.find((motif) => motif.slug === leitmotifSlug));
         // sort by rarity, highest first
         motifObjects.sort((a, b) => b.rarity - a.rarity);
+        // filter out undefined motifObjects
+        motifObjects = motifObjects.filter((motif) => motif);
         // now let's create a new array of motif objects with the same properties as the motif objects we just created, but with a new property, "isGuessed", which is set to false
         return motifObjects.map((motif) => {
             return {
