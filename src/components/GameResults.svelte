@@ -31,6 +31,7 @@
     $: if (game) {
         countdownTime = getHumanReadableUntilMidnightString();
         isCurrentGame = getIsCurrentGame();
+        artistsHTML = getArtistsHTML();
     }
 
     function getIsCurrentGame() {

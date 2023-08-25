@@ -193,12 +193,16 @@ const handleSeekBarChange = event => {
     if (game.song.urlType === 'youtube' && player && player.getDuration) {
         const goToTime = (percentage / 100) * player.getDuration();
         player.seekTo(goToTime);
+        currentTime = formatTime(goToTime);
     } else if (game.song.urlType === 'soundcloud' && soundcloudPlayer) {
         soundcloudPlayer.getDuration(duration => {
             const goToTime = (percentage / 100) * duration;
             soundcloudPlayer.seekTo(goToTime);
+            currentTime = formatTime(goToTime / 1000);
         });
     }
+
+    
 }
 
 const formatTime = (seconds) => {
