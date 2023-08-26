@@ -15,7 +15,8 @@ INCLUDED_GROUPS = [*COUNTED_REFERENCE_GROUPS, 'Fandom']
 
 EXCLUDED_GROUPS = ['Desynced']
 
-EXCLUDED_ALBUMS = ['hiveswap-act-1-ost', 'hiveswap-act-2-ost', 'hiveswap-friendsim', 'the-grubbles', 'homestuck-vol-1-4', 'genesis-frog', 'sburb']
+EXCLUDED_ALBUMS = ['hiveswap-act-1-ost', 'hiveswap-act-2-ost', 'hiveswap-friendsim', 'the-grubbles', 'homestuck-vol-1-4', 'genesis-frog', 'sburb',
+                   'call-and-new', 'call-and-new-2-locomotif', 'c-a-n-w-a-v-e', 'c-a-n-w-a-v-e-2']
 
 # Songs that aren't fun to play
 EXCLUDED_SONGS = [
@@ -26,6 +27,7 @@ EXCLUDED_SONGS = [
     'waste-of-a-track-slot',
     'credit-shack',
     'licord-nacrasty',
+    'im-not-saying-anything'
 ]
 
 # Motifs that are generally just memes that shouldn't count for making a song playable
@@ -41,7 +43,7 @@ DISCARDED_MOTIFS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 8, 29, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2023, 8, 27, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -69,6 +71,18 @@ def normalize_wiki_string(string: str) -> str:
     string = re.sub('^-+|-+$', '', string).lower()
     return string
 
+def get_is_official(album_object, song) -> bool:
+    song_exceptions = [
+        ('penumbra-phantasm', 'Toby Fox')
+    ]
+    is_album_official = any(group in COUNTED_REFERENCE_GROUPS for group in album_object['Groups'])
+    # check if the song is an unreleased official song like PP
+    song_slug = normalize_wiki_string(song['Track']) if 'Directory' not in song else song['Directory']
+    song_authors = song['Artists'] if 'Artists' in song else []
+    is_song_exception = any(song_slug == song_exception[0] and song_author == song_exception[1] for song_exception in song_exceptions for song_author in song_authors)
+    return is_album_official or is_song_exception
+    
+
 def load_slugs(album_path) -> dict:
     # iterates over all the songs, and either takes it's 'Directory' field or calculates it
     # by using normalize_wiki_string, then adds it to a dictionary with 'track:slug' as the key
@@ -92,8 +106,8 @@ def load_slugs(album_path) -> dict:
             if all(x in song for x in ['Track', 'URLs']):
                 song_name = song['Track']
                 song_slug = normalize_wiki_string(song_name)
-                is_official = any(group in COUNTED_REFERENCE_GROUPS for group in album_object['Groups'])
-                is_fandom = 'Fandom' in album_object['Groups'] if 'Groups' in song else False
+                is_official = get_is_official(album_object, song)
+                is_fandom = not is_official and 'Fandom' in album_object['Groups'] if 'Groups' in song else False
                 if album_lacks_art or ('Has Cover Art' in song and song['Has Cover Art'] == False):
                     image_url = f'https://hsmusic.wiki/media/album-art/{album_name}/cover.small.jpg'
                 else:
@@ -128,8 +142,8 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
     for album_name in album_names:
         print(f'Loading {album_name}...')
         if album_name in EXCLUDED_ALBUMS:
-                    print(f'Skipping {album_name} because it is excluded')
-                    continue
+            print(f'Skipping {album_name} because it is excluded')
+            continue
 
         potential_songs = load_file(os.path.join(album_path, f"{album_name}.yaml"))
         
@@ -155,8 +169,8 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
                 song_name = song['Track']
                 track_slug_no_prefix = normalize_wiki_string(song_name) if 'Directory' not in song else song['Directory']
                 track_slug = f"track:{track_slug_no_prefix}"
-                is_official = any(group in COUNTED_REFERENCE_GROUPS for group in groups)
-                is_fandom = 'Fandom' in groups
+                is_official = get_is_official(album_object, song)
+                is_fandom = not is_official and 'Fandom' in groups
                 if is_official:
                     official_slugs.append(track_slug)
                 album_artists = potential_songs[0]['Artists'] if 'Artists' in potential_songs[0] else []
@@ -226,7 +240,7 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
 
     return valid_songs, leitmotif_counter, official_slugs
 
-def get_guesses_array(slugs_dict, leitmotif_counter: Counter, official_slugs, common_leitmotif_threshold: int, uncommon_leitmotif_threshold: int, rare_leitmotif_threshold: int):
+def get_guesses_array(slugs_dict, leitmotif_counter: Counter, common_leitmotif_threshold: int, uncommon_leitmotif_threshold: int, rare_leitmotif_threshold: int):
     # adds metadata to the slugs_dict to convert it into a guesses array
     # this allows us to calculate if a leitmotif is common, uncommon, or rare
     # and create a final "guesses array" with it that we can use in the game as "valid guesses"
@@ -245,7 +259,7 @@ def get_guesses_array(slugs_dict, leitmotif_counter: Counter, official_slugs, co
                 song['rarity'] = 3
             elif count < rare_leitmotif_threshold:
                 song['rarity'] = 2
-            if slug not in official_slugs:
+            if not song['isOfficial']:
                 song['rarity'] -= 1
             if song['rarity'] < 1:
                 song['rarity'] = 1
@@ -343,6 +357,8 @@ def get_game_data(store: bool = True) -> List[object]:
         print(f'Found {len(old_game_songs)} old songs: {old_game_songs}')
 
     songs, leitmotif_counter, official_slugs = get_valid_songs(slugs_dict, album_path)
+    # ugly exception, we need to manually add penumbra-phantasm to official_slugs
+    official_slugs.append('track:penumbra-phantasm')
 
     five_hundred_most_common = leitmotif_counter.most_common(500)
     # pretty print so it's one per line
@@ -368,7 +384,7 @@ def get_game_data(store: bool = True) -> List[object]:
     # add the old songs to the filtered songs
     game_songs = old_game_songs + filtered_songs
 
-    guesses_array = get_guesses_array(slugs_dict, leitmotif_counter, official_slugs, common_leitmotif_threshold, uncommon_leitmotif_threshold, rare_leitmotif_threshold)
+    guesses_array = get_guesses_array(slugs_dict, leitmotif_counter, common_leitmotif_threshold, uncommon_leitmotif_threshold, rare_leitmotif_threshold)
     print(f'Found {len(guesses_array)} guesses')
     
     # order guesses_array by descending rarity, and then alphabetical order
