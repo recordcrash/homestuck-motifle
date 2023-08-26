@@ -145,7 +145,8 @@ class Game {
             ['serenade', 'requited'],
             ['hate-you', 'love-you-feferis-theme'],
             ['im-a-member-of-the-midnight-crew-acapella', 'im-a-member-of-the-midnight-crew'],
-            ['stress', 'five-four-stress']
+            ['stress', 'five-four-stress'],
+            ['in-the-beginning', 'contact'],
         ]
         let notAlreadyGuessedSlugs = this.displayedMotifs.filter((displayedMotif) => !displayedMotif.isGuessed).map((displayedMotif) => displayedMotif.slug);
         notAlreadyGuessedSlugs = notAlreadyGuessedSlugs.map((slug) => slug.replace('track:', ''));
