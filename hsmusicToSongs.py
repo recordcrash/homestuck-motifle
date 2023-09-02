@@ -43,7 +43,7 @@ DISCARDED_MOTIFS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 8, 27, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2023, 9, 3, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -60,9 +60,11 @@ def load_file(path: str) -> List[object]:
     return objs 
 
 def normalize_wiki_string(string: str) -> str:
-    # ugh, seems to be the only case where this matters
+    # ugh, seems to be the only TWO cases where this matters
     if (string == 'MeGaLoVania'):
         return 'MeGaLoVania'
+    elif (string == 'iRRRRRRRRECONCILA8LE'):
+        return 'iRRRRRRRRECONCILA8LE'
     string = re.split(' ', string)
     string = "-".join(string)
     string = re.sub('&', 'and', string)
@@ -292,10 +294,10 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
             uncommon_leitmotifs.add(leitmotif)
         elif count >= rare_leitmotif_threshold:
             rare_leitmotifs.add(leitmotif)
-    print(f'Found {len(common_leitmotifs)} common leitmotifs, {len(uncommon_leitmotifs)} uncommon leitmotifs, and {len(rare_leitmotifs)} rare leitmotifs')
-    print(f'Common leitmotifs: {common_leitmotifs}')
-    print(f'Uncommon leitmotifs: {uncommon_leitmotifs}')
-    print(f'Rare leitmotifs: {rare_leitmotifs}')
+    # print(f'Found {len(common_leitmotifs)} common leitmotifs, {len(uncommon_leitmotifs)} uncommon leitmotifs, and {len(rare_leitmotifs)} rare leitmotifs')
+    # print(f'Common leitmotifs: {common_leitmotifs}')
+    # print(f'Uncommon leitmotifs: {uncommon_leitmotifs}')
+    # print(f'Rare leitmotifs: {rare_leitmotifs}')
 
     # add all sets into guessable_leitmotifs
     guessable_leitmotifs = common_leitmotifs.union(uncommon_leitmotifs).union(rare_leitmotifs)
@@ -354,15 +356,12 @@ def get_game_data(store: bool = True) -> List[object]:
         day_difference = (START_DATETIME - ORIGINAL_DATETIME).days
         for index in range(day_difference):
             old_game_songs.append(old_game_songs_file[index])
-        print(f'Found {len(old_game_songs)} old songs: {old_game_songs}')
 
     songs, leitmotif_counter, official_slugs = get_valid_songs(slugs_dict, album_path)
     # ugly exception, we need to manually add penumbra-phantasm to official_slugs
     official_slugs.append('track:penumbra-phantasm')
 
     five_hundred_most_common = leitmotif_counter.most_common(500)
-    # pretty print so it's one per line
-    print('\n'.join([f'{leitmotif}: {count}' for leitmotif, count in five_hundred_most_common]))
 
     common_leitmotif_threshold = 20
     uncommon_leitmotif_threshold = 10

@@ -90,6 +90,15 @@
     "rarity": 5
   },
   {
+    "name": "Dance of Thorns",
+    "albumName": "Strife!",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/strife/dance-of-thorns.small.jpg",
+    "slug": "track:dance-of-thorns",
+    "rarity": 5
+  },
+  {
     "name": "Doctor",
     "albumName": "Homestuck Vol. 4",
     "isOfficial": true,
@@ -153,6 +162,15 @@
     "rarity": 5
   },
   {
+    "name": "Frost",
+    "albumName": "Homestuck Vol. 6: Heir Transparent",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/frost.small.jpg",
+    "slug": "track:frost-vol6",
+    "rarity": 5
+  },
+  {
     "name": "GameBro (Original 1990 Mix)",
     "albumName": "Homestuck Vol. 6: Heir Transparent",
     "isOfficial": true,
@@ -204,6 +222,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-9/moonsetter.small.jpg",
     "slug": "track:moonsetter",
+    "rarity": 5
+  },
+  {
+    "name": "Oppa Toby Style",
+    "albumName": "[S] Collide.",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/s-collide/oppa-toby-style.small.jpg",
+    "slug": "track:oppa-toby-style",
     "rarity": 5
   },
   {
@@ -288,6 +315,15 @@
     "rarity": 5
   },
   {
+    "name": "Umbral Ultimatum",
+    "albumName": "Homestuck Vol. 6: Heir Transparent",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/umbral-ultimatum.small.jpg",
+    "slug": "track:umbral-ultimatum",
+    "rarity": 5
+  },
+  {
     "name": "Unite Synchronization",
     "albumName": "Homestuck Vol. 8",
     "isOfficial": true,
@@ -321,6 +357,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-9/another-jungle.small.jpg",
     "slug": "track:another-jungle",
+    "rarity": 4
+  },
+  {
+    "name": "At The Price of Oblivion",
+    "albumName": "Homestuck Vol. 7: At the Price of Oblivion",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-7/at-the-price-of-oblivion.small.jpg",
+    "slug": "track:at-the-price-of-oblivion",
     "rarity": 4
   },
   {
@@ -378,15 +423,6 @@
     "rarity": 4
   },
   {
-    "name": "Dance of Thorns",
-    "albumName": "Strife!",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/strife/dance-of-thorns.small.jpg",
-    "slug": "track:dance-of-thorns",
-    "rarity": 4
-  },
-  {
     "name": "Dawn of Man",
     "albumName": "Mobius Trip and Hadron Kaleido",
     "isOfficial": true,
@@ -423,21 +459,21 @@
     "rarity": 4
   },
   {
-    "name": "Frost",
-    "albumName": "Homestuck Vol. 6: Heir Transparent",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/frost.small.jpg",
-    "slug": "track:frost-vol6",
-    "rarity": 4
-  },
-  {
     "name": "Fuchsia Ruler",
     "albumName": "coloUrs and mayhem: Universe A",
     "isOfficial": true,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-a/fuchsia-ruler.small.jpg",
     "slug": "track:fuchsia-ruler",
+    "rarity": 4
+  },
+  {
+    "name": "Gardener",
+    "albumName": "Homestuck Vol. 1-4",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-1-4/gardener.small.jpg",
+    "slug": "track:gardener",
     "rarity": 4
   },
   {
@@ -522,6 +558,15 @@
     "rarity": 4
   },
   {
+    "name": "Moshi Moshi?",
+    "albumName": "call and new",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new/moshi-moshi.small.jpg",
+    "slug": "track:moshi-moshi",
+    "rarity": 4
+  },
+  {
     "name": "Negastrife",
     "albumName": "One Year Older",
     "isOfficial": true,
@@ -531,12 +576,12 @@
     "rarity": 4
   },
   {
-    "name": "Oppa Toby Style",
-    "albumName": "[S] Collide.",
+    "name": "Pumpkin Cravings",
+    "albumName": "Homestuck Vol. 5",
     "isOfficial": true,
     "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/s-collide/oppa-toby-style.small.jpg",
-    "slug": "track:oppa-toby-style",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-5/pumpkin-cravings.small.jpg",
+    "slug": "track:pumpkin-cravings",
     "rarity": 4
   },
   {
@@ -657,6 +702,15 @@
     "rarity": 4
   },
   {
+    "name": "The Nutshack Intro",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-nutshack-intro.small.jpg",
+    "slug": "track:the-nutshack-intro",
+    "rarity": 4
+  },
+  {
     "name": "Three in the Morning",
     "albumName": "Midnight Crew: Drawing Dead",
     "isOfficial": true,
@@ -672,15 +726,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-2/tick.small.jpg",
     "slug": "track:tick",
-    "rarity": 4
-  },
-  {
-    "name": "Umbral Ultimatum",
-    "albumName": "Homestuck Vol. 6: Heir Transparent",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/umbral-ultimatum.small.jpg",
-    "slug": "track:umbral-ultimatum",
     "rarity": 4
   },
   {
@@ -726,6 +771,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-9/a-taste-for-adventure.small.jpg",
     "slug": "track:a-taste-for-adventure",
+    "rarity": 3
+  },
+  {
+    "name": "AAAAAAAAAAAAAAAAAAAAA",
+    "albumName": "cool and new voulem.1",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/aaaaaaaaaaaaaaaaaaaaa.small.jpg",
+    "slug": "track:aaaaaaaaaaaaaaaaaaaaa",
     "rarity": 3
   },
   {
@@ -780,15 +834,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-10/ascend.small.jpg",
     "slug": "track:ascend",
-    "rarity": 3
-  },
-  {
-    "name": "At The Price of Oblivion",
-    "albumName": "Homestuck Vol. 7: At the Price of Oblivion",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-7/at-the-price-of-oblivion.small.jpg",
-    "slug": "track:at-the-price-of-oblivion",
     "rarity": 3
   },
   {
@@ -927,12 +972,30 @@
     "rarity": 3
   },
   {
+    "name": "DK Rap",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/dk-rap.small.jpg",
+    "slug": "track:dk-rap",
+    "rarity": 3
+  },
+  {
     "name": "Darling Kanaya",
     "albumName": "AlterniaBound",
     "isOfficial": true,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/alterniabound/darling-kanaya.small.jpg",
     "slug": "track:darling-kanaya",
+    "rarity": 3
+  },
+  {
+    "name": "Davesprite",
+    "albumName": "Homestuck Vol. 8",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-8/davesprite.small.jpg",
+    "slug": "track:davesprite",
     "rarity": 3
   },
   {
@@ -1032,15 +1095,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-9/gamegrl-original-1993-mix.small.jpg",
     "slug": "track:gamegrl-original-1993-mix",
-    "rarity": 3
-  },
-  {
-    "name": "Gardener",
-    "albumName": "Homestuck Vol. 1-4",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-1-4/gardener.small.jpg",
-    "slug": "track:gardener",
     "rarity": 3
   },
   {
@@ -1215,12 +1269,12 @@
     "rarity": 3
   },
   {
-    "name": "Moshi Moshi?",
-    "albumName": "call and new",
+    "name": "Muse of Nanchos",
+    "albumName": "s]hecka jef",
     "isOfficial": false,
     "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new/moshi-moshi.small.jpg",
-    "slug": "track:moshi-moshi",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/s-hecka-jef/muse-of-nanchos.small.jpg",
+    "slug": "track:muse-of-nanchos",
     "rarity": 3
   },
   {
@@ -1278,30 +1332,12 @@
     "rarity": 3
   },
   {
-    "name": "Orange Hat",
-    "albumName": "coloUrs and mayhem: Universe B",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/orange-hat.small.jpg",
-    "slug": "track:orange-hat",
-    "rarity": 3
-  },
-  {
     "name": "Pony Chorale",
     "albumName": "Homestuck Vol. 3",
     "isOfficial": true,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-3/pony-chorale.small.jpg",
     "slug": "track:pony-chorale",
-    "rarity": 3
-  },
-  {
-    "name": "Pumpkin Cravings",
-    "albumName": "Homestuck Vol. 5",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-5/pumpkin-cravings.small.jpg",
-    "slug": "track:pumpkin-cravings",
     "rarity": 3
   },
   {
@@ -1377,15 +1413,6 @@
     "rarity": 3
   },
   {
-    "name": "Showtime (Imp Strife Mix)",
-    "albumName": "Homestuck Vol. 1",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-1/showtime-imp-strife-mix.small.jpg",
-    "slug": "track:showtime-imp-strife-mix",
-    "rarity": 3
-  },
-  {
     "name": "Skaian Skirmish",
     "albumName": "Homestuck Vol. 5",
     "isOfficial": true,
@@ -1419,6 +1446,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-10/solar-voyage.small.jpg",
     "slug": "track:solar-voyage",
+    "rarity": 3
+  },
+  {
+    "name": "Space Jam",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/space-jam.small.jpg",
+    "slug": "track:space-jam",
     "rarity": 3
   },
   {
@@ -1494,15 +1530,6 @@
     "rarity": 3
   },
   {
-    "name": "The Nutshack Intro",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-nutshack-intro.small.jpg",
-    "slug": "track:the-nutshack-intro",
-    "rarity": 3
-  },
-  {
     "name": "The Thirteenth Hour",
     "albumName": "Alternia",
     "isOfficial": true,
@@ -1554,6 +1581,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/one-year-older/under-the-hat.small.jpg",
     "slug": "track:under-the-hat",
+    "rarity": 3
+  },
+  {
+    "name": "Unintentional Touhou",
+    "albumName": "cool and new volume s*x: hair transplant",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-sx/unintentional-touhou.small.jpg",
+    "slug": "track:unintentional-touhou",
     "rarity": 3
   },
   {
@@ -1620,6 +1656,15 @@
     "rarity": 3
   },
   {
+    "name": "Where making this hapen",
+    "albumName": "More Homestuck Fandom",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/where-making-this-hapen.small.jpg",
+    "slug": "track:where-making-this-hapen",
+    "rarity": 3
+  },
+  {
     "name": "licord nacrasty",
     "albumName": "cool and new voulem.1",
     "isOfficial": false,
@@ -1635,15 +1680,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/3-in-the-morning-pianokind.small.jpg",
     "slug": "track:3-in-the-morning-pianokind",
-    "rarity": 2
-  },
-  {
-    "name": "AAAAAAAAAAAAAAAAAAAAA",
-    "albumName": "cool and new voulem.1",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/aaaaaaaaaaaaaaaaaaaaa.small.jpg",
-    "slug": "track:aaaaaaaaaaaaaaaaaaaaa",
     "rarity": 2
   },
   {
@@ -1674,6 +1710,15 @@
     "rarity": 2
   },
   {
+    "name": "Anbroids",
+    "albumName": "Unreleased Tracks",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/unreleased-tracks/anbroids.small.jpg",
+    "slug": "track:anbroids",
+    "rarity": 2
+  },
+  {
     "name": "Arisen Anew",
     "albumName": "AlterniaBound",
     "isOfficial": true,
@@ -1689,6 +1734,24 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/axel-f.small.jpg",
     "slug": "track:axel-f-crazy-frog",
+    "rarity": 2
+  },
+  {
+    "name": "Bad Apple!!",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/bad-apple.small.jpg",
+    "slug": "track:bad-apple",
+    "rarity": 2
+  },
+  {
+    "name": "Bassline Junkie",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/bassline-junkie.small.jpg",
+    "slug": "track:bassline-junkie",
     "rarity": 2
   },
   {
@@ -1854,6 +1917,15 @@
     "rarity": 2
   },
   {
+    "name": "Crank That",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/crank-that.small.jpg",
+    "slug": "track:crank-that",
+    "rarity": 2
+  },
+  {
     "name": "Crystalanthology",
     "albumName": "Homestuck Vol. 6: Heir Transparent",
     "isOfficial": true,
@@ -1863,30 +1935,12 @@
     "rarity": 2
   },
   {
-    "name": "DK Rap",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/dk-rap.small.jpg",
-    "slug": "track:dk-rap",
-    "rarity": 2
-  },
-  {
     "name": "Darling Dolorosa",
     "albumName": "Unreleased Tracks",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/unreleased-tracks/darling-dolorosa.small.jpg",
     "slug": "track:darling-dolorosa",
-    "rarity": 2
-  },
-  {
-    "name": "Davesprite",
-    "albumName": "Homestuck Vol. 8",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-8/davesprite.small.jpg",
-    "slug": "track:davesprite",
     "rarity": 2
   },
   {
@@ -2007,6 +2061,33 @@
     "rarity": 2
   },
   {
+    "name": "Emerald Terror",
+    "albumName": "coloUrs and mayhem: Universe B",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/emerald-terror.small.jpg",
+    "slug": "track:emerald-terror",
+    "rarity": 2
+  },
+  {
+    "name": "End of the world",
+    "albumName": "cool and new volume II",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-ii/end-of-the-world.small.jpg",
+    "slug": "track:end-of-the-world",
+    "rarity": 2
+  },
+  {
+    "name": "Feel Good Inc.",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/feel-good-inc.small.jpg",
+    "slug": "track:feel-good-inc",
+    "rarity": 2
+  },
+  {
     "name": "Fighting Spirit",
     "albumName": "Land of Fans and Music 2",
     "isOfficial": false,
@@ -2058,6 +2139,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-7/formation.small.jpg",
     "slug": "track:formation",
+    "rarity": 2
+  },
+  {
+    "name": "Fresh Jimmy's Fresh Beatz",
+    "albumName": "cool and new volume s*x: hair transplant",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-sx/fresh-jimmys-fresh-beatz.small.jpg",
+    "slug": "track:fresh-jimmys-fresh-beatz",
     "rarity": 2
   },
   {
@@ -2277,6 +2367,15 @@
     "rarity": 2
   },
   {
+    "name": "Lose Yourself",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/lose-yourself.small.jpg",
+    "slug": "track:lose-yourself",
+    "rarity": 2
+  },
+  {
     "name": "MEGALOVANIA",
     "albumName": "UNDERTALE Soundtrack",
     "isOfficial": false,
@@ -2340,12 +2439,12 @@
     "rarity": 2
   },
   {
-    "name": "Muse of Nanchos",
-    "albumName": "s]hecka jef",
+    "name": "Mutiny (crapapella)",
+    "albumName": "More Homestuck Fandom",
     "isOfficial": false,
     "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/s-hecka-jef/muse-of-nanchos.small.jpg",
-    "slug": "track:muse-of-nanchos",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/mutiny-crapapella.small.jpg",
+    "slug": "track:mutiny-crapapella",
     "rarity": 2
   },
   {
@@ -2436,6 +2535,24 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/the-felt/omelette-sandwich.small.jpg",
     "slug": "track:omelette-sandwich",
+    "rarity": 2
+  },
+  {
+    "name": "Orange Hat",
+    "albumName": "coloUrs and mayhem: Universe B",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/orange-hat.small.jpg",
+    "slug": "track:orange-hat",
+    "rarity": 2
+  },
+  {
+    "name": "Overture (Canon Edit)",
+    "albumName": "Act 7",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/act-7/overture-canon-edit.small.jpg",
+    "slug": "track:overture-canon-edit",
     "rarity": 2
   },
   {
@@ -2583,6 +2700,15 @@
     "rarity": 2
   },
   {
+    "name": "Showtime (Imp Strife Mix)",
+    "albumName": "Homestuck Vol. 1",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-1/showtime-imp-strife-mix.small.jpg",
+    "slug": "track:showtime-imp-strife-mix",
+    "rarity": 2
+  },
+  {
     "name": "Skaian Ride",
     "albumName": "Homestuck Vol. 5",
     "isOfficial": true,
@@ -2616,15 +2742,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-5/softly.small.jpg",
     "slug": "track:softly",
-    "rarity": 2
-  },
-  {
-    "name": "Space Jam",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/space-jam.small.jpg",
-    "slug": "track:space-jam",
     "rarity": 2
   },
   {
@@ -2826,6 +2943,15 @@
     "rarity": 2
   },
   {
+    "name": "The Ultimate Showdown of Ultimate Destiny",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-ultimate-showdown-of-ultimate-destiny.small.jpg",
+    "slug": "track:the-ultimate-showdown-of-ultimate-destiny",
+    "rarity": 2
+  },
+  {
     "name": "This Saturnine Existence",
     "albumName": "COOL AND NEW Volume 7: At the Price of $104.13",
     "isOfficial": false,
@@ -2880,6 +3006,15 @@
     "rarity": 2
   },
   {
+    "name": "U.N. Owen Was Her?",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/un-owen-was-her.small.jpg",
+    "slug": "track:un-owen-was-her",
+    "rarity": 2
+  },
+  {
     "name": "Ugly Betty",
     "albumName": "Homestuck Vol. 9",
     "isOfficial": true,
@@ -2895,15 +3030,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/one-year-older/underfoot.small.jpg",
     "slug": "track:underfoot",
-    "rarity": 2
-  },
-  {
-    "name": "Unintentional Touhou",
-    "albumName": "cool and new volume s*x: hair transplant",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-sx/unintentional-touhou.small.jpg",
-    "slug": "track:unintentional-touhou",
     "rarity": 2
   },
   {
@@ -2970,15 +3096,6 @@
     "rarity": 2
   },
   {
-    "name": "Where making this hapen",
-    "albumName": "More Homestuck Fandom",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/where-making-this-hapen.small.jpg",
-    "slug": "track:where-making-this-hapen",
-    "rarity": 2
-  },
-  {
     "name": "White",
     "albumName": "Homestuck Vol. 5",
     "isOfficial": true,
@@ -3012,6 +3129,24 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-10/you-killed-my-father-prepare-to-die.small.jpg",
     "slug": "track:you-killed-my-father-prepare-to-die",
+    "rarity": 2
+  },
+  {
+    "name": "iRRRRRRRRECONCILA8LE",
+    "albumName": "Homestuck Vol. 9",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-9/iRRRRRRRRECONCILA8LE.small.jpg",
+    "slug": "track:iRRRRRRRRECONCILA8LE",
+    "rarity": 2
+  },
+  {
+    "name": "justice must be a serve",
+    "albumName": "cool and new voulem.1",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/justice-must-be-a-serve.small.jpg",
+    "slug": "track:justice-must-be-a-serve",
     "rarity": 2
   },
   {
@@ -3078,6 +3213,15 @@
     "rarity": 1
   },
   {
+    "name": "-3x piano solo",
+    "albumName": "CaNWC Sound Test Vol.1: REVENGE OF THE GIIVASUNNER",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/canwc-sound-test-1/3x-piano-solo.small.jpg",
+    "slug": "track:3x-piano-solo",
+    "rarity": 1
+  },
+  {
     "name": "01",
     "albumName": "Unreleased Tracks",
     "isOfficial": false,
@@ -3138,6 +3282,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/comfortable-bugs/69423.small.jpg",
     "slug": "track:69423",
+    "rarity": 1
+  },
+  {
+    "name": "7 GRAND END",
+    "albumName": "Cool and New Homestuck 3",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-homestuck-3/7-grand-end.small.jpg",
+    "slug": "track:7-grand-end",
     "rarity": 1
   },
   {
@@ -3237,6 +3390,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/a-grand-new-era-ending.small.jpg",
     "slug": "track:a-grand-new-era-ending",
+    "rarity": 1
+  },
+  {
+    "name": "A History of Babies",
+    "albumName": "The Baby is You",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/the-baby-is-you/a-history-of-babies.small.jpg",
+    "slug": "track:a-history-of-babies",
     "rarity": 1
   },
   {
@@ -3456,15 +3618,6 @@
     "rarity": 1
   },
   {
-    "name": "Anbroids",
-    "albumName": "Unreleased Tracks",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/unreleased-tracks/anbroids.small.jpg",
-    "slug": "track:anbroids",
-    "rarity": 1
-  },
-  {
     "name": "Another Medium",
     "albumName": "UNDERTALE Soundtrack",
     "isOfficial": false,
@@ -3591,6 +3744,15 @@
     "rarity": 1
   },
   {
+    "name": "BL\u039bNK JIMMEE",
+    "albumName": "C A N W A V E 2",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/c-a-n-w-a-v-e-2/blnk-jimmee.small.jpg",
+    "slug": "track:blank-jimmee",
+    "rarity": 1
+  },
+  {
     "name": "Baby Face Morgan",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -3627,21 +3789,21 @@
     "rarity": 1
   },
   {
+    "name": "Backbone",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/backbone.small.jpg",
+    "slug": "track:backbone",
+    "rarity": 1
+  },
+  {
     "name": "Backyard Fun Theme",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/backyard-fun-theme.small.jpg",
     "slug": "track:backyard-fun-theme",
-    "rarity": 1
-  },
-  {
-    "name": "Bad Apple!!",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/bad-apple.small.jpg",
-    "slug": "track:bad-apple",
     "rarity": 1
   },
   {
@@ -3672,21 +3834,21 @@
     "rarity": 1
   },
   {
+    "name": "Bargaining with the Beast",
+    "albumName": "Homestuck Vol. 8",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-8/bargaining-with-the-beast.small.jpg",
+    "slug": "track:bargaining-with-the-beast",
+    "rarity": 1
+  },
+  {
     "name": "Basement Tale",
     "albumName": "Basement Tale",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/basement-tale/basement-tale.small.jpg",
     "slug": "track:basement-tale",
-    "rarity": 1
-  },
-  {
-    "name": "Bassline Junkie",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/bassline-junkie.small.jpg",
-    "slug": "track:bassline-junkie",
     "rarity": 1
   },
   {
@@ -3744,6 +3906,15 @@
     "rarity": 1
   },
   {
+    "name": "Battle Theme for the Lost at Heart",
+    "albumName": "More Homestuck Fandom",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/battle-theme-for-the-lost-at-heart.small.jpg",
+    "slug": "track:battle-theme-for-the-lost-at-heart",
+    "rarity": 1
+  },
+  {
     "name": "Battle! (Colress)",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -3795,6 +3966,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/beginning.small.jpg",
     "slug": "track:beginning",
+    "rarity": 1
+  },
+  {
+    "name": "Big Bad Beetleborgs Theme",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/big-bad-beetleborgs-theme.small.jpg",
+    "slug": "track:big-bad-beetleborgs-theme",
     "rarity": 1
   },
   {
@@ -4248,6 +4428,15 @@
     "rarity": 1
   },
   {
+    "name": "Clockstopper",
+    "albumName": "coloUrs and mayhem: Universe B",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/clockstopper.small.jpg",
+    "slug": "track:clockstopper",
+    "rarity": 1
+  },
+  {
     "name": "Clockwork Apocalypse",
     "albumName": "More Homestuck Fandom",
     "isOfficial": false,
@@ -4338,12 +4527,39 @@
     "rarity": 1
   },
   {
+    "name": "Cool And New Countdown",
+    "albumName": "call and new",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new/cool-and-new-countdown.small.jpg",
+    "slug": "track:cool-and-new-countdown",
+    "rarity": 1
+  },
+  {
+    "name": "Cool and New Music Team",
+    "albumName": "V8\ufe0flu\u264fe",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/v8lume/cool-and-new-music-team.small.jpg",
+    "slug": "track:cool-and-new-music-team",
+    "rarity": 1
+  },
+  {
     "name": "Cools and News",
     "albumName": "Basement Tale",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/basement-tale/cools-and-news.small.jpg",
     "slug": "track:cools-and-news",
+    "rarity": 1
+  },
+  {
+    "name": "Cornered",
+    "albumName": "Hiveswap Act 2 OST",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/hiveswap-act-2-ost/cornered.small.jpg",
+    "slug": "track:cornered",
     "rarity": 1
   },
   {
@@ -4371,15 +4587,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/courage.small.jpg",
     "slug": "track:courage",
-    "rarity": 1
-  },
-  {
-    "name": "Crank That",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/crank-that.small.jpg",
-    "slug": "track:crank-that",
     "rarity": 1
   },
   {
@@ -4635,6 +4842,15 @@
     "rarity": 1
   },
   {
+    "name": "Dialup",
+    "albumName": "V8\ufe0flu\u264fe",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/v8lume/dialup.small.jpg",
+    "slug": "track:dialup",
+    "rarity": 1
+  },
+  {
     "name": "Die For Me",
     "albumName": "Ancestral",
     "isOfficial": false,
@@ -4677,6 +4893,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/glitchstuck-volume-1/discord.small.jpg",
     "slug": "track:discord",
+    "rarity": 1
+  },
+  {
+    "name": "Discordant",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/discordant.small.jpg",
+    "slug": "track:discordant",
     "rarity": 1
   },
   {
@@ -4968,15 +5193,6 @@
     "rarity": 1
   },
   {
-    "name": "Emerald Terror",
-    "albumName": "coloUrs and mayhem: Universe B",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/emerald-terror.small.jpg",
-    "slug": "track:emerald-terror",
-    "rarity": 1
-  },
-  {
     "name": "Emissary of Wind",
     "albumName": "Land of Fans and Music",
     "isOfficial": false,
@@ -4992,15 +5208,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/gristmas-carols/end-of-act.small.jpg",
     "slug": "track:end-of-act",
-    "rarity": 1
-  },
-  {
-    "name": "End of the world",
-    "albumName": "cool and new volume II",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-ii/end-of-the-world.small.jpg",
-    "slug": "track:end-of-the-world",
     "rarity": 1
   },
   {
@@ -5046,6 +5253,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/epitaph.small.jpg",
     "slug": "track:epitaph",
+    "rarity": 1
+  },
+  {
+    "name": "Epona's Song",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/eponas-song.small.jpg",
+    "slug": "track:eponas-song",
     "rarity": 1
   },
   {
@@ -5229,15 +5445,6 @@
     "rarity": 1
   },
   {
-    "name": "Feel Good Inc.",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/feel-good-inc.small.jpg",
-    "slug": "track:feel-good-inc",
-    "rarity": 1
-  },
-  {
     "name": "Fell Into The Nexus",
     "albumName": "Dialed to 11",
     "isOfficial": false,
@@ -5253,6 +5460,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/dialed-to-11/fight-against-the-narrative-napoleon.small.jpg",
     "slug": "track:fight-against-the-narrative-napoleon",
+    "rarity": 1
+  },
+  {
+    "name": "Fighting Spirit ~Double Ascended Form~",
+    "albumName": "V8\ufe0flu\u264fe",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/v8lume/fighting-spirit-double-ascended-form.small.jpg",
+    "slug": "track:fighting-spirit-double-ascended-form",
     "rarity": 1
   },
   {
@@ -5382,6 +5598,24 @@
     "rarity": 1
   },
   {
+    "name": "Fly Me To The Elevator (Full)",
+    "albumName": "9",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/9/cover.small.jpg",
+    "slug": "track:fly-me-to-the-elevator-full",
+    "rarity": 1
+  },
+  {
+    "name": "Fly Me To The Moon",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/fly-me-to-the-moon.small.jpg",
+    "slug": "track:fly-me-to-the-moon",
+    "rarity": 1
+  },
+  {
     "name": "Flying Car",
     "albumName": "One Year Older",
     "isOfficial": true,
@@ -5442,15 +5676,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/freezeezy-peak.small.jpg",
     "slug": "track:freezeezy-peak",
-    "rarity": 1
-  },
-  {
-    "name": "Fresh Jimmy's Fresh Beatz",
-    "albumName": "cool and new volume s*x: hair transplant",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-sx/fresh-jimmys-fresh-beatz.small.jpg",
-    "slug": "track:fresh-jimmys-fresh-beatz",
     "rarity": 1
   },
   {
@@ -5523,6 +5748,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/fun-train-time-theme.small.jpg",
     "slug": "track:fun-train-time-theme",
+    "rarity": 1
+  },
+  {
+    "name": "Funkytown",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/funkytown.small.jpg",
+    "slug": "track:funkytown",
     "rarity": 1
   },
   {
@@ -5604,6 +5838,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-5/get-up.small.jpg",
     "slug": "track:get-up",
+    "rarity": 1
+  },
+  {
+    "name": "Ghost Mound",
+    "albumName": "THE GRUBBLES",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/the-grubbles/ghost-mound.small.jpg",
+    "slug": "track:ghost-mound",
     "rarity": 1
   },
   {
@@ -6093,6 +6336,15 @@
     "rarity": 1
   },
   {
+    "name": "Homicide",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/homicide.small.jpg",
+    "slug": "track:homicide",
+    "rarity": 1
+  },
+  {
     "name": "Homosuck Anthem",
     "albumName": "Unreleased Tracks",
     "isOfficial": false,
@@ -6156,6 +6408,15 @@
     "rarity": 1
   },
   {
+    "name": "Hyrule Field Main Theme",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/hyrule-field-main-theme.small.jpg",
+    "slug": "track:hyrule-field-main-theme",
+    "rarity": 1
+  },
+  {
     "name": "I Am An Island",
     "albumName": "More Homestuck Fandom",
     "isOfficial": false,
@@ -6207,6 +6468,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/i-need-a-doctor.small.jpg",
     "slug": "track:i-need-a-doctor",
+    "rarity": 1
+  },
+  {
+    "name": "I absolutely loathe this Drummer.",
+    "albumName": "call and new 2: locomotif",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/i-absolutely-loathe-this-drummer.small.jpg",
+    "slug": "track:i-absolutely-loathe-this-drummer",
     "rarity": 1
   },
   {
@@ -6291,6 +6561,15 @@
     "rarity": 1
   },
   {
+    "name": "Infection",
+    "albumName": "call and new 2: locomotif",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/infection.small.jpg",
+    "slug": "track:infection",
+    "rarity": 1
+  },
+  {
     "name": "Interior Crocodile Alligator",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -6306,6 +6585,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/c-a-n-w-a-v-e-2/intro.small.jpg",
     "slug": "track:intro",
+    "rarity": 1
+  },
+  {
+    "name": "Intro: I Switched My Robot Off",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/intro-i-switched-my-robot-off.small.jpg",
+    "slug": "track:intro-i-switched-my-robot-off",
     "rarity": 1
   },
   {
@@ -6360,6 +6648,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/its-beginning-to-look-a-lot-like-christmas.small.jpg",
     "slug": "track:its-beginning-to-look-a-lot-like-christmas",
+    "rarity": 1
+  },
+  {
+    "name": "It's Raining Somewhere Else",
+    "albumName": "UNDERTALE Soundtrack",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/undertale-soundtrack/its-raining-somewhere-else.small.jpg",
+    "slug": "track:its-raining-somewhere-else",
     "rarity": 1
   },
   {
@@ -6759,15 +7056,6 @@
     "rarity": 1
   },
   {
-    "name": "Lose Yourself",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/lose-yourself.small.jpg",
-    "slug": "track:lose-yourself",
-    "rarity": 1
-  },
-  {
     "name": "Lotus (Bloom)",
     "albumName": "Homestuck Vol. 8",
     "isOfficial": true,
@@ -7092,12 +7380,30 @@
     "rarity": 1
   },
   {
+    "name": "MoonShitter",
+    "albumName": "cool and new voulem.1",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/moonshitter.small.jpg",
+    "slug": "track:moonshitter",
+    "rarity": 1
+  },
+  {
     "name": "Moonlight Sonata",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/moonlight-sonata.small.jpg",
     "slug": "track:moonlight-sonata",
+    "rarity": 1
+  },
+  {
+    "name": "Moonreposter",
+    "albumName": "COOL AND NEW Volume 7: At the Price of $104.13",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-7/moonreposter.small.jpg",
+    "slug": "track:moonreposter",
     "rarity": 1
   },
   {
@@ -7137,12 +7443,30 @@
     "rarity": 1
   },
   {
+    "name": "Mortal Man",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/mortal-man.small.jpg",
+    "slug": "track:mortal-man",
+    "rarity": 1
+  },
+  {
     "name": "Mother",
     "albumName": "More Homestuck Fandom",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/mother.small.jpg",
     "slug": "track:mother-malcolm-brown",
+    "rarity": 1
+  },
+  {
+    "name": "Mother",
+    "albumName": "One Year Older",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/one-year-older/mother.small.jpg",
+    "slug": "track:mother",
     "rarity": 1
   },
   {
@@ -7161,15 +7485,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/mush-x-makin.small.jpg",
     "slug": "track:mush-x-makin",
-    "rarity": 1
-  },
-  {
-    "name": "Mutiny (crapapella)",
-    "albumName": "More Homestuck Fandom",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/mutiny-crapapella.small.jpg",
-    "slug": "track:mutiny-crapapella",
     "rarity": 1
   },
   {
@@ -7335,6 +7650,24 @@
     "rarity": 1
   },
   {
+    "name": "Of Orchids and Roses (Full)",
+    "albumName": "9",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/9/cover.small.jpg",
+    "slug": "track:of-orchids-and-roses-full",
+    "rarity": 1
+  },
+  {
+    "name": "Oh Boo Hoo",
+    "albumName": "call and new 2: locomotif",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/oh-boo-hoo.small.jpg",
+    "slug": "track:oh-boo-hoo",
+    "rarity": 1
+  },
+  {
     "name": "Oh Hi There, Lil Cal",
     "albumName": "Land of Fans and Music 3",
     "isOfficial": false,
@@ -7416,6 +7749,15 @@
     "rarity": 1
   },
   {
+    "name": "Otherworld",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/otherworld.small.jpg",
+    "slug": "track:otherworld",
+    "rarity": 1
+  },
+  {
     "name": "Outer Reaches [Veil]",
     "albumName": "SBURB OST",
     "isOfficial": false,
@@ -7452,12 +7794,12 @@
     "rarity": 1
   },
   {
-    "name": "Overture (Canon Edit)",
-    "albumName": "Act 7",
-    "isOfficial": true,
+    "name": "Overworld Adventure Part 2",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
     "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/act-7/overture-canon-edit.small.jpg",
-    "slug": "track:overture-canon-edit",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/overworld-adventure-part-2.small.jpg",
+    "slug": "track:overworld-adventure-part-2",
     "rarity": 1
   },
   {
@@ -7467,6 +7809,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/plur-police.small.jpg",
     "slug": "track:plur-police",
+    "rarity": 1
+  },
+  {
+    "name": "POKEMON GO SONG!!!",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/pokemon-go-song.small.jpg",
+    "slug": "track:pokemon-go-song",
     "rarity": 1
   },
   {
@@ -7611,6 +7962,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/hiveswap-friendsim/piwates.small.jpg",
     "slug": "track:piwates",
+    "rarity": 1
+  },
+  {
+    "name": "Plague",
+    "albumName": "call and new 2: locomotif",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/plague.small.jpg",
+    "slug": "track:plague",
     "rarity": 1
   },
   {
@@ -7875,12 +8235,30 @@
     "rarity": 1
   },
   {
+    "name": "Redbone",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/redbone.small.jpg",
+    "slug": "track:redbone",
+    "rarity": 1
+  },
+  {
     "name": "Redemption",
     "albumName": "Glitchstuck Volume 1",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/glitchstuck-volume-1/redemption.small.jpg",
     "slug": "track:redemption",
+    "rarity": 1
+  },
+  {
+    "name": "Redial",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/redial.small.jpg",
+    "slug": "track:redial",
     "rarity": 1
   },
   {
@@ -8010,6 +8388,24 @@
     "rarity": 1
   },
   {
+    "name": "Rhythm Code",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/rhythm-code.small.jpg",
+    "slug": "track:rhythm-code",
+    "rarity": 1
+  },
+  {
+    "name": "Ringleader",
+    "albumName": "Intermishin",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/intermishin/ringleader.small.jpg",
+    "slug": "track:ringleader",
+    "rarity": 1
+  },
+  {
     "name": "Roll With The Punches",
     "albumName": "Comfortable Bugs",
     "isOfficial": false,
@@ -8043,6 +8439,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/strife-2/rouge-on-the-rox.small.jpg",
     "slug": "track:rouge-on-the-rox",
+    "rarity": 1
+  },
+  {
+    "name": "Roustabout (Bassnectar Remix)",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/roustabout-bassnectar-remix.small.jpg",
+    "slug": "track:roustabout-bassnectar-remix",
     "rarity": 1
   },
   {
@@ -8178,6 +8583,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-5/sarabande.small.jpg",
     "slug": "track:sarabande-vol5",
+    "rarity": 1
+  },
+  {
+    "name": "Saturnz Barz",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/saturnz-barz.small.jpg",
+    "slug": "track:saturnz-barz",
     "rarity": 1
   },
   {
@@ -8325,6 +8739,15 @@
     "rarity": 1
   },
   {
+    "name": "Secret of the Forest",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/secret-of-the-forest.small.jpg",
+    "slug": "track:secret-of-the-forest",
+    "rarity": 1
+  },
+  {
     "name": "Seer of Same-Color Scalemate Combos",
     "albumName": "More Homestuck Fandom",
     "isOfficial": false,
@@ -8349,6 +8772,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-8/serenade.small.jpg",
     "slug": "track:serenade-vol8",
+    "rarity": 1
+  },
+  {
+    "name": "Shake That",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/shake-that.small.jpg",
+    "slug": "track:shake-that",
     "rarity": 1
   },
   {
@@ -8493,6 +8925,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/sleeping-terror.small.jpg",
     "slug": "track:sleeping-terror",
+    "rarity": 1
+  },
+  {
+    "name": "Smack",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/smack.small.jpg",
+    "slug": "track:smack",
     "rarity": 1
   },
   {
@@ -8739,6 +9180,15 @@
     "rarity": 1
   },
   {
+    "name": "Step's Theme",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/steps-theme.small.jpg",
+    "slug": "track:steps-theme",
+    "rarity": 1
+  },
+  {
     "name": "Stone Tower Temple",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -8910,6 +9360,15 @@
     "rarity": 1
   },
   {
+    "name": "Taureg",
+    "albumName": "More Homestuck Fandom",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/taureg.small.jpg",
+    "slug": "track:taureg",
+    "rarity": 1
+  },
+  {
     "name": "Teardrop",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -9069,6 +9528,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-court-of-miracles.small.jpg",
     "slug": "track:the-court-of-miracles",
+    "rarity": 1
+  },
+  {
+    "name": "The Creativity Song",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-creativity-song.small.jpg",
+    "slug": "track:the-creativity-song",
     "rarity": 1
   },
   {
@@ -9351,6 +9819,15 @@
     "rarity": 1
   },
   {
+    "name": "The Souns of Justis (Full)",
+    "albumName": "9",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/9/cover.small.jpg",
+    "slug": "track:the-souns-of-justis-full",
+    "rarity": 1
+  },
+  {
     "name": "The Star-Spangled Banner",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -9393,15 +9870,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-time-is-now.small.jpg",
     "slug": "track:the-time-is-now",
-    "rarity": 1
-  },
-  {
-    "name": "The Ultimate Showdown of Ultimate Destiny",
-    "albumName": "References Beyond Homestuck",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/the-ultimate-showdown-of-ultimate-destiny.small.jpg",
-    "slug": "track:the-ultimate-showdown-of-ultimate-destiny",
     "rarity": 1
   },
   {
@@ -9456,6 +9924,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/theme-of-eastern-story.small.jpg",
     "slug": "track:theme-of-eastern-story",
+    "rarity": 1
+  },
+  {
+    "name": "These Walls",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/these-walls.small.jpg",
+    "slug": "track:these-walls",
     "rarity": 1
   },
   {
@@ -9756,6 +10233,15 @@
     "rarity": 1
   },
   {
+    "name": "Transcend",
+    "albumName": "COOL AND NEW Volume 7: At the Price of $104.13",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-7/transcend.small.jpg",
+    "slug": "track:transcend",
+    "rarity": 1
+  },
+  {
     "name": "Trepidation",
     "albumName": "Homestuck Vol. 9",
     "isOfficial": true,
@@ -9837,12 +10323,12 @@
     "rarity": 1
   },
   {
-    "name": "U.N. Owen Was Her?",
+    "name": "U Guessed It",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
     "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/un-owen-was-her.small.jpg",
-    "slug": "track:un-owen-was-her",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/u-guessed-it.small.jpg",
+    "slug": "track:u-guessed-it",
     "rarity": 1
   },
   {
@@ -9852,6 +10338,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-homestuck/upw4rd-sn1ffm3nt.small.jpg",
     "slug": "track:upw4rd-sn1ffm3nt",
+    "rarity": 1
+  },
+  {
+    "name": "Ugly Story",
+    "albumName": "Land of Fans and Music 2",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam2/ugly-story.small.jpg",
+    "slug": "track:ugly-story",
     "rarity": 1
   },
   {
@@ -9960,6 +10455,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/uptown-funk.small.jpg",
     "slug": "track:uptown-funk",
+    "rarity": 1
+  },
+  {
+    "name": "Vaccine",
+    "albumName": "call and new 2: locomotif",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/vaccine.small.jpg",
+    "slug": "track:vaccine",
     "rarity": 1
   },
   {
@@ -10143,12 +10647,30 @@
     "rarity": 1
   },
   {
+    "name": "Where Have You Been",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/where-have-you-been.small.jpg",
+    "slug": "track:where-have-you-been",
+    "rarity": 1
+  },
+  {
     "name": "Where The Guns At",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/where-the-guns-at.small.jpg",
     "slug": "track:where-the-guns-at",
+    "rarity": 1
+  },
+  {
+    "name": "While the Iron's Hot",
+    "albumName": "Weird Puzzle Tunes",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/weird-puzzle-tunes/while-the-irons-hot.small.jpg",
+    "slug": "track:while-the-irons-hot",
     "rarity": 1
   },
   {
@@ -10221,6 +10743,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/witch-doctor.small.jpg",
     "slug": "track:witch-doctor-bagdasarian",
+    "rarity": 1
+  },
+  {
+    "name": "Without Me",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/without-me.small.jpg",
+    "slug": "track:without-me",
     "rarity": 1
   },
   {
@@ -10404,6 +10935,15 @@
     "rarity": 1
   },
   {
+    "name": "casino night",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/casino-night.small.jpg",
+    "slug": "track:casino-night",
+    "rarity": 1
+  },
+  {
     "name": "chase",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -10458,6 +10998,24 @@
     "rarity": 1
   },
   {
+    "name": "dick coordinat",
+    "albumName": "Cool and New Homestuck 2",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-homestuck-2/dick-coordinat.small.jpg",
+    "slug": "track:dick-coordinat",
+    "rarity": 1
+  },
+  {
+    "name": "dikr; bring togehter",
+    "albumName": "Cool and New Homestuck 2",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-homestuck-2/dikr-bring-togehter.small.jpg",
+    "slug": "track:dikr-bring-togehter",
+    "rarity": 1
+  },
+  {
     "name": "don't hug me i'm flared",
     "albumName": "cool and new volume 2",
     "isOfficial": false,
@@ -10468,10 +11026,10 @@
   },
   {
     "name": "feeling cool and new",
-    "albumName": "More Homestuck Fandom",
+    "albumName": "9",
     "isOfficial": false,
     "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/feeling-cool-and-new.small.jpg",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/9/feeling-cool-and-new.small.jpg",
     "slug": "track:feeling-cool-and-new",
     "rarity": 1
   },
@@ -10491,6 +11049,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/go-down-fanon-cut.small.jpg",
     "slug": "track:go-down-fanon-cut",
+    "rarity": 1
+  },
+  {
+    "name": "go down (cool and new Mix) (feat. John J \"Damn, Now Those Are Some Tunes\" Renns)",
+    "albumName": "Cool and New Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-homestuck/go-down-cool-and-new-mix-feat-john-j-damn-now-those-are-some-tunes-renns.small.jpg",
+    "slug": "track:go-down-cool-and-new-mix-feat-john-j-damn-now-those-are-some-tunes-renns",
     "rarity": 1
   },
   {
@@ -10527,15 +11094,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/hiveswap-friendsim/it-be-like-that-sometimes.small.jpg",
     "slug": "track:it-be-like-that-sometimes",
-    "rarity": 1
-  },
-  {
-    "name": "justice must be a serve",
-    "albumName": "cool and new voulem.1",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/justice-must-be-a-serve.small.jpg",
-    "slug": "track:justice-must-be-a-serve",
     "rarity": 1
   },
   {
@@ -10602,6 +11160,15 @@
     "rarity": 1
   },
   {
+    "name": "saoidfisd",
+    "albumName": "More Homestuck Fandom",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/saoidfisd.small.jpg",
+    "slug": "track:saoidfisd",
+    "rarity": 1
+  },
+  {
     "name": "the final clowntdown",
     "albumName": "Hiveswap Friendsim",
     "isOfficial": true,
@@ -10626,6 +11193,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/lofam3/timaeusamplified.small.jpg",
     "slug": "track:timaeusamplified",
+    "rarity": 1
+  },
+  {
+    "name": "timeshit",
+    "albumName": "More Homestuck Fandom",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/timeshit.small.jpg",
+    "slug": "track:timeshit",
     "rarity": 1
   },
   {
