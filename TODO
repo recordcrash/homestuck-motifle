@@ -1,4 +1,5 @@
 # Short Term
+- Samples should be guessable without errors but not counted for points
 - Allow users to reset/reload days when there is an inconsistency
 # Long Term
 - Embed Heardle into game as a different mode
