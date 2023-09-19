@@ -1197,6 +1197,15 @@
     "rarity": 3
   },
   {
+    "name": "Heir Transparent",
+    "albumName": "Homestuck Vol. 6: Heir Transparent",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/heir-transparent.small.jpg",
+    "slug": "track:heir-transparent",
+    "rarity": 3
+  },
+  {
     "name": "Heir of Grief",
     "albumName": "Songs Unsung",
     "isOfficial": false,
@@ -1764,6 +1773,15 @@
     "rarity": 3
   },
   {
+    "name": "1 Through 15",
+    "albumName": "Intermishin",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/intermishin/1-through-15.small.jpg",
+    "slug": "track:1-through-15",
+    "rarity": 2
+  },
+  {
     "name": "3 In The Morning (Pianokind)",
     "albumName": "Homestuck Vol. 6: Heir Transparent",
     "isOfficial": true,
@@ -2304,6 +2322,15 @@
     "rarity": 2
   },
   {
+    "name": "Gunshow 2 Theme (Instrumental)",
+    "albumName": "C A N W A V E 2",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/canwave-2/cover.small.jpg",
+    "slug": "track:gunshow-2-theme-instrumental",
+    "rarity": 2
+  },
+  {
     "name": "Half-Harley Manor",
     "albumName": "Hiveswap Act 1 OST",
     "isOfficial": true,
@@ -2367,15 +2394,6 @@
     "rarity": 2
   },
   {
-    "name": "Heir Transparent",
-    "albumName": "Homestuck Vol. 6: Heir Transparent",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/heir-transparent.small.jpg",
-    "slug": "track:heir-transparent",
-    "rarity": 2
-  },
-  {
     "name": "Homestuck Title Screen",
     "albumName": "More Homestuck Fandom",
     "isOfficial": false,
@@ -2409,6 +2427,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/i-dont-want-to-miss-a-thing.small.jpg",
     "slug": "track:i-dont-want-to-miss-a-thing-aerosmith",
+    "rarity": 2
+  },
+  {
+    "name": "I absolutely loathe this Drummer.",
+    "albumName": "call and new 2: locomotif",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/i-absolutely-loathe-this-drummer.small.jpg",
+    "slug": "track:i-absolutely-loathe-this-drummer",
     "rarity": 2
   },
   {
@@ -2691,6 +2718,15 @@
     "rarity": 2
   },
   {
+    "name": "Orchid Horror",
+    "albumName": "coloUrs and mayhem: Universe B",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/orchid-horror.small.jpg",
+    "slug": "track:orchid-horror",
+    "rarity": 2
+  },
+  {
     "name": "Overture (Canon Edit)",
     "albumName": "Act 7",
     "isOfficial": true,
@@ -2877,6 +2913,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-5/softly.small.jpg",
     "slug": "track:softly",
+    "rarity": 2
+  },
+  {
+    "name": "Song of Skaia",
+    "albumName": "Song of Skaia",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/song-of-skaia/song-of-skaia.small.jpg",
+    "slug": "track:song-of-skaia",
     "rarity": 2
   },
   {
@@ -3411,15 +3456,6 @@
     "rarity": 1
   },
   {
-    "name": "1 Through 15",
-    "albumName": "Intermishin",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/intermishin/1-through-15.small.jpg",
-    "slug": "track:1-through-15",
-    "rarity": 1
-  },
-  {
     "name": "25x SHOWDOWN COMBO",
     "albumName": "cool and new voulem.1",
     "isOfficial": false,
@@ -3624,6 +3660,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/deltarune-ch1-ost/another-him.small.jpg",
     "slug": "track:another-him",
+    "rarity": 1
+  },
+  {
+    "name": "ASGORE",
+    "albumName": "UNDERTALE Soundtrack",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/undertale-soundtrack/asgore.small.jpg",
+    "slug": "track:asgore",
     "rarity": 1
   },
   {
@@ -4326,6 +4371,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-ii/bowmanquest.small.jpg",
     "slug": "track:bowmanquest",
+    "rarity": 1
+  },
+  {
+    "name": "Boy Skylark (Brief)",
+    "albumName": "Homestuck Vol. 6: Heir Transparent",
+    "isOfficial": true,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-vol-6/boy-skylark-brief.small.jpg",
+    "slug": "track:boy-skylark-brief",
     "rarity": 1
   },
   {
@@ -6525,15 +6579,6 @@
     "rarity": 1
   },
   {
-    "name": "Gunshow 2 Theme (Instrumental)",
-    "albumName": "C A N W A V E 2",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/canwave-2/cover.small.jpg",
-    "slug": "track:gunshow-2-theme-instrumental",
-    "rarity": 1
-  },
-  {
     "name": "Gust of Heir",
     "albumName": "Homestuck Vol. 8",
     "isOfficial": true,
@@ -6954,15 +6999,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/i-need-a-doctor.small.jpg",
     "slug": "track:i-need-a-doctor",
-    "rarity": 1
-  },
-  {
-    "name": "I absolutely loathe this Drummer.",
-    "albumName": "call and new 2: locomotif",
-    "isOfficial": false,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/call-and-new-2-locomotif/i-absolutely-loathe-this-drummer.small.jpg",
-    "slug": "track:i-absolutely-loathe-this-drummer",
     "rarity": 1
   },
   {
@@ -7539,6 +7575,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/comfortable-bugs/light-of-apollo.small.jpg",
     "slug": "track:light-of-apollo",
+    "rarity": 1
+  },
+  {
+    "name": "Lighten Up",
+    "albumName": "Songs Unsung",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/songs-unsung/lighten-up.small.jpg",
+    "slug": "track:lighten-up",
     "rarity": 1
   },
   {
@@ -8127,6 +8172,15 @@
     "rarity": 1
   },
   {
+    "name": "New Island Theme",
+    "albumName": "References Beyond Homestuck",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/references-beyond-homestuck/new-island-theme.small.jpg",
+    "slug": "track:new-island-theme",
+    "rarity": 1
+  },
+  {
     "name": "Nic Cage Romance",
     "albumName": "Unreleased Tracks",
     "isOfficial": false,
@@ -8313,15 +8367,6 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/crossmound-vol-1/oracular-envoy.small.jpg",
     "slug": "track:oracular-envoy",
-    "rarity": 1
-  },
-  {
-    "name": "Orchid Horror",
-    "albumName": "coloUrs and mayhem: Universe B",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/coloUrs-and-mayhem-universe-b/orchid-horror.small.jpg",
-    "slug": "track:orchid-horror",
     "rarity": 1
   },
   {
@@ -9045,6 +9090,15 @@
     "rarity": 1
   },
   {
+    "name": "Rozepiano",
+    "albumName": "V8\ufe0flu\u264fe",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/v8lume/rozepiano.small.jpg",
+    "slug": "track:rozepiano",
+    "rarity": 1
+  },
+  {
     "name": "Rude Awakening",
     "albumName": "Dialed to 11",
     "isOfficial": false,
@@ -9639,15 +9693,6 @@
     "rarity": 1
   },
   {
-    "name": "Song of Skaia",
-    "albumName": "Song of Skaia",
-    "isOfficial": true,
-    "isFandom": false,
-    "imageUrl": "https://hsmusic.wiki/media/album-art/song-of-skaia/song-of-skaia.small.jpg",
-    "slug": "track:song-of-skaia",
-    "rarity": 1
-  },
-  {
     "name": "Song of Storms",
     "albumName": "References Beyond Homestuck",
     "isOfficial": false,
@@ -10161,6 +10206,15 @@
     "rarity": 1
   },
   {
+    "name": "The Ballad of Megan Pouring",
+    "albumName": "The Ballad of Megan Pouring",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/the-ballad-of-megan-pouring/cover.small.jpg",
+    "slug": "track:the-ballad-of-megan-pouring",
+    "rarity": 1
+  },
+  {
     "name": "The Ballad of Megan Pouring (instrumental)",
     "albumName": "The Ballad of Megan Pouring",
     "isOfficial": false,
@@ -10176,6 +10230,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/the-blood-lord.small.jpg",
     "slug": "track:the-blood-lord",
+    "rarity": 1
+  },
+  {
+    "name": "The Boss of Wheels",
+    "albumName": "One Week Older",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/one-week-older/the-boss-of-wheels.small.jpg",
+    "slug": "track:the-boss-of-wheels",
     "rarity": 1
   },
   {
@@ -11025,6 +11088,15 @@
     "rarity": 1
   },
   {
+    "name": "Tycoon",
+    "albumName": "cool and new voulem.1",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/tycoon.small.jpg",
+    "slug": "track:tycoon",
+    "rarity": 1
+  },
+  {
     "name": "Tycoon of Grief",
     "albumName": "Cool and New Homestuck 2",
     "isOfficial": false,
@@ -11187,6 +11259,15 @@
     "rarity": 1
   },
   {
+    "name": "Utopia",
+    "albumName": "One Week Older",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/one-week-older/utopia.small.jpg",
+    "slug": "track:utopia-one-week-older",
+    "rarity": 1
+  },
+  {
     "name": "Vaccine",
     "albumName": "call and new 2: locomotif",
     "isOfficial": false,
@@ -11337,6 +11418,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/more-homestuck-fandom/wanderlust.small.jpg",
     "slug": "track:wanderlust",
+    "rarity": 1
+  },
+  {
+    "name": "Waterfall",
+    "albumName": "UNDERTALE Soundtrack",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/undertale-soundtrack/waterfall.small.jpg",
+    "slug": "track:waterfall",
     "rarity": 1
   },
   {
@@ -11886,6 +11976,15 @@
     "isFandom": false,
     "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/kis-da-boy-3-3-otp-aaaaaaaa-omfg.small.jpg",
     "slug": "track:kis-da-boy",
+    "rarity": 1
+  },
+  {
+    "name": "le canrival",
+    "albumName": "V8\ufe0flu\u264fe",
+    "isOfficial": false,
+    "isFandom": false,
+    "imageUrl": "https://hsmusic.wiki/media/album-art/v8lume/le-canrival.small.jpg",
+    "slug": "track:le-canrival",
     "rarity": 1
   },
   {

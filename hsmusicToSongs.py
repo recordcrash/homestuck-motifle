@@ -43,7 +43,7 @@ DISCARDED_MOTIFS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 9, 19, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2023, 9, 20, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -329,6 +329,11 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
             if n_official_songs >= 2 or (n_official_songs >= 1 and n_common_unofficial_songs >= 2):
                 filtered_songs.append(song)
 
+    # TODO: remove this after lofam 5 act 2 songs are all done
+    lofam5a2_songs = [song for song in filtered_songs if song['albumName'] == 'Land of Fans and Music 5 Act 2']
+    other_songs = [song for song in filtered_songs if song['albumName'] != 'Land of Fans and Music 5 Act 2']
+    filtered_songs = lofam5a2_songs + other_songs
+
     # add starting date
     day = START_DATETIME
     for song in filtered_songs:
@@ -377,11 +382,6 @@ def get_game_data(store: bool = True) -> List[object]:
         min_leitmotifs,
         max_leitmotifs
     )
-
-    # TODO: remove this after lofam 5 act 2 songs are all done
-    lofam5a2_songs = [song for song in filtered_songs if song['albumName'] == 'Land of Fans and Music 5 Act 2']
-    other_songs = [song for song in filtered_songs if song['albumName'] != 'Land of Fans and Music 5 Act 2']
-    filtered_songs = lofam5a2_songs + other_songs
 
     print(f'Filtered {len(filtered_songs)} songs')
 
