@@ -122,6 +122,8 @@ function handleMotif(motif, success) {
         showToastMessage(`Yes, the song is "${motif.name}", but you're meant to guess *its motifs*, numbnuts!`);
     } else if (success === 'partial') {
         showToastMessage(`Your guess "${motif.name}" was close! It hasn't been counted as an error.`);
+    } else if (success === 'sample') {
+        showToastMessage(`Your guess "${motif.name}" was a sample, not a musical reference! It hasn't been counted as an error.`);
     } else if (success === 'error') {
         showToastMessage(`Your guess "${motif.name}" was wrong!`);
     }

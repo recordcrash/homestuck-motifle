@@ -65,6 +65,17 @@ class Game {
     hydrateWithObject(gameObject) {
         // grabs all data from a localStorage stored game object and sets it to the current game object
         this.dateString = gameObject.dateString;
+        const newGameObjectSong = gameObject.song;
+        // we have to check that this.song matches the stored one, because it could change
+        // check it's the same song
+        const sameSong = this.song.slug === newGameObjectSong.slug;
+        // check the arrays of leitmotifs and samples have the same contents
+        const sameLeitmotifs = this.song.leitmotifs.every((leitmotifSlug) => newGameObjectSong.leitmotifs.includes(leitmotifSlug));
+        const sameSamples = !this.song.samples || this.song.samples.every((sampleSlug) => newGameObjectSong.samples.includes(sampleSlug));
+        // if there's a discrepancy, don't hydrate the song and motif data
+        if (!sameSong || !sameLeitmotifs || !sameSamples) {
+            console.error(`Game.hydrateWithObject: song data ${gameObject.dateString} does not match, replacing with new data`);
+        }
         this.song = gameObject.song;
         this.submittedMotifs = gameObject.submittedMotifs;
         this.displayedMotifs = gameObject.displayedMotifs;
@@ -147,6 +158,7 @@ class Game {
             ['im-a-member-of-the-midnight-crew-acapella', 'im-a-member-of-the-midnight-crew'],
             ['stress', 'five-four-stress'],
             ['in-the-beginning', 'contact'],
+            ['moshi-moshi', 'stay-in-touch'],
         ]
         let notAlreadyGuessedSlugs = this.displayedMotifs.filter((displayedMotif) => !displayedMotif.isGuessed).map((displayedMotif) => displayedMotif.slug);
         notAlreadyGuessedSlugs = notAlreadyGuessedSlugs.map((slug) => slug.replace('track:', ''));
@@ -155,6 +167,13 @@ class Game {
             return list.includes(motifSlug) && list.some((slug) => notAlreadyGuessedSlugs.includes(slug));
         });
         return found;
+    }
+
+    checkSamples(motif) {
+        // return true if the motif is found in the song.samples array
+        console.log(`checking samples for ${motif.slug}`);
+        console.log(this.song.samples);
+        return this.song.samples.includes(motif.slug);
     }
 
     submitMotif(motif) {
@@ -173,7 +192,8 @@ class Game {
             submittedMotif.isGuessed = true;
             success = 'success';
         } else {
-            if (!this.checkBallpark(motif)) this.errorCount++;
+            if (this.checkSamples(motif)) success = 'sample';
+            else if (!this.checkBallpark(motif)) this.errorCount++;
             else success = 'partial';
         }
         

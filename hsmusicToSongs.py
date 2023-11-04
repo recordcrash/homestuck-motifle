@@ -43,7 +43,7 @@ DISCARDED_MOTIFS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 9, 20, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2023, 11, 5, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -111,9 +111,9 @@ def load_slugs(album_path) -> dict:
                 is_official = get_is_official(album_object, song)
                 is_fandom = not is_official and 'Fandom' in album_object['Groups'] if 'Groups' in song else False
                 if album_lacks_art or ('Has Cover Art' in song and song['Has Cover Art'] == False):
-                    image_url = f'https://hsmusic.wiki/media/album-art/{album_name}/cover.small.jpg'
+                    image_url = f'https://hsmusic.wiki/thumb/album-art/{album_name}/cover.small.jpg'
                 else:
-                    image_url = f'https://hsmusic.wiki/media/album-art/{album_name}/{song_slug}.small.jpg'
+                    image_url = f'https://hsmusic.wiki/thumb/album-art/{album_name}/{song_slug}.small.jpg'
                 song_object = {
                     'name': song_name,
                     'albumName': album_object['Album'],
@@ -188,8 +188,8 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
 
                 referenced_tracks = song['Referenced Tracks'] if 'Referenced Tracks' in song else []
                 sampled_tracks = song['Sampled Tracks'] if 'Sampled Tracks' in song else []
-                referenced_tracks = list(set(referenced_tracks + sampled_tracks))
                 leitmotifs = []
+                samples = []
                 for referenced_track in referenced_tracks:
                     if referenced_track in slugs_dict:
                         leitmotif_slug = referenced_track
@@ -197,6 +197,13 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
                         leitmotif_slug = f"track:{normalize_wiki_string(referenced_track)}"
                     leitmotif_counter[leitmotif_slug] += 1
                     leitmotifs.append(leitmotif_slug)
+                # samples
+                for sample in sampled_tracks:
+                    if sample in slugs_dict:
+                        sample_slug = sample
+                    else:
+                        sample_slug = f"track:{normalize_wiki_string(sample)}"
+                    samples.append(sample_slug)
                 # we fetch the url slug for the wiki URL and the image url
                 wiki_url = f'https://hsmusic.wiki/track/{track_slug_no_prefix}'
                 if album_lacks_art or ('Has Cover Art' in song and song['Has Cover Art'] == False):
@@ -223,6 +230,7 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
                         'artist': artists,  
                         'albumName': readable_album_name,
                         'leitmotifs': leitmotifs,
+                        'samples': samples,
                         'nLeitmotifs': len(leitmotifs),
                         'wikiUrl': wiki_url,
                         'imageUrl': image_url,
@@ -328,11 +336,6 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
             # one official song and two or more common songs
             if n_official_songs >= 2 or (n_official_songs >= 1 and n_common_unofficial_songs >= 2):
                 filtered_songs.append(song)
-
-    # TODO: remove this after lofam 5 act 2 songs are all done
-    lofam5a2_songs = [song for song in filtered_songs if song['albumName'] == 'Land of Fans and Music 5 Act 2']
-    other_songs = [song for song in filtered_songs if song['albumName'] != 'Land of Fans and Music 5 Act 2']
-    filtered_songs = lofam5a2_songs + other_songs
 
     # add starting date
     day = START_DATETIME

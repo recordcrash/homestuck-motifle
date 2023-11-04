@@ -143,6 +143,99 @@ button:focus:not(:focus-visible) {
 	background-color: rgba(122, 0, 209, 0.1);
 }
 
+/* General Button Styles */
+.material-button {
+    padding: 10px 20px;
+	margin: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    user-select: none;
+}
+
+/* Button Primary Color */
+.material-button.primary {
+    color: #fff;
+    background-color: var(--color-theme-1);
+}
+
+/* Button Accent Color */
+.material-button.accent {
+    color: #fff;
+    background-color: var(--color-accent);
+}
+
+/* Button Raised Effect */
+.material-button.raised {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.material-button.raised:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Button Ripple Effect */
+.material-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+    transition: width 0.3s, height 0.3s, opacity 0.3s, transform 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.material-button:active::before {
+    width: 300%;
+    height: 300%;
+    opacity: 0;
+    transform: scale(0, 0) translate(-50%, -50%);
+    transition: 0s;
+}
+
+/* Button Disabled State */
+.material-button.disabled,
+.material-button[disabled] {
+    background-color: #eaeaea;
+    color: #ccc;
+    cursor: default;
+    box-shadow: none;
+}
+
+/* Button Full Width Style */
+.material-button.full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Optional: Button Sizes */
+.material-button.small {
+    padding: 6px 16px;
+    font-size: 14px;
+}
+
+.material-button.large {
+    padding: 14px 24px;
+    font-size: 18px;
+}
+
+
 @keyframes shake {
 	0% { transform: translateX(0); }
 	10% { transform: translateX(-5px); }

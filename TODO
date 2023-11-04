@@ -1,6 +1,2 @@
-# Short Term
-- IMPORTANT: loaded games should only load player data for the songs, to avoid broken URLs being stuck forever
-- Samples should be guessable without errors but not counted for points
-- Allow users to reset/reload days when there is an inconsistency
 # Long Term
 - Embed Heardle into game as a different mode

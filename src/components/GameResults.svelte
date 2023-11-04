@@ -133,6 +133,18 @@
         copyGameState(false, false);
     }
 
+    function resetDay() {
+        // removes the song from the localStorage for that day and reloads the page
+        // this will trigger a new game to be generated
+        const savedGames = localStorage.getItem('games');
+        if (savedGames) {
+            const jsonGames = JSON.parse(savedGames);
+            delete jsonGames[game.dateString];
+            localStorage.setItem('games', JSON.stringify(jsonGames));
+        } 
+        window.location.reload();
+    }
+
 </script>
 
 {#if game}
@@ -140,13 +152,13 @@
         <h2>{game.status === 'won' ? 'Congratulations! The song was:' : 'Better luck next time! The song was:'}</h2>
         <p><a href={game.song.wikiUrl} target="_blank">{game.song.name}</a> by <span class="artist-links">{@html artistsHTML}</span> ({game.song.albumName})</p>
         <p><a href={game.song.url} target="_blank">Listen on {game.song.urlType == 'youtube' ? 'Youtube' : 'Soundcloud'}</a></p>
-        <h3>Total points: {game.points} / {game.maxPoints}</h3>
+        <h3>Total points: {game.points} / {game.maxPoints} <button class="material-button" on:click={resetDay}>Reset Day</button></h3>
 
         {#if isCurrentGame}<p>Come back in {countdownTime} for a new game!</p>{/if}
         <div class="button-row">
-            <button on:click={copyWithUrlEmbed}>Copy Results</button>
-            <button on:click={copyWithoutUrlEmbed}>Copy Results (no Discord embed)</button>
-            <button on:click={copyWithoutUrl}>Copy Results (no links)</button>
+            <button class="material-button" on:click={copyWithUrlEmbed}>Copy Results</button>
+            <button class="material-button" on:click={copyWithoutUrlEmbed}>Copy Results (no embed)</button>
+            <button class="material-button" on:click={copyWithoutUrl}>Copy Results (no links)</button>
         </div>
     </div>
 {/if}
