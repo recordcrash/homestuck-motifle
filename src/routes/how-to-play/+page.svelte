@@ -13,11 +13,11 @@
     <p>
         Points are awarded based on the rarity of the guessed motif:
         <ul>
-            <li><span class="bold rarity5">Core (100 points)</span>: Official melodies that every Homestuck fan has heard multiple times, like <a class="rarity5" href="https://hsmusic.wiki/track/sburban-jungle">Sburban Jungle</a> from [S] Enter and others.</li>
+            <li><span class="bold rarity5">Core (100 points)</span>: Official melodies that every Homestuck fan has heard multiple times, like <a class="rarity5" href="https://hsmusic.wiki/track/MeGaLoVania">MeGaLoVania</a>, <a class="rarity5" href="https://hsmusic.wiki/track/sburban-jungle">Sburban Jungle</a> from [S] Enter and others.</li>
 			<li><span class="bold rarity4">Common (125 points)</span>: Either popular fanmusic melodies like <a class="rarity4" href="https://hsmusic.wiki/track/moshi-moshi">Moshi Moshi</a> or slightly less common official melodies like <a class="rarity4" href="https://hsmusic.wiki/track/crystamanthequins">Crystamanthequins</a>, which you might remember from [S] Make Her Pay.</li>
 			<li><span class="bold rarity3">Uncommon (175 points)</span>: Melodies that are not as popular as the previous two categories, like <a class="rarity3" href="https://hsmusic.wiki/track/an-unbreakable-union">An Unbreakable Union</a> or <a class="rarity3" href="https://hsmusic.wiki/track/arisen-anew">Arisen Anew</a>.</li>
 			<li><span class="bold rarity2">Rare (250 points)</span>: At this point you might not even know the songs, like <a class="rarity2" href="https://hsmusic.wiki/track/blue-atom">Blue Atom</a> or <a class="rarity2" href="https://hsmusic.wiki/track/contact">CONTACT</a>.</li>
-			<li><span class="bold rarity1">Singular (500 points)</span>: Near impossible melodies to guess—they have only appeared once in our dataset. For example, <a class="rarity1" href="https://hsmusic.wiki/track/a-fashionable-escape">A Fashionable Escape</a> or <a class="rarity1" href="https://hsmusic.wiki/track/gasters-theme">Gaster's Theme</a>.</li>
+			<li><span class="bold rarity1">Singular (500 points)</span>: Near impossible melodies to guess—they have only appeared once or twice in our dataset. For example, <a class="rarity1" href="https://hsmusic.wiki/track/a-fashionable-escape">A Fashionable Escape</a> or <a class="rarity1" href="https://hsmusic.wiki/track/gasters-theme">Gaster's Theme</a>.</li>
         </ul>
 
     <p>

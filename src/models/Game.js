@@ -74,7 +74,8 @@ class Game {
         const sameSamples = !this.song.samples || this.song.samples.every((sampleSlug) => newGameObjectSong.samples.includes(sampleSlug));
         // if there's a discrepancy, don't hydrate the song and motif data
         if (!sameSong || !sameLeitmotifs || !sameSamples) {
-            console.error(`Game.hydrateWithObject: song data ${gameObject.dateString} does not match, replacing with new data`);
+            console.error(`Game.hydrateWithObject: song data ${gameObject.dateString} does not match, ignoring existing data`);
+            return;
         }
         this.song = gameObject.song;
         this.submittedMotifs = gameObject.submittedMotifs;
@@ -171,8 +172,7 @@ class Game {
 
     checkSamples(motif) {
         // return true if the motif is found in the song.samples array
-        console.log(`checking samples for ${motif.slug}`);
-        console.log(this.song.samples);
+        if (!this.song.samples) return false;
         return this.song.samples.includes(motif.slug);
     }
 
