@@ -43,7 +43,7 @@ DISCARDED_MOTIFS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2023, 11, 5, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2024, 9, 29, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -216,6 +216,9 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
                 url = None
                 urlType = None
                 for urlString in urls:
+                    if not urlString:
+                        print(f'WARNING: Skipping {song_name} because it somehow has a None URL!')
+                        continue
                     if 'youtu' in urlString:
                         url = urlString
                         urlType = 'youtube'
@@ -361,13 +364,14 @@ def get_game_data(store: bool = True) -> List[object]:
     
     # if it exists, and the date is before the original date, we want to use the old songs and remove them from being picked
     if old_game_songs_file is not None:
-        day_difference = (START_DATETIME - ORIGINAL_DATETIME).days
-        for index in range(day_difference):
+        print(f"Using old songs from {ORIGINAL_DATETIME} to {START_DATETIME}")
+        for index in range(len(old_game_songs_file)):
             old_game_songs.append(old_game_songs_file[index])
 
     songs, leitmotif_counter, official_slugs = get_valid_songs(slugs_dict, album_path)
-    # ugly exception, we need to manually add penumbra-phantasm to official_slugs
+    # ugly exception, we need to manually add unreleased famous songs to official_slugs
     official_slugs.append('track:penumbra-phantasm')
+    official_slugs.append('track:double-midnight')
 
     five_hundred_most_common = leitmotif_counter.most_common(500)
 

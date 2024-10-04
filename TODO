@@ -1,4 +1,5 @@
 # Short Term
-- N/A
+- Check why "the will to fight" isn't in game_motifs
+- When number of displayed motifs vs motifs don't match, tell the user somehow
 # Long Term
 - Embed Heardle into game as a different mode
