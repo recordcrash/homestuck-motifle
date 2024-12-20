@@ -43,7 +43,10 @@ DISCARDED_MOTIFS = [
 ORIGINAL_DATETIME = datetime.datetime(2023, 8, 9, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 # The first day of the newly generated songs
-START_DATETIME = datetime.datetime(2024, 9, 29, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+START_DATETIME = datetime.datetime(2024, 12, 19, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
+
+# The target end date until which we will loop songs if we run out
+END_DATETIME = datetime.datetime(2029, 4, 13, 0, 0, 0, 0, tzinfo=datetime.timezone.utc)
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -98,6 +101,8 @@ def load_slugs(album_path) -> dict:
     for album_name in album_names:
         potential_songs = load_file(os.path.join(album_path, f"{album_name}.yaml"))
         album_object = next((album for album in potential_songs if 'Album' in album), None)
+        if album_object is None:
+            continue
         album_lacks_art = 'Has Track Art' in album_object and album_object['Has Track Art'] == False
         for song in potential_songs:
             if song is None:
@@ -109,7 +114,7 @@ def load_slugs(album_path) -> dict:
                 song_name = song['Track']
                 song_slug = normalize_wiki_string(song_name)
                 is_official = get_is_official(album_object, song)
-                is_fandom = not is_official and 'Fandom' in album_object['Groups'] if 'Groups' in song else False
+                is_fandom = not is_official and 'Fandom' in album_object['Groups'] if 'Groups' in album_object else False
                 if album_lacks_art or ('Has Cover Art' in song and song['Has Cover Art'] == False):
                     image_url = f'https://hsmusic.wiki/thumb/album-art/{album_name}/cover.small.jpg'
                 else:
@@ -151,6 +156,8 @@ def get_valid_songs(slugs_dict: dict, album_path) -> List[object]:
         
         # we only want to include albums that have at least one group in GAME_GROUPS
         album_object = next((album for album in potential_songs if 'Album' in album), None)
+        if album_object is None:
+            continue
         album_lacks_art = 'Has Track Art' in album_object and album_object['Has Track Art'] == False
         groups = album_object['Groups'] if 'Groups' in album_object else []
         if not any(group in INCLUDED_GROUPS for group in groups) or any(group in EXCLUDED_GROUPS for group in groups):
@@ -294,7 +301,8 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
     # filter out leitmotifs that aren't official or are too rare
     for leitmotif, count in leitmotif_counter.items():
         if leitmotif not in official_slugs or count < rare_leitmotif_threshold:
-            del official_counter[leitmotif]
+            if leitmotif in official_counter:
+                del official_counter[leitmotif]
     
     # filter out leitmotifs that appear less than min_leitmotif_counter times
     print(f'Filtering leitmotifs with thresholds {common_leitmotif_threshold}, {uncommon_leitmotif_threshold}, {rare_leitmotif_threshold}...')
@@ -305,10 +313,6 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
             uncommon_leitmotifs.add(leitmotif)
         elif count >= rare_leitmotif_threshold:
             rare_leitmotifs.add(leitmotif)
-    # print(f'Found {len(common_leitmotifs)} common leitmotifs, {len(uncommon_leitmotifs)} uncommon leitmotifs, and {len(rare_leitmotifs)} rare leitmotifs')
-    # print(f'Common leitmotifs: {common_leitmotifs}')
-    # print(f'Uncommon leitmotifs: {uncommon_leitmotifs}')
-    # print(f'Rare leitmotifs: {rare_leitmotifs}')
 
     # add all sets into guessable_leitmotifs
     guessable_leitmotifs = common_leitmotifs.union(uncommon_leitmotifs).union(rare_leitmotifs)
@@ -319,7 +323,7 @@ def filter_songs(songs: list, old_game_songs: list, leitmotif_counter: Counter, 
             official_leitmotifs.add(leitmotif)
             
 
-    # filter out songs that have less than min_n_references leitmotifs
+    # filter out songs that have less than min_leitmotifs leitmotifs
     print(f'Filtering out songs that have less than {min_leitmotifs} leitmotifs or more than {max_leitmotifs}...')
     for song in songs:
         if song['slug'] in [song['slug'] for song in old_game_songs]:
@@ -394,6 +398,24 @@ def get_game_data(store: bool = True) -> List[object]:
 
     # add the old songs to the filtered songs
     game_songs = old_game_songs + filtered_songs
+
+    # Now, if we have a target END_DATETIME, we loop the entire game_songs list until we reach it.
+    if game_songs:
+        last_day_str = game_songs[-1]['day']
+        last_day = datetime.datetime.strptime(last_day_str, '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc)
+        current_day = last_day + datetime.timedelta(days=1)
+
+        # Loop through game_songs repeatedly until we reach END_DATETIME
+        song_index = 0
+        while current_day <= END_DATETIME:
+            # We reuse songs from game_songs, in order, wrapping around as needed.
+            base_song = game_songs[song_index % len(game_songs)]
+            looped_song = dict(base_song)
+            # Update the day for this looped instance
+            looped_song['day'] = current_day.strftime('%Y-%m-%d')
+            game_songs.append(looped_song)
+            current_day += datetime.timedelta(days=1)
+            song_index += 1
 
     guesses_array = get_guesses_array(slugs_dict, leitmotif_counter, common_leitmotif_threshold, uncommon_leitmotif_threshold, rare_leitmotif_threshold)
     print(f'Found {len(guesses_array)} guesses')

@@ -11595,5 +11595,2223 @@
     "url": "https://www.youtube.com/watch?v=BeznzPMq0fY",
     "urlType": "youtube",
     "day": "2024-09-28"
+  },
+  {
+    "slug": "its-megaman-except-the-song-is-homestuck-too",
+    "name": "its megaman except the song is homestuck too",
+    "artist": [
+      "artist:hadron"
+    ],
+    "albumName": "CaNWC Sound Test Vol.1: REVENGE OF THE GIIVASUNNER",
+    "leitmotifs": [
+      "track:title-mega-man-3",
+      "track:doctor",
+      "track:explore",
+      "track:sburban-jungle",
+      "track:meet-the-flintstones"
+    ],
+    "samples": [
+      "track:title-mega-man-3"
+    ],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/its-megaman-except-the-song-is-homestuck-too",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/canwc-sound-test-1/its-megaman-except-the-song-is-homestuck-too.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/MSqSCrIjiOM",
+    "urlType": "youtube",
+    "day": "2024-09-29"
+  },
+  {
+    "slug": "candlelit-contemplation",
+    "name": "Candlelit Contemplation",
+    "artist": [
+      "artist:rowyn-berlan"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:candlelit-contemplation-beta",
+      "track:upward-movement-dave-owns",
+      "track:candles-and-clockwork"
+    ],
+    "samples": [
+      "track:candlelit-contemplation-beta"
+    ],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/candlelit-contemplation",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/candlelit-contemplation.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=yK_vGEn16jY",
+    "urlType": "youtube",
+    "day": "2024-09-30"
+  },
+  {
+    "slug": "friendleader",
+    "name": "fRIENDLEADER",
+    "artist": [
+      "artist:apatheticpianist"
+    ],
+    "albumName": "Alternate Hues and Melodies",
+    "leitmotifs": [
+      "track:doctor",
+      "track:courser",
+      "track:green-ghost"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/friendleader",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/alternate-hues-and-melodies/friendleader.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/R7C4Q1WS8XM",
+    "urlType": "youtube",
+    "day": "2024-10-01"
+  },
+  {
+    "slug": "time-on-my-side-16-bit-cover",
+    "name": "Time on My Side 16-Bit Cover",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:time-on-my-side",
+      "track:beatdown-strider-style",
+      "track:liquid-negrocity"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/time-on-my-side-16-bit-cover",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/time-on-my-side-16-bit-cover.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=f6hJoz86Qrc",
+    "urlType": "youtube",
+    "day": "2024-10-02"
+  },
+  {
+    "slug": "rough-and-jungle",
+    "name": "Rough and Jungle",
+    "artist": [
+      "artist:caldw3ll"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:doctor",
+      "track:sburban-jungle",
+      "track:unite-synchronization"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/rough-and-jungle",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/rough-and-jungle.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=-2Im7mGpFj8",
+    "urlType": "youtube",
+    "day": "2024-10-03"
+  },
+  {
+    "slug": "transcend-canmt",
+    "name": "Transcend",
+    "artist": [
+      "artist:tirantbacon"
+    ],
+    "albumName": "COOL AND NEW Volume 7: At the Price of $104.13",
+    "leitmotifs": [
+      "track:sburban-jungle",
+      "track:rollercoaster-tycoon-theme",
+      "track:upward-movement-dave-owns",
+      "track:beatdown-strider-style",
+      "track:crystalanthemums"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/transcend-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-7/transcend-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/bjhlz95Dp_8",
+    "urlType": "youtube",
+    "day": "2024-10-04"
+  },
+  {
+    "slug": "downwards-canmt",
+    "name": "Downwards",
+    "artist": [
+      "artist:starlightcalliope"
+    ],
+    "albumName": "9",
+    "leitmotifs": [
+      "track:upward-movement-dave-owns",
+      "track:end-of-the-world",
+      "track:flare",
+      "track:MeGaLoVania",
+      "track:transcend-canmt",
+      "track:homestuck",
+      "track:moshi-moshi",
+      "track:muse-of-nanchos",
+      "track:rollercoaster-tycoon-theme",
+      "track:good-grievous-bodily-harm",
+      "track:fresh-jimmys-fresh-beatz",
+      "track:midnight-suffer",
+      "track:licord-nacrasty",
+      "track:justice-must-be-a-serve",
+      "track:fighting-spirit",
+      "track:rhythm-code",
+      "track:plague-canmt",
+      "track:infection-canmt",
+      "track:tock",
+      "track:tick",
+      "track:1-through-15",
+      "track:contact",
+      "track:in-the-beginning-basement-tale",
+      "track:ratboy-genius-theme-song",
+      "track:formation",
+      "track:fruity-pebbles-jingle",
+      "track:aaaaaaaaaaaaaaaaaaaaa",
+      "track:even-in-death",
+      "track:liquid-negrocity",
+      "track:dance-of-thorns",
+      "track:i-absolutely-loathe-this-drummer",
+      "track:rex-mille-geromius",
+      "track:rex-duodecim-angelus",
+      "track:aggrieve",
+      "track:steps-theme",
+      "track:vaccine-canmt",
+      "track:oh-boo-hoo",
+      "track:jungle-3",
+      "track:fighting-spirit-double-ascended-form",
+      "track:while-the-irons-hot",
+      "track:unintentional-touhou",
+      "track:unintentional-anime-piano-version",
+      "track:ringleader-canmt",
+      "track:touchdown"
+    ],
+    "samples": [
+      "track:upward-movement-dave-owns",
+      "track:aaaaaaaaaaaaaaaaaaaaa",
+      "track:oh-boo-hoo"
+    ],
+    "nLeitmotifs": 44,
+    "wikiUrl": "https://hsmusic.wiki/track/downwards-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/9/downwards-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/FhtrQuWxfk0",
+    "urlType": "youtube",
+    "day": "2024-10-05"
+  },
+  {
+    "slug": "a-handmaids-last-stand",
+    "name": "A Handmaid's Last Stand",
+    "artist": [
+      "artist:rainy"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:all-alone",
+      "track:penumbra-phantasm",
+      "track:hate-you"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/a-handmaids-last-stand",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/a-handmaids-last-stand.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=B9bxMxUIqG8",
+    "urlType": "youtube",
+    "day": "2024-10-06"
+  },
+  {
+    "slug": "irradiated-lofam2",
+    "name": "Irradiated",
+    "artist": [
+      "artist:thomas-ibarra"
+    ],
+    "albumName": "Land of Fans and Music 2",
+    "leitmotifs": [
+      "track:harlequin",
+      "track:liquid-negrocity",
+      "track:sburban-jungle",
+      "track:carefree-action"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/irradiated-lofam2",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam2/irradiated-lofam2.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/M_lXyhRBOhk",
+    "urlType": "youtube",
+    "day": "2024-10-07"
+  },
+  {
+    "slug": "harmonize-canmt",
+    "name": "Harmonize",
+    "artist": [
+      "artist:kobacat"
+    ],
+    "albumName": "cool and new volume s*x: hair transplant",
+    "leitmotifs": [
+      "track:jungle-3",
+      "track:tock",
+      "track:archagent-everlasting",
+      "track:licord-nacrasty",
+      "track:black",
+      "track:sburban-jungle",
+      "track:contact",
+      "track:descend",
+      "track:dr-pepper",
+      "track:ruins-with-strings",
+      "track:deaf-injustice-ignoration",
+      "track:oppa-toby-style",
+      "track:madame-controversielle",
+      "track:moshi-moshi",
+      "track:o"
+    ],
+    "samples": [],
+    "nLeitmotifs": 15,
+    "wikiUrl": "https://hsmusic.wiki/track/harmonize-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-s-x/harmonize-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/w0_Fxg-CQSw",
+    "urlType": "youtube",
+    "day": "2024-10-08"
+  },
+  {
+    "slug": "pascal-dont-call-me-starkemeister-van-den-bos-and-timelessheirs-dx-collab-gone-wronggone-sexual-definitive-edition",
+    "name": "Pascal \"Don't call me Starkemeister\" van den Bos and TimelessHeir's DX collab (gone wrong(gone sexual)) definitive edition",
+    "artist": [
+      "artist:rowyn-berlan",
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:miasmic-decay",
+      "track:vexation-paradox-music-team",
+      "track:proletariat-paradox-music-team",
+      "track:avarice-paradox-music-team",
+      "track:static-dust",
+      "track:sunsetter",
+      "track:the-lemonsnout-turnabout",
+      "track:hate-you",
+      "track:its-safe-now",
+      "track:walk-stab-walk-rande",
+      "track:crystalanthemums",
+      "track:time-on-my-side",
+      "track:cascade-beta",
+      "track:penumbra-phantasm",
+      "track:liquid-negrocity",
+      "track:oppa-toby-style",
+      "track:lust-stlap2",
+      "track:versus"
+    ],
+    "samples": [],
+    "nLeitmotifs": 18,
+    "wikiUrl": "https://hsmusic.wiki/track/pascal-dont-call-me-starkemeister-van-den-bos-and-timelessheirs-dx-collab-gone-wronggone-sexual-definitive-edition",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/pascal-dont-call-me-starkemeister-van-den-bos-and-timelessheirs-dx-collab-gone-wronggone-sexual-definitive-edition.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=qTwRgtfk4tk",
+    "urlType": "youtube",
+    "day": "2024-10-09"
+  },
+  {
+    "slug": "fuckass",
+    "name": "FUCKASS",
+    "artist": [
+      "artist:bb-panzu"
+    ],
+    "albumName": "FNF: COLORS & MAYHEM Vol. 1",
+    "leitmotifs": [
+      "track:2beep2meow",
+      "track:crustacean",
+      "track:terezi-owns",
+      "track:sburban-jungle",
+      "track:vriska-song-new"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/fuckass",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/fnf-colors-and-mayhem-vol-1/fuckass.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://soundcloud.com/bbpanzus-alt-account/fuckass",
+    "urlType": "soundcloud",
+    "day": "2024-10-10"
+  },
+  {
+    "slug": "spacetime-continuum",
+    "name": "Spacetime Continuum",
+    "artist": [
+      "artist:apatheticpianist",
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:candles-and-clockwork",
+      "track:guardian",
+      "track:courser",
+      "track:requiem-of-sunshine-and-rainbows",
+      "track:eternity-served-cold",
+      "track:english",
+      "track:crystalanthemums",
+      "track:beatdown-strider-style",
+      "track:darling-kanaya",
+      "track:rex-duodecim-angelus",
+      "track:rust-maid",
+      "track:rust-servant",
+      "track:old-secret",
+      "track:worst-end",
+      "track:sunsetter",
+      "track:atomyk-ebonpyre",
+      "track:atomic-bonsai",
+      "track:ascend",
+      "track:doctor",
+      "track:infinity-mechanism",
+      "track:upward-movement-dave-owns",
+      "track:cascade-beta",
+      "track:carne-vale",
+      "track:penumbra-phantasm",
+      "track:versus",
+      "track:umbral-ultimatum"
+    ],
+    "samples": [],
+    "nLeitmotifs": 26,
+    "wikiUrl": "https://hsmusic.wiki/track/spacetime-continuum",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/spacetime-continuum.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=yH6vUheS5TA",
+    "urlType": "youtube",
+    "day": "2024-10-11"
+  },
+  {
+    "slug": "cascade-dx",
+    "name": "Cascade DX",
+    "artist": [
+      "artist:caelan-kier"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:cascade-beta",
+      "track:sburban-jungle",
+      "track:temporal-virtuoso",
+      "track:time-on-my-side",
+      "track:flare",
+      "track:courser",
+      "track:spider8ite"
+    ],
+    "samples": [],
+    "nLeitmotifs": 7,
+    "wikiUrl": "https://hsmusic.wiki/track/cascade-dx",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/cascade-dx.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=35kl_zcZ8dA",
+    "urlType": "youtube",
+    "day": "2024-10-12"
+  },
+  {
+    "slug": "unbreakable-unity",
+    "name": "Unbreakable Unity",
+    "artist": [
+      "artist:mrcheeze"
+    ],
+    "albumName": "Cool and New Homestuck 3",
+    "leitmotifs": [
+      "track:an-unbreakable-union",
+      "track:mutiny",
+      "track:mutiny-crapapella",
+      "track:carefree-victory"
+    ],
+    "samples": [
+      "track:an-unbreakable-union",
+      "track:mutiny",
+      "track:feel-alive",
+      "track:mutiny-crapapella"
+    ],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/unbreakable-unity",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-homestuck-3/unbreakable-unity.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/AQZ5VZ60dKo",
+    "urlType": "youtube",
+    "day": "2024-10-13"
+  },
+  {
+    "slug": "timeout-beforus",
+    "name": "Timeout",
+    "artist": [
+      "artist:psithurist"
+    ],
+    "albumName": "Beforus",
+    "leitmotifs": [
+      "track:MeGaLoVania",
+      "track:fuchsia-ruler",
+      "track:penumbra-phantasm",
+      "track:flare",
+      "track:killed-by-br8k-spider"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/timeout-beforus",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/beforus/timeout-beforus.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/OEJ4XmwS1n0",
+    "urlType": "youtube",
+    "day": "2024-10-14"
+  },
+  {
+    "slug": "troll-fashion",
+    "name": "Troll Fashion",
+    "artist": [
+      "artist:bb-panzu"
+    ],
+    "albumName": "FNF: COLORS & MAYHEM Vol. 1",
+    "leitmotifs": [
+      "track:alternia-intro",
+      "track:sunsetter",
+      "track:liquid-negrocity",
+      "track:darling-kanaya"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/troll-fashion",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/fnf-colors-and-mayhem-vol-1/troll-fashion.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://soundcloud.com/bbpanzus-alt-account/troll-fashion",
+    "urlType": "soundcloud",
+    "day": "2024-10-15"
+  },
+  {
+    "slug": "at-the-strike-of-three",
+    "name": "At the Strike of Three",
+    "artist": [
+      "artist:beau-brian"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:oppa-toby-style",
+      "track:intermission-1",
+      "track:doctor",
+      "track:liquid-negrocity",
+      "track:crystalanthemums",
+      "track:clockwork-melody",
+      "track:cascade-beta",
+      "track:play-the-wind",
+      "track:megalovania-ebhh",
+      "track:filthy-nuclear-bunker",
+      "track:rustblood",
+      "track:unsheathd"
+    ],
+    "samples": [],
+    "nLeitmotifs": 12,
+    "wikiUrl": "https://hsmusic.wiki/track/at-the-strike-of-three",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/at-the-strike-of-three.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=j0YrEYWSVKw",
+    "urlType": "youtube",
+    "day": "2024-10-16"
+  },
+  {
+    "slug": "shatter-lofam4",
+    "name": "Shatter",
+    "artist": [
+      "artist:kanishka"
+    ],
+    "albumName": "Land of Fans and Music 4",
+    "leitmotifs": [
+      "track:double-midnight",
+      "track:amen-brother",
+      "track:penumbra-phantasm",
+      "track:a-baby-legend-the-baby-is-2",
+      "track:dirgeish"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/shatter-lofam4",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam4/shatter-lofam4.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/dxjSHHDLekQ",
+    "urlType": "youtube",
+    "day": "2024-10-17"
+  },
+  {
+    "slug": "hehehe-i-am-the-greatest-canrival-ripping-warria-in-the-galaxy",
+    "name": "HEHEHE I AM THE GREATEST CANRIVAL RIPPING WARRIA IN THE GALAXY",
+    "artist": [
+      "artist:bobthetacocat"
+    ],
+    "albumName": "le canrivalry: album is mandatory",
+    "leitmotifs": [
+      "track:the-greatest-warrior-in-the-galaxy",
+      "track:the-greatest-warrior-in-the-galaxy-ever",
+      "track:le-canrival",
+      "track:upward-movement-dave-owns",
+      "track:MeGaLoVania",
+      "track:conflict",
+      "track:meet-the-flintstones",
+      "track:harlequin",
+      "track:moshi-moshi"
+    ],
+    "samples": [
+      "track:the-greatest-warrior-in-the-galaxy-ever",
+      "track:upward-movement-dave-owns"
+    ],
+    "nLeitmotifs": 9,
+    "wikiUrl": "https://hsmusic.wiki/track/hehehe-i-am-the-greatest-canrival-ripping-warria-in-the-galaxy",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/le-canrivalry-album-is-mandatory/hehehe-i-am-the-greatest-canrival-ripping-warria-in-the-galaxy.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=_HGufm6fVsQ",
+    "urlType": "youtube",
+    "day": "2024-10-18"
+  },
+  {
+    "slug": "cith-beatdown-strider-in-the-house",
+    "name": "CITH - Beatdown (Strider in the House)",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:cory-in-the-house-theme-song",
+      "track:beatdown-strider-style",
+      "track:versus",
+      "track:upward-movement-dave-owns"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/cith-beatdown-strider-in-the-house",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/cith-beatdown-strider-in-the-house.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=OEIhetsdJzA",
+    "urlType": "youtube",
+    "day": "2024-10-19"
+  },
+  {
+    "slug": "threshold-stlap3",
+    "name": "Threshold",
+    "artist": [
+      "artist:beau-brian"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:corridors-of-time",
+      "track:arisen-anew",
+      "track:clockwork-melody",
+      "track:gentle-heat"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/threshold-stlap3",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/threshold-stlap3.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=0lFishQG2I4",
+    "urlType": "youtube",
+    "day": "2024-10-20"
+  },
+  {
+    "slug": "your-darkest-canrival",
+    "name": "Your Darkest Canrival",
+    "artist": [
+      "artist:bobthetacocat"
+    ],
+    "albumName": "le canrivalry: album is mandatory",
+    "leitmotifs": [
+      "track:your-best-nightmare",
+      "track:le-canrival",
+      "track:crank-that",
+      "track:darude-sandstorm",
+      "track:conflict",
+      "track:meet-the-flintstones",
+      "track:moshi-moshi",
+      "track:we-are-number-one",
+      "track:inspector-gadget-main-theme",
+      "track:bad-apple-feat-nomico",
+      "track:harlequin",
+      "track:waters-of-nazareth"
+    ],
+    "samples": [
+      "track:your-best-nightmare",
+      "track:crank-that",
+      "track:waters-of-nazareth"
+    ],
+    "nLeitmotifs": 12,
+    "wikiUrl": "https://hsmusic.wiki/track/your-darkest-canrival",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/le-canrivalry-album-is-mandatory/your-darkest-canrival.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=nIOZ2npWEsg",
+    "urlType": "youtube",
+    "day": "2024-10-21"
+  },
+  {
+    "slug": "a-farewell-to-arms",
+    "name": "A Farewell to Arms",
+    "artist": [
+      "artist:catboss"
+    ],
+    "albumName": "P[S]",
+    "leitmotifs": [
+      "track:skies-of-skaia",
+      "track:homestuck-anthem",
+      "track:theme",
+      "track:crystalanthemums",
+      "track:the-beginning-of-something-really-excellent",
+      "track:eden",
+      "track:courser",
+      "track:infinity-mechanism",
+      "track:sburban-jungle",
+      "track:another-jungle",
+      "track:frost-vol6",
+      "track:heir-conditioning",
+      "track:endless-climb",
+      "track:dissension-original",
+      "track:beatdown-strider-style",
+      "track:ohgodwhat",
+      "track:sarabande",
+      "track:ballad-of-awakening",
+      "track:upward-movement-dave-owns"
+    ],
+    "samples": [],
+    "nLeitmotifs": 19,
+    "wikiUrl": "https://hsmusic.wiki/track/a-farewell-to-arms",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/p-s/a-farewell-to-arms.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=6YT--cfMA4Q",
+    "urlType": "youtube",
+    "day": "2024-10-22"
+  },
+  {
+    "slug": "le-meemmixmix",
+    "name": "le meemmixmix",
+    "artist": [
+      "artist:bobthetacocat"
+    ],
+    "albumName": "le canrivalry: album is mandatory",
+    "leitmotifs": [
+      "track:le-canrival",
+      "track:crank-that",
+      "track:we-are-number-one",
+      "track:x-gon-give-it-to-ya",
+      "track:gangnam-style",
+      "track:conflict",
+      "track:gamebro-original-1990-mix",
+      "track:sburban-jungle",
+      "track:bangarang",
+      "track:gamegrl-original-1993-mix",
+      "track:inspector-gadget-main-theme",
+      "track:buffskull",
+      "track:bad-apple",
+      "track:the-nutshack-intro",
+      "track:moshi-moshi",
+      "track:upward-movement-dave-owns",
+      "track:science-blaster",
+      "track:without-me",
+      "track:MeGaLoVania",
+      "track:thyme-on-my-fries",
+      "track:soldier-game",
+      "track:trouble-busters",
+      "track:bonfire-childish-gambino",
+      "track:takyon-death-yon"
+    ],
+    "samples": [
+      "track:crank-that",
+      "track:x-gon-give-it-to-ya",
+      "track:gangnam-style",
+      "track:gamebro-original-1990-mix",
+      "track:gamegrl-original-1993-mix",
+      "track:buffskull",
+      "track:the-nutshack-intro",
+      "track:we-are-number-one",
+      "track:without-me",
+      "track:thyme-on-my-fries",
+      "track:soldier-game",
+      "track:trouble-busters",
+      "track:bonfire-childish-gambino",
+      "track:takyon-death-yon"
+    ],
+    "nLeitmotifs": 24,
+    "wikiUrl": "https://hsmusic.wiki/track/le-meemmixmix",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/le-canrivalry-album-is-mandatory/le-meemmixmix.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=2BShBPeoD7I",
+    "urlType": "youtube",
+    "day": "2024-10-23"
+  },
+  {
+    "slug": "voids-edge",
+    "name": "Voids Edge",
+    "artist": [
+      "artist:rowyn-berlan"
+    ],
+    "albumName": "The Nobles",
+    "leitmotifs": [
+      "track:lets-all-rock-the-heist",
+      "track:time-on-my-side",
+      "track:derse-dreamers",
+      "track:checkmate",
+      "track:aggrieve",
+      "track:on-apocalyptic-shores"
+    ],
+    "samples": [],
+    "nLeitmotifs": 6,
+    "wikiUrl": "https://hsmusic.wiki/track/voids-edge",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/the-nobles/voids-edge.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=0SfwniXWhhg",
+    "urlType": "youtube",
+    "day": "2024-10-24"
+  },
+  {
+    "slug": "davesprite-3",
+    "name": "Davesprite 3",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:davesprite",
+      "track:beatdown-strider-style",
+      "track:atomyk-ebonpyre"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/davesprite-3",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/davesprite-3.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=AwosPuFXgF0",
+    "urlType": "youtube",
+    "day": "2024-10-25"
+  },
+  {
+    "slug": "fighter-kanaya-full-version",
+    "name": "Fighter Kanaya (full version)",
+    "artist": [
+      "artist:nicholas-nakano"
+    ],
+    "albumName": "COOL AND NEW Volume 7: At the Price of $104.13",
+    "leitmotifs": [
+      "track:dance-of-thorns",
+      "track:darling-kanaya",
+      "track:cascade-beta"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/fighter-kanaya-full-version",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-7/fighter-kanaya-full-version.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=b7BsRkwS120",
+    "urlType": "youtube",
+    "day": "2024-10-26"
+  },
+  {
+    "slug": "homestuck-15th-anniversary-medley",
+    "name": "Homestuck 15th Anniversary Medley",
+    "artist": [
+      "artist:tsunderecat-tc"
+    ],
+    "albumName": "Homestuck 15th Anniversary Medley",
+    "leitmotifs": [
+      "track:sburban-jungle",
+      "track:terezis-theme",
+      "track:showtime-original-mix",
+      "track:beatdown-strider-style",
+      "track:MeGaLoVania",
+      "track:spiders-claw",
+      "track:crystalanthemums",
+      "track:the-blind-prophet",
+      "track:penumbra-phantasm",
+      "track:wood-man-stage",
+      "track:rex-duodecim-angelus",
+      "track:english",
+      "track:liquid-negrocity",
+      "track:bl1nd-just1c3-1nv3st1g4t1on",
+      "track:pursuit-corner-the-culprit",
+      "track:doctor",
+      "track:your-best-friend",
+      "track:walls-covered-in-blood",
+      "track:dogsong",
+      "track:trickster-mode-blast-off",
+      "track:upward-movement-dave-owns",
+      "track:terezi-owns",
+      "track:heir-conditioning",
+      "track:patient",
+      "track:boss-battle-kirby-squeak-squad",
+      "track:umbral-ultimatum",
+      "track:dance-of-thorns",
+      "track:purple-tyrant",
+      "track:no-more-nuzzles",
+      "track:spider8ite",
+      "track:sunsetter-ska",
+      "track:megalovania-undertale",
+      "track:horschestra",
+      "track:love-you-feferis-theme",
+      "track:eridans-theme",
+      "track:hate-you",
+      "track:homestuck-anthem",
+      "track:moonsetter",
+      "track:im-a-member-of-the-midnight-crew",
+      "track:how-do-i-live",
+      "track:heir-of-grief",
+      "track:crustacean"
+    ],
+    "samples": [
+      "track:megalovania-ebhh",
+      "track:terezis-theme",
+      "track:pursuit-corner-the-culprit",
+      "track:sunsetter-ska",
+      "track:megalovania-undertale",
+      "track:moonsetter"
+    ],
+    "nLeitmotifs": 42,
+    "wikiUrl": "https://hsmusic.wiki/track/homestuck-15th-anniversary-medley",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-15th-anniversary-medley/homestuck-15th-anniversary-medley.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=4C2Ay3KPa5s",
+    "urlType": "youtube",
+    "day": "2024-10-27"
+  },
+  {
+    "slug": "epilogue-canmt",
+    "name": "Epilogue",
+    "artist": [
+      "artist:cecily-renns"
+    ],
+    "albumName": "cool and new volume 3",
+    "leitmotifs": [
+      "track:cascante",
+      "track:homestuck-anthem",
+      "track:sburban-jungle",
+      "track:rollercoaster-tycoon-theme",
+      "track:unintentional-touhou",
+      "track:rain-cecily-renns",
+      "track:the-samedigital-boy-reprise"
+    ],
+    "samples": [
+      "track:cascante"
+    ],
+    "nLeitmotifs": 7,
+    "wikiUrl": "https://hsmusic.wiki/track/epilogue-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-volume-3/epilogue-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/z-U3doEX0MQ",
+    "urlType": "youtube",
+    "day": "2024-10-28"
+  },
+  {
+    "slug": "broken-dreams-the-nobles",
+    "name": "Broken Dreams",
+    "artist": [
+      "artist:rowyn-berlan"
+    ],
+    "albumName": "The Nobles",
+    "leitmotifs": [
+      "track:ruins",
+      "track:skaian-shrapnel",
+      "track:time-on-my-side",
+      "track:liquid-negrocity"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/broken-dreams-the-nobles",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/the-nobles/broken-dreams-the-nobles.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=n_TA9HnLhrI",
+    "urlType": "youtube",
+    "day": "2024-10-29"
+  },
+  {
+    "slug": "black-heart-green-dress",
+    "name": "Black Heart, Green Dress",
+    "artist": [
+      "artist:psithurist"
+    ],
+    "albumName": "Ancestral",
+    "leitmotifs": [
+      "track:amen-brother",
+      "track:limelight",
+      "track:temporal-shenanigans",
+      "track:english"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/black-heart-green-dress",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/ancestral/black-heart-green-dress.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/0A9JljvOJEI",
+    "urlType": "youtube",
+    "day": "2024-10-30"
+  },
+  {
+    "slug": "cascading-towards-the-end",
+    "name": "Cascading Towards the End",
+    "artist": [
+      "artist:rainy"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:flare",
+      "track:liquid-negrocity",
+      "track:cascade-beta"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/cascading-towards-the-end",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/cascading-towards-the-end.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=0USfsJQZdHQ",
+    "urlType": "youtube",
+    "day": "2024-10-31"
+  },
+  {
+    "slug": "the-puppetmaster-friendsymphony",
+    "name": "The Puppetmaster",
+    "artist": [
+      "artist:gryotharian"
+    ],
+    "albumName": "FriendSymphony",
+    "leitmotifs": [
+      "track:worst-end",
+      "track:the-final-clowntdown",
+      "track:english",
+      "track:carne-vale"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/the-puppetmaster-friendsymphony",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/friendsymphony/the-puppetmaster-friendsymphony.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=n6Py4Vgj-bo",
+    "urlType": "youtube",
+    "day": "2024-11-01"
+  },
+  {
+    "slug": "between-mediums",
+    "name": "Between Mediums",
+    "artist": [
+      "artist:rainy"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:freefall",
+      "track:cascade-beta",
+      "track:interstellar-p-s"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/between-mediums",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/between-mediums.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=KRv70kGqEgI",
+    "urlType": "youtube",
+    "day": "2024-11-02"
+  },
+  {
+    "slug": "8r8k-the-8ottle",
+    "name": "8r8k the 8ottle",
+    "artist": [
+      "artist:apatheticpianist",
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes",
+    "leitmotifs": [
+      "track:sburban-jungle",
+      "track:showtime-original-mix",
+      "track:endless-climb",
+      "track:aggrieve",
+      "track:sunsetter",
+      "track:beatdown-strider-style",
+      "track:mutiny",
+      "track:lotus",
+      "track:liquid-negrocity",
+      "track:courser",
+      "track:cascade-beta",
+      "track:spiders-claw",
+      "track:doctor",
+      "track:penumbra-phantasm",
+      "track:crystalanthemums",
+      "track:upward-movement-dave-owns",
+      "track:another-jungle"
+    ],
+    "samples": [],
+    "nLeitmotifs": 17,
+    "wikiUrl": "https://hsmusic.wiki/track/8r8k-the-8ottle",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap/8r8k-the-8ottle.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=1VhMGErwclI",
+    "urlType": "youtube",
+    "day": "2024-11-03"
+  },
+  {
+    "slug": "troublemaker-tango",
+    "name": "Troublemaker Tango",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:spiders-claw",
+      "track:escapade-desynced",
+      "track:crystalanthemums",
+      "track:courser",
+      "track:versus",
+      "track:upward-movement-dave-owns",
+      "track:beatdown-strider-style",
+      "track:artificial-extortion",
+      "track:deception-paradox-music-team",
+      "track:penumbra-phantasm",
+      "track:umbral-ultimatum"
+    ],
+    "samples": [
+      "track:cith-beatdown-strider-in-the-house"
+    ],
+    "nLeitmotifs": 11,
+    "wikiUrl": "https://hsmusic.wiki/track/troublemaker-tango",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/troublemaker-tango.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=ESS95sJff2M",
+    "urlType": "youtube",
+    "day": "2024-11-04"
+  },
+  {
+    "slug": "cue-the-curtains",
+    "name": "Cue the Curtains",
+    "artist": [
+      "artist:apatheticpianist",
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes",
+    "leitmotifs": [
+      "track:showtime-original-mix",
+      "track:three-in-the-morning",
+      "track:flare",
+      "track:vriskas-theme",
+      "track:terezis-theme",
+      "track:upward-movement-dave-owns",
+      "track:time-on-my-side",
+      "track:chorale-for-jaspers",
+      "track:rex-duodecim-angelus",
+      "track:heir-conditioning",
+      "track:penumbra-phantasm",
+      "track:even-in-death",
+      "track:cascade-beta"
+    ],
+    "samples": [],
+    "nLeitmotifs": 13,
+    "wikiUrl": "https://hsmusic.wiki/track/cue-the-curtains",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap/cue-the-curtains.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=mBcIMWZULF4",
+    "urlType": "youtube",
+    "day": "2024-11-05"
+  },
+  {
+    "slug": "tycoon-canmt",
+    "name": "Tycoon",
+    "artist": [
+      "artist:noisemaker"
+    ],
+    "albumName": "cool and new voulem.1",
+    "leitmotifs": [
+      "track:rex-duodecim-angelus",
+      "track:beatdown-strider-style",
+      "track:MeGaLoVania",
+      "track:descend",
+      "track:rollercoaster-tycoon-theme"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/tycoon-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cool-and-new-voulem1/tycoon-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=GuCEVLHyvBw",
+    "urlType": "youtube",
+    "day": "2024-11-06"
+  },
+  {
+    "slug": "fight-for-the-future",
+    "name": "Fight For the Future",
+    "artist": [
+      "artist:rainy"
+    ],
+    "albumName": "On the Rox",
+    "leitmotifs": [
+      "track:rex-duodecim-angelus",
+      "track:showtime-original-mix",
+      "track:on-apocalyptic-shores",
+      "track:cascade-beta",
+      "track:aggrieve",
+      "track:darling-kanaya",
+      "track:oppa-toby-style",
+      "track:freefall",
+      "track:ugly-betty"
+    ],
+    "samples": [],
+    "nLeitmotifs": 9,
+    "wikiUrl": "https://hsmusic.wiki/track/fight-for-the-future",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/on-the-rox/fight-for-the-future.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/VwZYHC7jank",
+    "urlType": "youtube",
+    "day": "2024-11-07"
+  },
+  {
+    "slug": "collide-colors-mayhem-vol-1",
+    "name": "Collide",
+    "artist": [
+      "artist:bb-panzu"
+    ],
+    "albumName": "FNF: COLORS & MAYHEM Vol. 1",
+    "leitmotifs": [
+      "track:oppa-toby-style",
+      "track:pumpkin-party-in-sea-hitlers-water-apocalypse",
+      "track:cascade-beta",
+      "track:2beep2meow",
+      "track:beatdown-strider-style",
+      "track:t-godhead",
+      "track:liquid-negrocity",
+      "track:vriska-song-new",
+      "track:just1c3",
+      "track:lewd-doodle",
+      "track:english",
+      "track:sunsetter",
+      "track:grimdark-colors-mayhem-vol-1"
+    ],
+    "samples": [],
+    "nLeitmotifs": 13,
+    "wikiUrl": "https://hsmusic.wiki/track/collide-colors-mayhem-vol-1",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/fnf-colors-and-mayhem-vol-1/collide-colors-mayhem-vol-1.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/SjBeBiFkoFU",
+    "urlType": "youtube",
+    "day": "2024-11-08"
+  },
+  {
+    "slug": "blue-blood-group",
+    "name": "Blue Blood Group",
+    "artist": [
+      "artist:mark-j-hadley"
+    ],
+    "albumName": "P[S]",
+    "leitmotifs": [
+      "track:spiders-claw",
+      "track:vriskas-theme",
+      "track:horschestra"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/blue-blood-group",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/p-s/blue-blood-group.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=8MNfr-CC56E",
+    "urlType": "youtube",
+    "day": "2024-11-09"
+  },
+  {
+    "slug": "the-puppet-master-cosmic-caretakers",
+    "name": "The Puppet Master",
+    "artist": [
+      "artist:splitsuns"
+    ],
+    "albumName": "Cosmic Caretakers",
+    "leitmotifs": [
+      "track:english",
+      "track:afraid-of-the-darko",
+      "track:aggrieve",
+      "track:beatdown-strider-style",
+      "track:dissension-original",
+      "track:showtime-original-mix"
+    ],
+    "samples": [],
+    "nLeitmotifs": 6,
+    "wikiUrl": "https://hsmusic.wiki/track/the-puppet-master-cosmic-caretakers",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/cosmic-caretakers/the-puppet-master-cosmic-caretakers.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/hGnSgIGK6HM",
+    "urlType": "youtube",
+    "day": "2024-11-10"
+  },
+  {
+    "slug": "rectify-lofam2",
+    "name": "Rectify",
+    "artist": [
+      "artist:thomas-ibarra"
+    ],
+    "albumName": "Land of Fans and Music 2",
+    "leitmotifs": [
+      "track:liquid-negrocity",
+      "track:atomyk-ebonpyre",
+      "track:showtime-piano-refrain"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/rectify-lofam2",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam2/rectify-lofam2.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/GTtM6ZIyJ7Q",
+    "urlType": "youtube",
+    "day": "2024-11-11"
+  },
+  {
+    "slug": "bad-mp3",
+    "name": "bad.mp3",
+    "artist": [
+      "artist:noisemaker"
+    ],
+    "albumName": "_",
+    "leitmotifs": [
+      "track:rex-duodecim-angelus",
+      "track:english",
+      "track:black",
+      "track:rollercoaster-tycoon-theme",
+      "track:sunslammer",
+      "track:MeGaLoVania"
+    ],
+    "samples": [
+      "track:gamebro-original-1990-mix"
+    ],
+    "nLeitmotifs": 6,
+    "wikiUrl": "https://hsmusic.wiki/track/bad-mp3",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/_/bad-mp3.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/qjoE3pAgGXM",
+    "urlType": "youtube",
+    "day": "2024-11-12"
+  },
+  {
+    "slug": "dirge-dreamers-diarchy",
+    "name": "Dirge",
+    "artist": [
+      "artist:circlejourney"
+    ],
+    "albumName": "Dreamer's Diarchy",
+    "leitmotifs": [
+      "track:derse-dreamers",
+      "track:showtime-original-mix",
+      "track:even-in-death"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/dirge-dreamers-diarchy",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/dreamers-diarchy/dirge-dreamers-diarchy.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=chhay34e2Qs",
+    "urlType": "youtube",
+    "day": "2024-11-13"
+  },
+  {
+    "slug": "leftovers-ancestral",
+    "name": "Leftovers",
+    "artist": [
+      "artist:psithurist"
+    ],
+    "albumName": "Ancestral",
+    "leitmotifs": [
+      "track:walls-covered-in-blood",
+      "track:olive-scribe",
+      "track:flare"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/leftovers-ancestral",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/ancestral/leftovers-ancestral.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/fQsujVTQ3e8",
+    "urlType": "youtube",
+    "day": "2024-11-14"
+  },
+  {
+    "slug": "slammed-8y-the-sun",
+    "name": "Slammed 8y the Sun!!!!!!!!",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes",
+    "leitmotifs": [
+      "track:killed-by-br8k-spider",
+      "track:sunslammer",
+      "track:vriskas-theme"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/slammed-8y-the-sun",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap/slammed-8y-the-sun.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=kwsKtNHcAXI",
+    "urlType": "youtube",
+    "day": "2024-11-15"
+  },
+  {
+    "slug": "prismatic-season",
+    "name": "Prismatic Season",
+    "artist": [
+      "artist:beau-brian"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:crystalanthemums",
+      "track:explore",
+      "track:penumbra-phantasm"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/prismatic-season",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/prismatic-season.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=Q3Q0Z6TgNks",
+    "urlType": "youtube",
+    "day": "2024-11-16"
+  },
+  {
+    "slug": "1nf1n1t3-t34l",
+    "name": "1NF1N1T3 T34L",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Alternate Hues and Melodies",
+    "leitmotifs": [
+      "track:infinite-blue",
+      "track:bl1nd-just1c3-1nv3st1g4t1on",
+      "track:terezis-theme"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/1nf1n1t3-t34l",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/alternate-hues-and-melodies/1nf1n1t3-t34l.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/WqcUmngM2nM",
+    "urlType": "youtube",
+    "day": "2024-11-17"
+  },
+  {
+    "slug": "umorah",
+    "name": "uMORAH",
+    "artist": [
+      "artist:bb-panzu"
+    ],
+    "albumName": "FNF: COLORS & MAYHEM Vol. 1",
+    "leitmotifs": [
+      "track:vriska-song-new",
+      "track:spiders-claw",
+      "track:killed-by-br8k-spider"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/umorah",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/fnf-colors-and-mayhem-vol-1/umorah.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://soundcloud.com/bbpanzus-alt-account/umorah",
+    "urlType": "soundcloud",
+    "day": "2024-11-18"
+  },
+  {
+    "slug": "dumbass-terminal",
+    "name": "Dumbass Terminal",
+    "artist": [
+      "artist:tee-vee"
+    ],
+    "albumName": "FriendSymphony",
+    "leitmotifs": [
+      "track:knifes-edge",
+      "track:arachnofunkia",
+      "track:time-on-my-side",
+      "track:killed-by-br8k-spider",
+      "track:spider8ite"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/dumbass-terminal",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/friendsymphony/dumbass-terminal.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=pEfkto01GK8",
+    "urlType": "youtube",
+    "day": "2024-11-19"
+  },
+  {
+    "slug": "marvelous-marauder",
+    "name": "Marvelous Marauder",
+    "artist": [
+      "artist:rainy",
+      "artist:tee-vee"
+    ],
+    "albumName": "FriendSymphony",
+    "leitmotifs": [
+      "track:courser",
+      "track:sburban-jungle",
+      "track:umbral-ultimatum"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/marvelous-marauder",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/friendsymphony/marvelous-marauder.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=U1-BT0mClUE",
+    "urlType": "youtube",
+    "day": "2024-11-20"
+  },
+  {
+    "slug": "everlasting-lofam4",
+    "name": "Everlasting",
+    "artist": [
+      "artist:joe-ouellet"
+    ],
+    "albumName": "Land of Fans and Music 4",
+    "leitmotifs": [
+      "track:sburban-jungle",
+      "track:doctor",
+      "track:endless-climb",
+      "track:even-in-death"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/everlasting-lofam4",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam4/everlasting-lofam4.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/oDwdsffF2yk",
+    "urlType": "youtube",
+    "day": "2024-11-21"
+  },
+  {
+    "slug": "death-by-the-time-to-gardenlovania-bassline",
+    "name": "Death by the Time to Gardenlovania (Bassline)",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes",
+    "leitmotifs": [
+      "track:death-by-glamour",
+      "track:time-on-my-side",
+      "track:gardener",
+      "track:megalovania-ebhh",
+      "track:verdancy-bassline"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/death-by-the-time-to-gardenlovania-bassline",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap/death-by-the-time-to-gardenlovania-bassline.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=H2CbGnaRI8c",
+    "urlType": "youtube",
+    "day": "2024-11-22"
+  },
+  {
+    "slug": "11-11-11-what-do-you-suppose-the-name-on-the-envelopes-will-be",
+    "name": "[11/11/11] What do you suppose the name on the envelopes will be?",
+    "artist": [
+      "artist:maukustus"
+    ],
+    "albumName": "Homestuck Anniversary Act 6",
+    "leitmotifs": [
+      "track:time-on-my-side",
+      "track:five-four-stress",
+      "track:dissension-original",
+      "track:another-jungle",
+      "track:ruins-with-strings",
+      "track:homestuck-anthem",
+      "track:carne-vale",
+      "track:showtime-original-mix",
+      "track:pumpkin-party-in-sea-hitlers-water-apocalypse",
+      "track:chorale-for-jaspers",
+      "track:hate-you",
+      "track:sburban-jungle",
+      "track:liquid-negrocity"
+    ],
+    "samples": [
+      "track:amen-brother"
+    ],
+    "nLeitmotifs": 13,
+    "wikiUrl": "https://hsmusic.wiki/track/11-11-11-what-do-you-suppose-the-name-on-the-envelopes-will-be",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-anniversary-act-6/11-11-11-what-do-you-suppose-the-name-on-the-envelopes-will-be.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://soundcloud.com/maukustus/homestuck-anniversary-act-6-update",
+    "urlType": "soundcloud",
+    "day": "2024-11-23"
+  },
+  {
+    "slug": "a-happy-ending",
+    "name": "A Happy Ending",
+    "artist": [
+      "artist:rainy"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:mother-piano",
+      "track:crystalanthemums",
+      "track:candles-and-clockwork",
+      "track:endless-climb",
+      "track:clockwork-apocalypse",
+      "track:doctor"
+    ],
+    "samples": [],
+    "nLeitmotifs": 6,
+    "wikiUrl": "https://hsmusic.wiki/track/a-happy-ending",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/a-happy-ending.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=xsg9sPO4Kl4",
+    "urlType": "youtube",
+    "day": "2024-11-24"
+  },
+  {
+    "slug": "fetch-the-bullet",
+    "name": "Fetch The Bullet!",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes",
+    "leitmotifs": [
+      "track:mutiny",
+      "track:beatdown-strider-style",
+      "track:MeGaLoVania"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/fetch-the-bullet",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap/fetch-the-bullet.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=9GIsMmaBTUg",
+    "urlType": "youtube",
+    "day": "2024-11-25"
+  },
+  {
+    "slug": "garrystuck",
+    "name": "Garrystuck",
+    "artist": [
+      "artist:jukdo"
+    ],
+    "albumName": "Stuck funkin DEMO ost",
+    "leitmotifs": [
+      "track:no-more-nuzzles",
+      "track:MeGaLoVania",
+      "track:beatdown-strider-style"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/garrystuck",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stuck-funkin-demo-ost/garrystuck.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://soundcloud.com/fnf-stuck-funking-account/garrystuck",
+    "urlType": "soundcloud",
+    "day": "2024-11-26"
+  },
+  {
+    "slug": "ringleader-canmt",
+    "name": "Ringleader",
+    "artist": [
+      "artist:discfortune"
+    ],
+    "albumName": "Intermishin",
+    "leitmotifs": [
+      "track:english",
+      "track:liquid-negrocity",
+      "track:lets-all-rock-the-heist"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/ringleader-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/intermishin/ringleader-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/G4_UZUyhdmw",
+    "urlType": "youtube",
+    "day": "2024-11-27"
+  },
+  {
+    "slug": "wind-awakening",
+    "name": "Wind Awakening",
+    "artist": [
+      "artist:asian"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:doctor",
+      "track:savior-of-the-waking-world",
+      "track:penumbra-phantasm"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/wind-awakening",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/wind-awakening.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=tP8Cypu9O4s",
+    "urlType": "youtube",
+    "day": "2024-11-28"
+  },
+  {
+    "slug": "soft-as-the-clouds",
+    "name": "Soft as the Clouds",
+    "artist": [
+      "artist:warxtron"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:softly",
+      "track:softbit",
+      "track:the-beginning-of-something-really-excellent",
+      "track:penumbra-phantasm",
+      "track:sunsetter",
+      "track:spiders-claw",
+      "track:dissension-original"
+    ],
+    "samples": [],
+    "nLeitmotifs": 7,
+    "wikiUrl": "https://hsmusic.wiki/track/soft-as-the-clouds",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/soft-as-the-clouds.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=Bokb9cB7Qlk",
+    "urlType": "youtube",
+    "day": "2024-11-29"
+  },
+  {
+    "slug": "04-13-09-today-is-this-young-mans-birthday",
+    "name": "[04/13/09] Today is this young man's birthday.",
+    "artist": [
+      "artist:maukustus"
+    ],
+    "albumName": "Homestuck Anniversary (excl. Act 6)",
+    "leitmotifs": [
+      "track:showtime-original-mix",
+      "track:english",
+      "track:rex-duodecim-angelus",
+      "track:umbral-ultimatum",
+      "track:oppa-toby-style",
+      "track:crystalanthemums",
+      "track:sunsetter",
+      "track:dissension-original",
+      "track:MeGaLoVania",
+      "track:beatdown-strider-style",
+      "track:versus",
+      "track:doctor",
+      "track:black-rose-green-sun",
+      "track:endless-climb"
+    ],
+    "samples": [
+      "track:amen-brother"
+    ],
+    "nLeitmotifs": 14,
+    "wikiUrl": "https://hsmusic.wiki/track/04-13-09-today-is-this-young-mans-birthday",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/homestuck-anniversary-excl-act-6/04-13-09-today-is-this-young-mans-birthday.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://soundcloud.com/maukustus/04-13-09-today-is-this-young",
+    "urlType": "soundcloud",
+    "day": "2024-11-30"
+  },
+  {
+    "slug": "24-7-lo-fi-anime-beats-to-question-your-sexuality-to",
+    "name": "24/7 lo fi anime beats to question your sexuality to",
+    "artist": [
+      "artist:james-roach"
+    ],
+    "albumName": "Pesterquest Soundtrack",
+    "leitmotifs": [
+      "track:2chords",
+      "track:upward-movement-dave-owns",
+      "track:sburban-jungle"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/24-7-lo-fi-anime-beats-to-question-your-sexuality-to",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/pesterquest-soundtrack/24-7-lo-fi-anime-beats-to-question-your-sexuality-to.small.jpg",
+    "isOfficial": true,
+    "isFandom": false,
+    "url": "https://www.youtube.com/watch?v=0I2ufAhRbf0",
+    "urlType": "youtube",
+    "day": "2024-12-01"
+  },
+  {
+    "slug": "daydreamer-lofam4",
+    "name": "Daydreamer",
+    "artist": [
+      "artist:electric-lantern"
+    ],
+    "albumName": "Land of Fans and Music 4",
+    "leitmotifs": [
+      "track:old-secret",
+      "track:spider-dance",
+      "track:atomyk-ebonpyre",
+      "track:derse-dreamers"
+    ],
+    "samples": [],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/daydreamer-lofam4",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam4/daydreamer-lofam4.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/2wqnd4OaYvk",
+    "urlType": "youtube",
+    "day": "2024-12-02"
+  },
+  {
+    "slug": "sunsetter-x",
+    "name": "Sunsetter X",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:sunsetter",
+      "track:beatdown-strider-style",
+      "track:davesprite",
+      "track:versus",
+      "track:atomyk-ebonpyre"
+    ],
+    "samples": [],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/sunsetter-x",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/sunsetter-x.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=Y0sBGNWIJDQ",
+    "urlType": "youtube",
+    "day": "2024-12-03"
+  },
+  {
+    "slug": "solicide",
+    "name": "Solicide",
+    "artist": [
+      "artist:caelan-kier"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes",
+    "leitmotifs": [
+      "track:flare",
+      "track:beatdown-strider-style",
+      "track:time-on-my-side",
+      "track:aggrieve",
+      "track:upward-movement-dave-owns"
+    ],
+    "samples": [
+      "track:derse-dreamers"
+    ],
+    "nLeitmotifs": 5,
+    "wikiUrl": "https://hsmusic.wiki/track/solicide",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap/solicide.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=MUUpyZPWbew",
+    "urlType": "youtube",
+    "day": "2024-12-04"
+  },
+  {
+    "slug": "clockbreaker-lofam",
+    "name": "Clockbreaker",
+    "artist": [
+      "artist:mal-mcgannon"
+    ],
+    "albumName": "Land of Fans and Music",
+    "leitmotifs": [
+      "track:the-broken-clock",
+      "track:crustacean",
+      "track:sunsetter"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/clockbreaker-lofam",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam/clockbreaker-lofam.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/ZKhzNLEXlAI",
+    "urlType": "youtube",
+    "day": "2024-12-05"
+  },
+  {
+    "slug": "alive",
+    "name": "ALIVE",
+    "artist": [
+      "artist:heir-of-puns"
+    ],
+    "albumName": "Land of Fans and Music 5",
+    "leitmotifs": [
+      "track:temporal-shenanigans",
+      "track:old-secret",
+      "track:rust-apocalypse",
+      "track:MeGaLoVania"
+    ],
+    "samples": [
+      "track:temporal-shenanigans"
+    ],
+    "nLeitmotifs": 4,
+    "wikiUrl": "https://hsmusic.wiki/track/alive",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam5/alive.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=C1BsYfejnEI",
+    "urlType": "youtube",
+    "day": "2024-12-06"
+  },
+  {
+    "slug": "le-meemmixmix-instrumental",
+    "name": "le meemmixmix (Instrumental)",
+    "artist": [
+      "artist:bobthetacocat"
+    ],
+    "albumName": "le canrivalry: album is mandatory",
+    "leitmotifs": [
+      "track:le-canrival",
+      "track:meet-the-flintstones",
+      "track:we-are-number-one",
+      "track:inspector-gadget-main-theme",
+      "track:bad-apple",
+      "track:moshi-moshi",
+      "track:science-blaster",
+      "track:MeGaLoVania"
+    ],
+    "samples": [],
+    "nLeitmotifs": 8,
+    "wikiUrl": "https://hsmusic.wiki/track/le-meemmixmix-instrumental",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/le-canrivalry-album-is-mandatory/le-meemmixmix-instrumental.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=whr9RpdoZVI",
+    "urlType": "youtube",
+    "day": "2024-12-07"
+  },
+  {
+    "slug": "fireflies-and-clockwork",
+    "name": "Fireflies and Clockwork",
+    "artist": [
+      "artist:apatheticpianist"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:candles-and-clockwork",
+      "track:beatdown-strider-style",
+      "track:doctor",
+      "track:upward-movement-dave-owns",
+      "track:penumbra-phantasm",
+      "track:showtime-original-mix"
+    ],
+    "samples": [],
+    "nLeitmotifs": 6,
+    "wikiUrl": "https://hsmusic.wiki/track/fireflies-and-clockwork",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/fireflies-and-clockwork.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=f6NQCrX6yjI",
+    "urlType": "youtube",
+    "day": "2024-12-08"
+  },
+  {
+    "slug": "chorale-for-rose",
+    "name": "Chorale for Rose",
+    "artist": [
+      "artist:jacobpolarbearboy"
+    ],
+    "albumName": "Project [S] OST - Vol. 1",
+    "leitmotifs": [
+      "track:chorale-for-jaspers",
+      "track:aggrieve",
+      "track:derse-dreamers"
+    ],
+    "samples": [
+      "track:mario-paint-meow"
+    ],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/chorale-for-rose",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/project-s-ost-vol-1/chorale-for-rose.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=M40XJ9lm4LM",
+    "urlType": "youtube",
+    "day": "2024-12-09"
+  },
+  {
+    "slug": "pop-pills-get-girls",
+    "name": "Pop Pills Get Girls",
+    "artist": [
+      "artist:scorpyus"
+    ],
+    "albumName": "FriendSymphony",
+    "leitmotifs": [
+      "track:killed-by-br8k-spider",
+      "track:MeGaLoVania",
+      "track:superego"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/pop-pills-get-girls",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/friendsymphony/pop-pills-get-girls.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=kwSOd0kN41A",
+    "urlType": "youtube",
+    "day": "2024-12-10"
+  },
+  {
+    "slug": "ascend-x10-combo",
+    "name": "Ascend x10 Combo",
+    "artist": [
+      "artist:pascal-van-den-bos"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:doctor",
+      "track:penumbra-phantasm",
+      "track:sunsetter",
+      "track:time-on-my-side",
+      "track:beatdown-strider-style",
+      "track:liquid-negrocity",
+      "track:cascade-beta",
+      "track:derse-dreamers",
+      "track:sburban-jungle"
+    ],
+    "samples": [],
+    "nLeitmotifs": 9,
+    "wikiUrl": "https://hsmusic.wiki/track/ascend-x10-combo",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/ascend-x10-combo.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=U5SjchVabw4",
+    "urlType": "youtube",
+    "day": "2024-12-11"
+  },
+  {
+    "slug": "heirflow",
+    "name": "Heirflow",
+    "artist": [
+      "artist:rowyn-berlan"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 3",
+    "leitmotifs": [
+      "track:doctor",
+      "track:heir-transparent",
+      "track:heir-conditioning"
+    ],
+    "samples": [
+      "track:amen-brother"
+    ],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/heirflow",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap3/heirflow.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=aqZWPu_mOqw",
+    "urlType": "youtube",
+    "day": "2024-12-12"
+  },
+  {
+    "slug": "play-the-rain",
+    "name": "Play the Rain",
+    "artist": [
+      "artist:monobrow"
+    ],
+    "albumName": "Stable Time Loops and Paradoxes 2",
+    "leitmotifs": [
+      "track:aggrieve",
+      "track:aggrieve-violin-refrain",
+      "track:chorale-for-jaspers",
+      "track:crystal-castle-final",
+      "track:roses-death",
+      "track:endless-climb",
+      "track:doctor",
+      "track:lotus-bloom",
+      "track:dance-of-thorns",
+      "track:rain"
+    ],
+    "samples": [],
+    "nLeitmotifs": 10,
+    "wikiUrl": "https://hsmusic.wiki/track/play-the-rain",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/stlap2/play-the-rain.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=5f6asOx076A",
+    "urlType": "youtube",
+    "day": "2024-12-13"
+  },
+  {
+    "slug": "arise-canmt",
+    "name": "Arise",
+    "artist": [
+      "artist:wights-end"
+    ],
+    "albumName": "V8\ufe0flu\u264fe",
+    "leitmotifs": [
+      "track:misery-loves-company",
+      "track:the-nutshack-intro",
+      "track:rollercoaster-tycoon-theme",
+      "track:MeGaLoVania",
+      "track:waters-of-nazareth",
+      "track:conflict",
+      "track:bangarang",
+      "track:hopes-and-dreams",
+      "track:unintentional-touhou",
+      "track:midnight-suffer",
+      "track:crank-that",
+      "track:michael-bowman-remix",
+      "track:final-savage-all-voice-ska-punk-flavor",
+      "track:final-savage-sister-flandre-s",
+      "track:this-saturnine-existence",
+      "track:moshi-moshi",
+      "track:first-contact",
+      "track:sweet-haunt-and-hella-bass",
+      "track:focus-canwc-vol-7",
+      "track:meet-the-flintstones",
+      "track:snow-halation",
+      "track:fruity-pebbles-jingle",
+      "track:sad-jhon-full"
+    ],
+    "samples": [
+      "track:waters-of-nazareth",
+      "track:hopes-and-dreams",
+      "track:michael-bowman-remix",
+      "track:final-savage-all-voice-ska-punk-flavor",
+      "track:bangarang",
+      "track:sad-jhon-full"
+    ],
+    "nLeitmotifs": 23,
+    "wikiUrl": "https://hsmusic.wiki/track/arise-canmt",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/v8lume/arise-canmt.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://youtu.be/fWG4kXtGAYA",
+    "urlType": "youtube",
+    "day": "2024-12-14"
+  },
+  {
+    "slug": "movement-lofam5a2",
+    "name": "Movement",
+    "artist": [
+      "artist:morris"
+    ],
+    "albumName": "Land of Fans and Music 5 Act 2",
+    "leitmotifs": [
+      "track:sburban-jungle",
+      "track:dawn-of-man",
+      "track:cascade-beta"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/movement-lofam5a2",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/lofam5a2/movement-lofam5a2.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=GHnv4Bar9I0",
+    "urlType": "youtube",
+    "day": "2024-12-15"
+  },
+  {
+    "slug": "abscond-time",
+    "name": "Abscond Time",
+    "artist": [
+      "artist:randohorn"
+    ],
+    "albumName": "Jade Tower",
+    "leitmotifs": [
+      "track:rex-duodecim-angelus",
+      "track:its-pizza-time",
+      "track:aggrieve"
+    ],
+    "samples": [
+      "track:yall-ready-to-get-funky-acapella"
+    ],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/abscond-time",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/jade-tower/abscond-time.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=-Qpl72PNpbk",
+    "urlType": "youtube",
+    "day": "2024-12-16"
+  },
+  {
+    "slug": "run-stab-run-jade-tower",
+    "name": "Run-Stab-Run",
+    "artist": [
+      "artist:yoshifan33"
+    ],
+    "albumName": "Jade Tower",
+    "leitmotifs": [
+      "track:darling-kanaya",
+      "track:abscond-time",
+      "track:sunsetter",
+      "track:the-death-that-i-deservioli",
+      "track:its-pizza-time",
+      "track:walk-stab-walk-rande"
+    ],
+    "samples": [
+      "track:sunslammer",
+      "track:yall-ready-to-get-funky-acapella"
+    ],
+    "nLeitmotifs": 6,
+    "wikiUrl": "https://hsmusic.wiki/track/run-stab-run-jade-tower",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/jade-tower/run-stab-run-jade-tower.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=vawZ2hqYxpM",
+    "urlType": "youtube",
+    "day": "2024-12-17"
+  },
+  {
+    "slug": "center-stage",
+    "name": "Center Stage",
+    "artist": [
+      "artist:rainy"
+    ],
+    "albumName": "BeforusBound",
+    "leitmotifs": [
+      "track:spider8ite",
+      "track:carne-vale",
+      "track:hate-you"
+    ],
+    "samples": [],
+    "nLeitmotifs": 3,
+    "wikiUrl": "https://hsmusic.wiki/track/center-stage",
+    "imageUrl": "https://hsmusic.wiki/media/album-art/beforusbound/center-stage.small.jpg",
+    "isOfficial": false,
+    "isFandom": true,
+    "url": "https://www.youtube.com/watch?v=mPeoGtCzqnk",
+    "urlType": "youtube",
+    "day": "2024-12-18"
   }
 ]
