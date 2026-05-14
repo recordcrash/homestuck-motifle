@@ -31,7 +31,7 @@
 
 	<h2>Contact</h2>
 	<p>
-		Have questions, feedback, or just want to chat about Homestuck music? Reach out to other players and me at the <a href="https://discord.gg/homestuck">Homestuck Discord</a>'s Heardle/Motifle thread on the #mspa-forums channel.
+		Have questions, feedback, or just want to chat about Homestuck music? Reach out to other players and me at the <a href="https://discord.homestuck.net">Homestuck Discord</a>'s Heardle/Motifle thread on the #mspa-forums channel.
 	</p>
 
 	<h2>Support</h2>

@@ -32,7 +32,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://discord.gg/homestuck" target="_blank">
+		<a href="https://discord.homestuck.net" target="_blank">
 			<img src={discord} alt="Discord" />
 		</a>
 	</div>

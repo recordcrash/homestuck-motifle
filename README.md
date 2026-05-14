@@ -56,4 +56,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Support
 
-Love what we're doing? Share the project with your friends and like-minded enthusiasts. If you have feedback or questions, join our conversation on the [Homestuck Discord](https://discord.gg/homestuck)!
+Love what we're doing? Share the project with your friends and like-minded enthusiasts. If you have feedback or questions, join our conversation on the [Homestuck Discord](https://discord.homestuck.net)!

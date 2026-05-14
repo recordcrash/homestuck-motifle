@@ -25,7 +25,7 @@
     </p>
 
     <p>
-        Once the game ends, songs are revealed along with links to the <a href="https://hsmusic.wiki">Homestuck Music Wiki</a>. Share your scores on your favorite social networks, by clicking on the share buttons! We recommend sharing in the <a href="https://discord.gg/homestuck">Homestuck Discord</a>'s Heardle/Motifle thread, which is frequented by around 20 people every day.
+        Once the game ends, songs are revealed along with links to the <a href="https://hsmusic.wiki">Homestuck Music Wiki</a>. Share your scores on your favorite social networks, by clicking on the share buttons! We recommend sharing in the <a href="https://discord.homestuck.net">Homestuck Discord</a>'s Heardle/Motifle thread, which is frequented by around 20 people every day.
     </p>
 </div>
 
