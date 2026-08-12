@@ -77,13 +77,32 @@ class Game {
             console.error(`Game.hydrateWithObject: song data ${gameObject.dateString} does not match, ignoring existing data`);
             return;
         }
-        this.song = gameObject.song;
-        this.submittedMotifs = gameObject.submittedMotifs;
-        this.displayedMotifs = gameObject.displayedMotifs;
+        // Only the player's own progress comes out of storage. Everything describing the song and
+        // its motifs is kept as freshly loaded, because a stored copy pins whatever names, artwork
+        // and links were current when the game was first opened, and those move around: a game
+        // saved before the wiki changed art hosts would keep asking for images that no longer exist.
         this.status = gameObject.status;
         this.errorCount = gameObject.errorCount;
-        this.maxPoints = gameObject.maxPoints || this.initializeMaxPoints();
         this.maxErrors = gameObject.maxErrors || this.initializeMaxErrors();
+
+        const guessedSlugs = new Set(
+            (gameObject.displayedMotifs || [])
+                .filter((motif) => motif.isGuessed)
+                .map((motif) => motif.slug)
+        );
+        this.displayedMotifs.forEach((motif) => {
+            motif.isGuessed = guessedSlugs.has(motif.slug);
+        });
+
+        // submitted motifs are re-resolved too, keeping the stored one only when it has since
+        // disappeared from the motif list
+        this.submittedMotifs = (gameObject.submittedMotifs || []).map((submitted) => {
+            const current = this.displayedMotifs.find((motif) => motif.slug === submitted.slug);
+            return current || submitted;
+        });
+
+        // recomputed rather than restored, so the total always matches the cards on screen
+        this.maxPoints = this.initializeMaxPoints();
     }
 
     initializeMaxPoints() {
