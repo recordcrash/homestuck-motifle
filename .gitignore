@@ -22,3 +22,8 @@ hsmusic-wiki
 /hsmusic-wiki
 hsmusic-cache
 /hsmusic-cache
+.bandcamp-profile
+/.bandcamp-profile
+
+__pycache__/
+*.pyc

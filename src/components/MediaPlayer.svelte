@@ -12,6 +12,27 @@ let currentTime = '00:00'; // This value will keep track of the current playback
 let seekBarInterval; // Interval to update the seek bar
 let seekBarDisabled = true; // Whether the seek bar should be disabled
 
+// Bandcamp has no JS API, so its songs can't run behind our own transport the way YouTube and
+// SoundCloud do. They get Bandcamp's own player, cropped to the strip holding its play button and
+// seek bar; the rows above name the song, which would hand the player the answer.
+$: isBandcamp = game.song.urlType === 'bandcamp';
+// The embed reflows at different widths, so it is drawn at a fixed width and scaled to fit. That
+// way a phone gets the same strip as a desktop rather than a differently laid-out one.
+const BANDCAMP_DESIGN_WIDTH = 400;  // the width the iframe is always drawn at
+const BANDCAMP_EMBED_HEIGHT = 120;  // natural height of the large embed
+const BANDCAMP_CROP_TOP = 55;       // everything above this names the song, so it is cropped away
+// stops short of the embed's bottom edge, which is padding
+const BANDCAMP_STRIP_HEIGHT = 58;
+
+let bandcampWidth = 0;
+
+// scale down on narrow screens, never up
+$: bandcampScale = bandcampWidth ? Math.min(1, bandcampWidth / BANDCAMP_DESIGN_WIDTH) : 1;
+
+$: bandcampEmbedUrl = isBandcamp && game.song.bandcampTrackId
+    ? `https://bandcamp.com/EmbeddedPlayer/track=${game.song.bandcampTrackId}/size=large/artwork=none/tracklist=false/transparent=true/`
+    : '';
+
 onMount(() => {
     setupYouTubePlayer();
     setupSoundCloudPlayer();
@@ -114,7 +135,7 @@ function togglePlay() {
 function setupYouTubePlayer() {
     const initializePlayer = () => {
         player = new YT.Player('youtube-player', {
-            videoId: extractYouTubeID(game.song.url),
+            videoId: game.song.urlType === 'youtube' ? extractYouTubeID(game.song.url) : '',
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -216,6 +237,25 @@ const formatTime = (seconds) => {
     <div id="youtube-player"></div>
     <iframe id="soundcloud-player" src="" frameborder="0" title="soundcloud"></iframe>
     
+    {#if isBandcamp}
+        <!-- only the bottom strip is exposed: the rows above carry artwork, album, artist and
+             track title, any of which would give the song away -->
+        <div class="bandcamp-player" bind:clientWidth={bandcampWidth}
+             style="height: {(BANDCAMP_STRIP_HEIGHT + 2) * bandcampScale}px">
+            <!-- keyed on the url so changing day remounts the iframe, which is the only way to
+                 stop playback in a player we cannot talk to -->
+            {#key bandcampEmbedUrl}
+                <div class="bandcamp-scaler" style="transform: scale({bandcampScale})">
+                    <div class="bandcamp-viewport"
+                         style="width: {BANDCAMP_DESIGN_WIDTH}px; height: {BANDCAMP_STRIP_HEIGHT}px">
+                        <iframe class="bandcamp-frame" src={bandcampEmbedUrl} title="player" seamless
+                            style="width: {BANDCAMP_DESIGN_WIDTH}px; height: {BANDCAMP_EMBED_HEIGHT}px; top: {-BANDCAMP_CROP_TOP}px"
+                            frameborder="0"></iframe>
+                    </div>
+                </div>
+            {/key}
+        </div>
+    {:else}
     <div class="controls-container">
         <button class="play-button" on:click={togglePlay} disabled={!isReady}>
             {isReady ? (isPlaying ? '⏸' : '▶') : '⧗'}
@@ -240,6 +280,7 @@ const formatTime = (seconds) => {
             { isReady ? '⏹' : '⧗'}
         </button>
     </div>
+    {/if}
 </div>
 
 
@@ -247,6 +288,31 @@ const formatTime = (seconds) => {
     #youtube-player,
     #soundcloud-player {
         display: none;
+    }
+
+    .bandcamp-player {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bandcamp-scaler {
+        transform-origin: top left;
+    }
+
+    /* cropping slices through the embed's own frame, so the top and bottom edges are drawn back
+       on here; the left and right edges are still the embed's own */
+    .bandcamp-viewport {
+        position: relative;
+        overflow: hidden;
+        border-top: 1px solid rgba(0, 0, 0, 0.18);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+        box-sizing: content-box;
+    }
+
+    .bandcamp-frame {
+        position: absolute;
+        left: 0;
+        border: 0;
     }
 
     .play-button, .stop-button {

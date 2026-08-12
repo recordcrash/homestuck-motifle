@@ -6,6 +6,7 @@ import GameResults from '../components/GameResults.svelte';
 import ScoreDisplay from '../components/ScoreDisplay.svelte';
 import MediaPlayer from '../components/MediaPlayer.svelte';
 import Typeahead from "svelte-typeahead";
+import { isLocalHost } from '$lib/isLocalHost.js';
 import { fade } from 'svelte/transition'
 
 let showToast = false;
@@ -24,7 +25,18 @@ const extractMotif = (motif) => motif.name;
 let selectedDate = new Date();
 let selectedDateString = selectedDate.toISOString().slice(0, 10);
 const firstDayString = '2023-08-09';
-const lastDayString = new Date().toISOString().slice(0, 10);
+const todayString = new Date().toISOString().slice(0, 10);
+
+// running the site locally unlocks future days in the date picker, so upcoming songs can be
+// checked before they go live. it can only ever be true in a browser on a local host, so the
+// deployed site keeps its usual "today is the latest day you can play" rule
+let unlockFutureDays = false;
+
+// the last day that exists in the data, which is as far ahead as the picker can usefully go
+$: lastAvailableDayString = gameSongs.length
+	? gameSongs.reduce((latest, song) => (song.day > latest ? song.day : latest), gameSongs[0].day)
+	: todayString;
+$: lastDayString = unlockFutureDays ? lastAvailableDayString : todayString;
 
 let selectedMotif;
 let displayedMotifs;
@@ -145,6 +157,7 @@ function giveUp() {
 }
 
 onMount(async () => {
+	unlockFutureDays = isLocalHost();
 	await loadGameData();
 });
 </script>
@@ -192,6 +205,23 @@ onMount(async () => {
 	width: 100%;
 }
 
+
+.date-picker {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.future-badge {
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	padding: 3px 7px;
+	border-radius: 4px;
+	background-color: #ffb300;
+	color: #222;
+	white-space: nowrap;
+}
 
 .dateInput {
 	display: block;
@@ -275,8 +305,13 @@ onMount(async () => {
 {#if displayedMotifs}
 <div class="container" transition:fade={{ duration: 1000 }}>
 	<div class="first-row">
-		<input class="dateInput" type="date" bind:value={selectedDateString} 
-			min={firstDayString} max={lastDayString}/>
+		<div class="date-picker">
+			<input class="dateInput" type="date" bind:value={selectedDateString}
+				min={firstDayString} max={lastDayString}/>
+			{#if unlockFutureDays && selectedDateString > todayString}
+				<span class="future-badge" title="This day hasn't gone live yet. Future days are only browsable when running locally.">UNRELEASED</span>
+			{/if}
+		</div>
 		<ScoreDisplay game={currentGame} displayedMotifs={displayedMotifs} />
 	</div>
 	<div class="second-row">
