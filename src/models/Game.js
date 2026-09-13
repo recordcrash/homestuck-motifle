@@ -170,7 +170,7 @@ class Game {
             ['clockwork-apocalypse', 'clockwork-reversal'],
             ['eternity-served-cold', 'english'],
             ['i-dont-want-to-miss-a-thing-aerosmith', 'i-dont-want-to-miss-a-thing'],
-            ['wsw-beatdown', 'walk-stab-walk-rande'],
+            ['wsw-beatdown', 'walk-stab-walk-r-and-e'],
             ['horschestra-STRONG-version', 'horschestra'],
             ['trollcops', 'under-the-hat'],
             ['serenade', 'requited'],
